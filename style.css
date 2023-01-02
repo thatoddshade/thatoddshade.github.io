@@ -57,7 +57,7 @@
 
     /* others */
     --radius: 8px;
-    --shading: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -80,28 +80,28 @@ body {
     padding: 16px;
     margin: 0px;
     border-radius: var(--radius);
-    box-shadow: var(--shading);
+    box-shadow: var(--shadow);
 }
 
 small {
     color: var(--second-color);
 }
 
-a {
+a:not(:has(img)) {
     color: var(--link-color);
     text-decoration: none;
 }
 
-a:hover {
+a:hover:not(:has(img)) {
     text-decoration: underline;
 }
 
-a:focus {
+a:focus:not(:has(img)) {
     background-color: var(--link-color);
     color: var(--bg-color) !important;
 }
 
-a:visited {
+a:visited:not(:has(img)) {
     color: var(--visited-link-color);
 }
 
@@ -121,14 +121,14 @@ a:visited {
     font-family: var(--body-font);
     text-align: center;
     font-size: 20px;
-    box-shadow: var(--shading);
+    box-shadow: var(--shadow);
     padding: 32px;
 }
 
 .cards div iframe,
 .cards div img {
     border-radius: calc(var(--radius) * 2);
-    box-shadow: var(--shading);
+    box-shadow: var(--shadow);
 }
 
 .cards div.large-card {
@@ -138,4 +138,8 @@ a:visited {
 /* size images to take up their grid column width */
 .cards img {
     width: 100%;
+}
+
+a.social-link img {
+    box-shadow: none;
 }
