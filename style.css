@@ -29,17 +29,23 @@
 @media (prefers-color-scheme: light) {
     :root {
         --bg-color: #ffffff;
-        --card-bg-color: #ffffff;
+        --second-bg-color: #ffffff;
         --color: #2e222f;
+        --second-color: #3e3546;
+        --link-color: #374e4a;
+        --visited-link-color: #6b3e75;
     }
 }
 
-/* dark theme colour sheme */
+/* dark theme color sheme */
 @media (prefers-color-scheme: dark) {
     :root {
         --bg-color: #2e222f;
-        --card-bg-color: #3e3546;
+        --second-bg-color: #3e3546;
         --color: #ffffff;
+        --second-color: #c7dcd0;
+        --link-color: #b2ba90;
+        --visited-link-color: #eaaded;
     }
 }
 
@@ -77,6 +83,27 @@ body {
     box-shadow: var(--shading);
 }
 
+small {
+    color: var(--second-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:focus {
+    background-color: var(--link-color);
+    color: var(--bg-color) !important;
+}
+
+a:visited {
+    color: var(--visited-link-color);
+}
 
 /* masonry layout */
 .cards {
@@ -89,7 +116,7 @@ body {
 }
 
 .cards div {
-    background-color: var(--card-bg-color);
+    background-color: var(--second-bg-color);
     border-radius: var(--radius);
     font-family: var(--body-font);
     text-align: center;
