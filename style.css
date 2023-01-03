@@ -142,4 +142,16 @@ a:visited:not(:has(img)) {
 
 a.social-link img {
     box-shadow: none;
+    filter: sepia(100%) hue-rotate(-135deg);
+    transition: 1.5s;
+}
+
+a.social-link img:hover {
+    filter: none;
+    transition: 0.75s;
+}
+
+a.social-link img:active {
+    filter: contrast(200%);
+    transition: 0.75s;
 }
