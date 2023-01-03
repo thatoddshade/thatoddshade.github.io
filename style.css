@@ -55,6 +55,10 @@
     --body-font: "Inter", serif;
     --card-font: "Inter", serif;
 
+    /* transitions */
+    --trans: 0.75s;
+    --second-trans: 1.5s;
+
     /* others */
     --radius: 8px;
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -140,18 +144,22 @@ a:visited:not(:has(img)) {
     width: 100%;
 }
 
-a.social-link img {
+.social-links a {
+    display: inline;
+}
+
+.social-links a img {
     box-shadow: none;
     filter: sepia(100%) hue-rotate(-135deg);
-    transition: 1.5s;
+    transition: var(--second-trans);
 }
 
-a.social-link img:hover {
+.social-links a img:hover {
     filter: none;
-    transition: 0.75s;
+    transition: var(--trans);
 }
 
-a.social-link img:active {
+.social-links a img:active {
     filter: contrast(200%);
-    transition: 0.75s;
+    transition: var(--trans);
 }
