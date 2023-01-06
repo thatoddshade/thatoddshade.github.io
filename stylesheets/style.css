@@ -1,3 +1,6 @@
+/* @import "social-links.css"; */
+@import url("portrait.css") screen and (orientation: portrait);
+
 @font-face {
     font-family: 'Fira Sans';
     src: url('../font/FiraSans-Regular.ttf') format('truetype');
