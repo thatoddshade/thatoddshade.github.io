@@ -62,6 +62,11 @@
     --trans: 0.75s;
     --second-trans: 1.5s;
 
+    /* size */
+    --card-padding: 32px;
+    --description-padding: 16px;
+    --description-font-size: 16px;
+
     /* others */
     --radius: 8px;
     --shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -80,11 +85,12 @@ body {
 }
 
 #description {
+    font-size: var(--description-font-size);
     color: var(--bg-color);
     background-color: var(--color);
     user-select: none;
     text-align: center;
-    padding: 16px;
+    padding: var(--description-padding);
     margin: 0px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -129,7 +135,7 @@ a:visited:not(:has(img)) {
     text-align: center;
     font-size: 20px;
     box-shadow: var(--shadow);
-    padding: 32px;
+    padding: var(--card-padding);
 }
 
 .cards>div iframe,

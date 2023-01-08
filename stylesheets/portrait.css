@@ -1,5 +1,16 @@
 @import "style.css";
 
+#description {
+    font-size: calc(var(--description-font-size) * 1.5) !important;
+}
+
 .cards>div {
-    max-zoom: 100%;
+    min-width: calc(100%) !important;
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+}
+
+.cards {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
