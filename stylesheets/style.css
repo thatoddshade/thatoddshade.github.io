@@ -28,6 +28,7 @@
     font-style: normal;
 }
 
+/* light theme color sheme */
 @media (prefers-color-scheme: light) {
     :root {
         --bg-color: #ffffff;
@@ -67,6 +68,8 @@
     --card-padding: 32px;
     --description-font-size: 16px;
     --description-padding: 16px;
+    --card-min-width: 42%;
+    --card-gap: 36px;
 
     /* others */
     --radius: 8px;
@@ -74,6 +77,7 @@
 }
 
 
+/* selected content */
 *::selection {
     color: var(--bg-color);
     background-color: var(--color);
@@ -85,6 +89,7 @@ body {
     font-family: var(--body-font);
 }
 
+/* description box */
 #description {
     font-size: var(--description-font-size);
     color: var(--bg-color);
@@ -96,10 +101,12 @@ body {
     box-shadow: var(--shadow);
 }
 
+/* small texts */
 small {
     color: var(--second-color);
 }
 
+/* text links */
 a:not(:has(img)) {
     color: var(--link-color);
     text-decoration: none;
@@ -118,15 +125,16 @@ a:visited:not(:has(img)) {
     color: var(--visited-link-color);
 }
 
-/* masonry layout */
+/* card box */
 .cards {
     display: grid;
     grid-template-columns: var(--card-columns);
-    gap: 36px;
-    margin: 36px;
+    gap: var(--card-gap);
+    margin: var(--card-gap);
     justify-content: center;
 }
 
+/* the cards themselves */
 .cards>div {
     background-color: var(--second-bg-color);
     border-radius: var(--radius);
@@ -135,14 +143,21 @@ a:visited:not(:has(img)) {
     font-size: var(--card-font-size);
     box-shadow: var(--shadow);
     padding: var(--card-padding);
+    min-width: var(--card-min-width);
 }
 
+/* card graphics */
 .cards>div iframe,
 .cards>div img {
     border-radius: calc(var(--radius) * 2);
     box-shadow: var(--shadow);
 }
 
+.cards img {
+    width: 100%;
+}
+
+/* card types */
 .cards>div.medium-card {
     grid-column: auto / span 2;
 }
@@ -151,11 +166,7 @@ a:visited:not(:has(img)) {
     grid-column: auto / span 3;
 }
 
-/* size images to take up their grid column width */
-.cards img {
-    width: 100%;
-}
-
+/* social link card */
 .social-links>a {
     display: inline;
 }

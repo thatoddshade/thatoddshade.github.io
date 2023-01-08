@@ -5,12 +5,7 @@
 }
 
 .cards>div {
-    min-width: calc(100%) !important;
-    margin-left: 16px !important;
-    margin-right: 16px !important;
-}
-
-.cards {
-    margin-right: auto !important;
-    margin-left: auto !important;
+    min-width: calc(var(--card-min-width) * 2) !important;
+    margin-left: 8px;
+    margin-right: 8px;
 }
