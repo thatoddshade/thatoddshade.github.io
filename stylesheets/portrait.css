@@ -5,7 +5,10 @@
 }
 
 .cards>div {
-    min-width: calc(var(--card-min-width) * 2) !important;
     margin-left: 8px;
     margin-right: 8px;
+}
+
+.cards {
+    align-items: stretch;
 }
