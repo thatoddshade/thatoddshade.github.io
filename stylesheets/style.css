@@ -33,6 +33,7 @@
     :root {
         --bg-color: #ffffff;
         --second-bg-color: #ffffff;
+        --bg-gradient: linear-gradient(0deg, rgba(46, 34, 47, 1) 0%, rgba(255, 255, 255, 1) 100%);
         --color: #2e222f;
         --second-color: #3e3546;
         --link-color: #374e4a;
@@ -45,6 +46,7 @@
     :root {
         --bg-color: #2e222f;
         --second-bg-color: #3e3546;
+        --bg-gradient: linear-gradient(0deg, rgba(49, 54, 56, 1) 0%, rgba(46, 34, 47, 1) 100%);
         --color: #ffffff;
         --second-color: #c7dcd0;
         --link-color: #b2ba90;
@@ -80,11 +82,11 @@
 /* selected content */
 *::selection {
     color: var(--bg-color);
-    background-color: var(--color);
+    background: var(--color);
 }
 
 body {
-    background-color: var(--bg-color);
+    background: var(--bg-gradient), var(--bg-color);
     color: var(--color);
     font-family: var(--body-font);
 }
