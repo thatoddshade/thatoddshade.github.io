@@ -1,0 +1,29 @@
+/* font setup */
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('../font/FiraSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../font/Inter-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('../font/Metropolis-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Zilla Slab';
+    src: url('../font/ZillaSlab-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

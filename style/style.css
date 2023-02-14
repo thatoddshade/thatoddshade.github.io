@@ -1,0 +1,263 @@
+@import "variables.css";
+@import "font.css";
+@import "portrait.css" screen and (orientation: portrait);
+
+
+
+/* selected content */
+
+::selection {
+    background-color: var(--color);
+    color: var(--bg-color);
+}
+
+
+
+/* scrollbar */
+
+html {
+    /* change scroll bar color */
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+
+    /* make scrolling a bit slower */
+    scroll-behavior: smooth;
+
+    /* tweak scrolling padding */
+    scroll-padding: 160px;
+}
+
+
+
+/* body */
+
+body {
+
+    /* typography */
+    font-family: var(--body-font);
+    color: var(--color);
+
+    /* box-model stuff */
+    padding-top: calc(var(--nav-height) * 2);
+    background-color: var(--bg-color);
+}
+
+
+
+/* navigation menu */
+
+nav {
+    /* positioning stuff */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 20;
+
+    /* box-model stuff */
+    width: var(--nav-width);
+    height: var(--nav-height);
+    padding: var(--regular-padding);
+    background-color: var(--transparent-bg-color);
+
+    /* manipulation stuff */
+    backdrop-filter: var(--blur);
+
+    /* misc */
+    box-shadow: var(--shadow);
+}
+
+nav ul {
+    /* display */
+    display: flex;
+    flex-direction: row;
+
+    /* positioning stuff */
+    align-items: center;
+    justify-content: center;
+    /* float: left; */
+
+    /* block-model stuff */
+    /* height: 100%;
+    width: 100%; */
+    margin-block: 0;
+}
+
+nav ul li {
+    /* display */
+    display: inline-block;
+
+    /* box-model stuff */
+    /* padding-top: var(--regular-padding); */
+    /* padding-bottom: var(--regular-padding); */
+    /* padding: var(--regular-padding); */
+    padding-inline: var(--regular-padding);
+
+    /* misc */
+    list-style-type: none;
+    user-select: none;
+}
+
+nav ul li a {
+    /* typography */
+    font-family: var(--title-font);
+    font-size: var(--navigation-font-size);
+    color: var(--link-color) !important;
+    background-color: transparent !important;
+    text-decoration: none;
+    letter-spacing: 2.4px;
+}
+
+
+#logo img {
+    /* box-model stuff */
+    max-width: 439px;
+    max-height: 439px;
+}
+
+
+
+/* header and sections */
+
+header {
+    /* typography */
+    font-size: var(--description-font-size);
+    text-align: center;
+
+    /* box-model stuff */
+    padding: var(--description-padding) !important;
+    background-image: url("../images/header_background.png");
+}
+
+header>div, section>div {
+    /* typography */
+    /* color: white; */
+
+    /* box-model stuff */
+    min-width: 25%;
+    padding: var(--regular-padding);
+    background-color: var(--transparent-bg-color);
+
+    /* manipulation stuff */
+    backdrop-filter: var(--blur);
+
+    /* misc */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+
+section,
+header {
+    /* box-model stuff */
+    margin-block: var(--regular-margin);
+    padding: var(--regular-padding);
+
+    /* misc */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+
+section, header {
+    /* display */
+    display: flex;
+
+    /* positioning */
+    position: relative;
+    align-items: center;
+    flex-direction: column;
+}
+
+section>img,
+section>iframe {
+    /* box-model stuff */
+    min-width: 75%;
+
+    /* misc */
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+
+
+
+footer {
+    /* positioning stuff */
+    position: absolute;
+    left: 0;
+
+    /* box-model stuff */
+    width: 100%;
+    
+    /* manipulation stuff */
+    backdrop-filter: brightness(0.75);
+}
+
+
+
+/* text */
+
+h1, h2, h3, h4, h5, h6 {
+    /* typography */
+    font-family: var(--title-font);
+}
+
+h1, h2, h3 {
+    /* positioning */
+    text-align: center;
+}
+
+
+small {
+    /* typography */
+    color: var(--second-color);
+}
+
+code {
+    /* typography */
+    font-family: var(--code-font) !important;
+
+    /* box-model stuff */
+    padding: calc(var(--regular-padding) / 8);
+
+    /* manipulation stuff */
+    backdrop-filter: brightness(1.25);
+
+    /* misc */
+    border-color: var(--scrollbar-color);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: calc(var(--radius) / 2);
+}
+
+
+a {
+    /* typography */
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    /* typography */
+    text-decoration: underline;
+}
+
+a:focus {
+    /* typography */
+    color: var(--transparent-bg-color);
+    
+    /* box-model stuff */
+    background-color: var(--link-color);
+}
+
+a:focus:visited {
+    /* typography */
+    color: var(--transparent-bg-color);
+    
+    /* box-model stuff */
+    background-color: var(--visited-link-color) !important;
+}
+
+a:visited {
+    /* typography */
+    color: var(--visited-link-color);
+}

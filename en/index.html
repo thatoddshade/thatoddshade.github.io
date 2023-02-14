@@ -4,7 +4,7 @@
 <head>
     <title>ThatOddShade</title>
 
-    <link href="../stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
 
     <meta charset="utf-8">
     <meta property="og:title" name="twitter:title" itemprop="name"
@@ -26,67 +26,110 @@
 </head>
 
 <body>
-    <div id="description">
-        <p><b>Developer</b>, potato and cheese lover, living being and <b>(pixel) artist.</b></p>
-        <small lang="fr"><a href="../fr" title="French">🇫🇷 Français</a></small>
-    </div>
-    <div class="cards">
 
-        <div class="medium-card">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home" id="logo" title="Home">
+                        <img src="../images/logo.png" alt="Home">
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills" title="Skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects" title="Projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <marquee direction="left">Welcome to my wonderful and beautiful Web Site. </marquee>
+        <marquee behavior="alternate">[ Insert cool text 😎 ]</marquee>
+        
+        <h3> <a href="../fr" title="French Version"><code>🇫🇷 Version Française</code></a> </h3>
 
-            <p>I can do some Python. </p>
-            <script src="https://gist.github.com/thatoddshade/451ff30fcf2e5bf0ac87bd1a6ba1232f.js"></script>
-
-            <p>I know a bit of JavaScript. </p>
-            <script src="https://gist.github.com/thatoddshade/dc18bcc5fff5a9ecd30c0782ea4ebfdd.js"></script>
-
-        </div>
-
-        <div class="social-links">
-            <a href="https://youtube.com/@thatoddshade/"
-                title="Subscribe to my channel (mostly French content, but subscribing still supports me 😃). ">
-                <img src="../images/social-link-icons/youtube.png" alt="YouTube" />
-            </a>
-            <a href="https://thatoddshade.itch.io/" title="Play games made by me. ">
-                <img src="../images/social-link-icons/itchio.png" alt="itch.io" />
-            </a>
-            <a href=" https://github.com/thatoddshade/" title="Star my repositories. ">
-                <img src="../images/social-link-icons/github.png" alt="GitHub" />
-            </a>
-            <a href="https://reddit.com/user/That-Odd-Shade/" title="Follow my posts. ">
-                <img src="../images/social-link-icons/reddit.png" alt="reddit" />
-            </a>
-            <a href="https://audio.com/thatoddshade/" title="Listen to audios I share. ">
-                <img src="../images/social-link-icons/audiocom.png" alt="audio.com" />
-            </a>
-        </div>
-
-        <div class="large-card">
-
-            <iframe
-                src="https://itch.io/embed/1813431?border_width=1&amp;bg_color=1b1b1b&amp;fg_color=ffffff&amp;link_color=ea323c&amp;border_color=3a30c1"
-                width="554" height="169" frameborder="0"><a href="https://thatoddshade.itch.io/geofood">GéograFood by
-                    ThatOddShade</a>
-            </iframe>
-            <p>Try this game I made during Github GameOff 2022 !</p>
-
-        </div>
-
-        <div class="large-card">
-            <a href="https://addons.mozilla.org/en-GB/firefox/addon/grun-dark/?utm_source=thatoddshade.github.io"
-                title="Install Grün for Firefox. "><img
-                    src="https://addons.mozilla.org/user-media/version-previews/full/3931/3931271.svg?modified=1673886621" />
-            </a>
+        <h1 id="home">Home</h1>
+        
+        <header>
+            <div>
+                <p><b>Developer</b>, potato and cheese lover, living being and <b>(pixel) artist. </b>
+            </div>
+        </header>
+        
+        
+        <h1 id="links">Links</h1>
+        
+        <section>
+            <p>
+                <a href="https://youtube.com/@thatoddshade/"
+                    title="Mostly French videos...">
+                    YouTube
+                </a>
+                <a href="https://thatoddshade.itch.io/"
+                    title="I MAKE GAEMS. ">
+                    itch.io
+                </a>
+                <a href="https://github.com/thatoddshade/" title="I make repos for random stuff. ">
+                    GitHub
+                </a>
+                <a href="https://reddit.com/user/That-Odd-Shade/" title="I downvote other people's posts... ">
+                    Reddit
+                </a>
+                <a href="https://audio.com/thatoddshade/" title="I share noises. ">
+                    audio.com
+                </a>
+                <a href="https://stackoverflow.com/users/20547839/thatoddshade" title="Programming is pain. Help me. ">Stack Overflow</a>
+            </p>
+        </section>
+        
+        
+        <h1 id="skills">Skills</h1>
+        
+        <section id="skills">
+            <h2>Favo<i>u</i>rite Languages</h2>
+            <ul>
+                <li>Python</li>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+        
+        
+        <h1 id="projects">Projects</h1>
+        
+        <section id="grun">
+            <h2>Grün</h2>
+            <img src="https://addons.mozilla.org/user-media/version-previews/full/3931/3931287.svg?modified=1673889621"
+                alt="preview" title="Grün">
             <p>Get my Firefox theme, <a
                     href="https://addons.mozilla.org/en-GB/firefox/addon/grun-dark/?utm_source=thatoddshade.github.io"
                     title="Grün download page. ">Grün</a>
                 !</p>
-            <small>If you aren't using <a href="https://firefox.com/"
-                    title="Download Firefox for Desktop — from Mozilla ">Firefox</a>,
-                please install it so that you can download my theme or stop breathing. 🙂</small>
-        </div>
-
-    </div>
+            <small>If you're not using <a href="https://firefox.com/"
+                    title="Téléchargez le navigateur Firefox, rapide, sécurisé, libre et gratuit, par Mozilla ">Firefox</a>,
+                please install it on your machine or stop breathing. 🙂
+            </small>
+        </section>
+        
+        <section id="geofood">
+            <h2>GéograFood</h2>
+            <iframe
+                src="https://itch.io/embed/1813431?border_width=1&amp;bg_color=1b1b1b&amp;fg_color=ffffff&amp;link_color=ea323c&amp;border_color=3a30c1"
+                width="554" height="169" frameborder="0"><a href="https://thatoddshade.itch.io/geofood">GéograFood par
+                    ThatOddShade</a>
+            </iframe>
+            <p>Try this game I made during the GameOff 2022 Game Jam. </p>
+        </section>
+        
+        
+        
+        <footer>
+            <h1 id="contact">Contact</h1>
+            <h2>Email : <code>thatoddshade.contact@skiff.com</code></h2>
+        </footer>
 
 </body>
 

@@ -1,0 +1,24 @@
+@import "style.css";
+
+/* #description {
+    font-size: calc(var(--description-font-size) * 1.5) !important;
+}
+
+.cards>div {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.cards {
+    align-items: stretch;
+} */
+
+/* #logo img {
+    src: url("a") !important;
+} */
+
+/* make section font size greater */
+section {
+    /* typography */
+    font-size: calc(var(--regular-font-size) * 2);
+}

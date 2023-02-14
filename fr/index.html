@@ -4,9 +4,11 @@
 <head>
     <title>ThatOddShade</title>
 
-    <link href="../stylesheets/style.css" rel="stylesheet" type="text/css" />
+    <link href="../style/style.css" rel="stylesheet" type="text/css" />
+    <!-- <script type="text/javascript" src="../script/script.js"></script> -->
 
     <meta charset="utf-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <meta property="og:title" name="twitter:title" itemprop="name"
         content="Le magnifique Site Web officiel de ThatOddShade. ">
     <meta property="og:site_name" content="ThatOddShade">
@@ -26,75 +28,108 @@
 </head>
 
 <body>
-    <div id="description">
-        <p><b>Développeur</b>, adorateur de patate et de fromage, être vivant et <b>(pixel) artiste.</b>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#home" id="logo" title="Accueil">
+                    <img src="../images/logo.png" alt="Accueil">
+                </a>
+            </li>
+            <li>
+                <a href="#skills" title="Compétences">Compétences</a>
+            </li>
+            <li>
+                <a href="#projects" title="Projets">Projets</a>
+            </li>
+            <li>
+                <a href="#contact" title="Contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <marquee direction="left">Bienvenue sur mon incroyable et magnifique Site Web. </marquee>
+    <marquee behavior="alternate">[ Insérez texte super cool 😎 ]</marquee>
+
+    <h3> <a href="../en" title="Version Anglaise"><code>🇬🇧 English Version</code></a> </h3>
+
+    <h1 id="home">Accueil</h1>
+
+    <header>
+        <div>
+            <p><b>Développeur</b>, adorateur de patate et de fromage, être vivant et <b>(pixel) artiste. </b>
+        </div>
+    </header>
+
+
+    <h1 id="links">Liens</h1>
+
+    <section>
+        <p>
+        <a href="https://youtube.com/@thatoddshade/" title="Je fais des vidéos quand je souhaite ouvrir mon logiciel de montage... ">
+            YouTube
+        </a>
+        <a href="https://thatoddshade.itch.io/" title="Je publie des jeux et des assets dont la qualité est variable... ">
+            itch.io
+        </a>
+        <a href="https://github.com/thatoddshade/" title="Je fais des dépôts pour différents projets... ">
+            GitHub
+        </a>
+        <a href="https://reddit.com/user/That-Odd-Shade/" title="Je commente des postes de d'autres personnes. ">
+            Reddit
+        </a>
+        <a href="https://audio.com/thatoddshade/" title="Je publie parfois des audios. ">
+            audio.com
+        </a>
+        <a href="https://stackoverflow.com/users/20547839/thatoddshade" title="AIDEZ-MOI.">Stack Overflow</a>
         </p>
-        <small lang="en"><a href="../en" title="Anglais">🇬🇧 English</a></small>
-    </div>
-    <div class="cards">
+    </section>
 
-        <div class="medium-card">
 
-            <p>Je sais faire du Python. </p>
-            <script src="https://gist.github.com/thatoddshade/451ff30fcf2e5bf0ac87bd1a6ba1232f.js"></script>
+    <h1 id="skills">Compétences</h1>
 
-            <p>Je maîtrise les bases du JavaScript. </p>
-            <script src="https://gist.github.com/thatoddshade/dc18bcc5fff5a9ecd30c0782ea4ebfdd.js"></script>
+    <section id="skills">
+        <h2>Langages préférés</h2>
+        <ul>
+            <li>Python</li>
+            <li>HTML / CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </section>
 
-        </div>
 
-        <div class="social-links">
-            <a href="https://youtube.com/@thatoddshade/" title="Abonnez-vous à ma chaîne. ">
-                <img src="../images/social-link-icons/youtube.png" alt="YouTube" />
-            </a>
-            <a href="https://thatoddshade.itch.io/" title="Jouez à des jeux crées par moi. ">
-                <img src="../images/social-link-icons/itchio.png" alt="itch.io" />
-            </a>
-            <a href=" https://github.com/thatoddshade/" title="Étoilez mes dépôts.">
-                <img src="../images/social-link-icons/github.png" alt="GitHub" />
-            </a>
-            <a href="https://reddit.com/user/That-Odd-Shade/" title="Suivez mes publications. ">
-                <img src="../images/social-link-icons/reddit.png" alt="reddit" />
-            </a>
-            <a href="https://audio.com/thatoddshade/" title="Écoutez les audios que je partage. ">
-                <img src="../images/social-link-icons/audiocom.png" alt="audio.com" />
-            </a>
-        </div>
+    <h1 id="projects">Projets</h1>
 
-        <div class="large-card">
+    <section id="grun">
+        <h2>Grün</h2>
+        <img src="https://addons.mozilla.org/user-media/version-previews/full/3931/3931287.svg?modified=1673889621" alt="preview" title="Grün">
+        <p>Adoptez mon thème Firefox, <a
+                href="https://addons.mozilla.org/fr/firefox/addon/grun-dark/?utm_source=thatoddshade.github.io"
+                title="Page de téléchargement de Grün. ">Grün</a>
+            !</p>
+        <small>Si vous n'utilisez pas <a href="https://firefox.com/"
+                title="Téléchargez le navigateur Firefox, rapide, sécurisé, libre et gratuit, par Mozilla ">Firefox</a>,
+            veuillez l'installer
+            de façon à pouvoir télécharger mon thème ou cessez de respirer. 🙂
+        </small>
+    </section>
 
-            <iframe
-                src="https://itch.io/embed/1813431?border_width=1&amp;bg_color=1b1b1b&amp;fg_color=ffffff&amp;link_color=ea323c&amp;border_color=3a30c1"
-                width="554" height="169" frameborder="0"><a href="https://thatoddshade.itch.io/geofood">GéograFood par
-                    ThatOddShade</a>
-            </iframe>
-            <p>Essayez ce jeu que j'ai réalisé durant la Game Jam GameOff 2022, </p>
+    <section id="geofood">
+        <h2>GéograFood</h2>
+        <iframe
+            src="https://itch.io/embed/1813431?border_width=1&amp;bg_color=1b1b1b&amp;fg_color=ffffff&amp;link_color=ea323c&amp;border_color=3a30c1"
+            width="554" height="169" frameborder="0"><a href="https://thatoddshade.itch.io/geofood">GéograFood par
+                ThatOddShade</a>
+        </iframe>
+        <p>Essayez ce jeu que j'ai réalisé durant la Game Jam GameOff 2022. </p>
+    </section>
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BHjkcl59yo8"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-            <p>ou regardez la timelapse. </p>
 
-        </div>
-
-        <div class="large-card">
-            <a href="https://addons.mozilla.org/fr/firefox/addon/grun-dark/?utm_source=thatoddshade.github.io"
-                title="Installer Grün pour Firefox. "><img
-                    src=https://addons.mozilla.org/user-media/version-previews/full/3931/3931271.svg?modified=1673886621" />
-            </a>
-            <p>Adoptez mon thème Firefox, <a
-                    href="https://addons.mozilla.org/fr/firefox/addon/grun-dark/?utm_source=thatoddshade.github.io"
-                    title="Page de téléchargement de Grün. ">Grün</a>
-                !</p>
-            <small>Si vous n'utilisez pas <a href="https://firefox.com/"
-                    title="Téléchargez le navigateur Firefox, rapide, sécurisé, libre et gratuit, par Mozilla ">Firefox</a>,
-                veuillez l'installer
-                de façon à pouvoir télécharger mon thème ou cessez de respirer. 🙂</small>
-        </div>
-
-    </div>
+    
+    <footer>
+        <h1 id="contact">Contact</h1>
+        <h2>Email : <code>thatoddshade.contact@skiff.com</code></h2>
+    </footer>
 
 </body>
 
