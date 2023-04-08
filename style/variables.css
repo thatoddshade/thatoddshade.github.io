@@ -1,4 +1,4 @@
-/* set variables */
+@import "font.css";
 
 /* light theme color sheme */
 @media (prefers-color-scheme: light) {
@@ -6,16 +6,23 @@
         /* typography */
         --color: #2e222f;
         --second-color: #3e3546;
-        --link-color: #374e4a;
+        --accent-color: #547e64;
         --visited-link-color: #6b3e75;
 
         /* box-model stuff */
-        --bg-color: #ffffff;
-        --transparent-bg-color: #ffffff60;
+        --background-color: #ffffff;
+        --transparent-background-color: #ffffff60;
+        --card-background-color: #ffffff;
+        --button-background-color: #9babb260;
+        --button-overlay-color: #2e222f40;
+
+        /* manipulation stuff */
+        --button-backdrop-filter: brightness(1);
+        --button-hover-backdrop-filter: brightness(1);
 
         /* misc */
         --scrollbar-color: #9babb2;
-        --scrollbar-bg-color: #c7dcd0;
+        --scrollbar-background-color: #c7dcd0;
     }
 }
 
@@ -25,16 +32,24 @@
         /* typography */
         --color: #ffffff;
         --second-color: #c7dcd0;
-        --link-color: #b2ba90;
+        --accent-color: #547e64;
         --visited-link-color: #eaaded;
 
         /* box-model stuff */
-        --bg-color: #2e222f;
-        --transparent-bg-color: #2e222f60;
+        --background-color: #2e222f;
+        --transparent-background-color: #2e222f60;
+        --card-background-color: #372d3c;
+        --button-background-color: #62556560;
+        /* --button-overlay-color: #ffffff40; */
+        --button-overlay-color: #2e222f40;
+
+        /* manipulation stuff */
+        --button-backdrop-filter: brightness(1.25);
+        --button-hover-backdrop-filter: brightness(1.75);
 
         /* misc */
         --scrollbar-color: #625565;
-        --scrollbar-bg-color: #3e3546;
+        --scrollbar-background-color: #3e3546;
 
     }
 }
@@ -46,11 +61,11 @@
 
     /* typography */
     --title-font: "Zilla Slab", serif;
-    --body-font: "Inter", sans-serif;
-    --code-font: "Fira Sans", lucida;
+    --body-font: "Fira Sans", sans-serif;
+    --code-font: "Fira Code", lucida;
     --regular-font-size: 16px;
     --navigation-font-size: 32px;
-    --description-font-size: 32px;
+    --header-font-size: 32px;
     /* --card-font-size: 20px; */
 
 
@@ -58,13 +73,15 @@
     --nav-width: 100%;
     --nav-height: 75px;
     --regular-margin: 16px;
-    --description-padding: 64px;
     --regular-padding: 32px;
+    --button-padding: 16px;
+    --header-padding: 64px;
     /* --card-min-width: 42%; */
     /* --card-gap: 36px; */
 
     /* manipulation stuff */
     --blur: blur(50px);
+    --opacity: 0.38;
 
     /* misc */
     --radius: 25px;

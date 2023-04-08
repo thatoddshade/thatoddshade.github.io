@@ -1,6 +1,5 @@
 @import "variables.css";
-@import "font.css";
-@import "portrait.css" screen and (orientation: portrait);
+@import "portrait.css";
 
 
 
@@ -8,7 +7,7 @@
 
 ::selection {
     background-color: var(--color);
-    color: var(--bg-color);
+    color: var(--background-color);
 }
 
 
@@ -17,7 +16,7 @@
 
 html {
     /* change scroll bar color */
-    scrollbar-color: var(--scrollbar-color) var(--scrollbar-bg-color);
+    scrollbar-color: var(--scrollbar-color) var(--scrollbar-background-color);
 
     /* make scrolling a bit slower */
     scroll-behavior: smooth;
@@ -27,9 +26,7 @@ html {
 }
 
 
-
-/* body */
-
+/* general properties */
 body {
 
     /* typography */
@@ -38,9 +35,8 @@ body {
 
     /* box-model stuff */
     padding-top: calc(var(--nav-height) * 2);
-    background-color: var(--bg-color);
+    background-color: var(--background-color);
 }
-
 
 
 /* navigation menu */
@@ -56,7 +52,7 @@ nav {
     width: var(--nav-width);
     height: var(--nav-height);
     padding: var(--regular-padding);
-    background-color: var(--transparent-bg-color);
+    background-color: var(--transparent-background-color);
 
     /* manipulation stuff */
     backdrop-filter: var(--blur);
@@ -100,9 +96,9 @@ nav ul li a {
     /* typography */
     font-family: var(--title-font);
     font-size: var(--navigation-font-size);
-    color: var(--link-color) !important;
-    background-color: transparent !important;
-    text-decoration: none;
+    color: var(--accent-color) !important;
+    /* background-color: transparent !important; */
+    /* text-decoration: none; */
     letter-spacing: 2.4px;
 }
 
@@ -119,45 +115,28 @@ nav ul li a {
 
 header {
     /* typography */
-    font-size: var(--description-font-size);
+    font-size: var(--header-font-size);
     text-align: center;
 
     /* box-model stuff */
-    padding: var(--description-padding) !important;
+    padding: var(--header-padding) !important;
     background-image: url("../images/header_background.png");
 }
 
-header>div, section>div {
+header>div {
     /* typography */
     /* color: white; */
 
     /* box-model stuff */
     min-width: 25%;
     padding: var(--regular-padding);
-    background-color: var(--transparent-bg-color);
+    background-color: var(--transparent-background-color);
 
     /* manipulation stuff */
     backdrop-filter: var(--blur);
-
-    /* misc */
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
 }
 
-
-section,
 header {
-    /* box-model stuff */
-    margin-block: var(--regular-margin);
-    padding: var(--regular-padding);
-
-    /* misc */
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-}
-
-
-section, header {
     /* display */
     display: flex;
 
@@ -165,20 +144,21 @@ section, header {
     position: relative;
     align-items: center;
     flex-direction: column;
+
+    /* box-model stuff */
+    background-color: var(--card-background-color);
+    margin-block: var(--regular-margin);
+    padding: var(--regular-padding);
 }
 
-section>img,
-section>iframe {
-    /* box-model stuff */
-    min-width: 75%;
-
+body>section img,
+body>section iframe,
+header,
+header>div {
     /* misc */
     border-radius: var(--radius);
     box-shadow: var(--shadow);
 }
-
-
-
 
 footer {
     /* positioning stuff */
@@ -187,21 +167,37 @@ footer {
 
     /* box-model stuff */
     width: 100%;
-    
+
     /* manipulation stuff */
     backdrop-filter: brightness(0.75);
 }
 
+body>section#links {
+    /* display stuff */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+/* body>section#links>button {
+    width: 100%;
+} */
 
 /* text */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     /* typography */
     font-family: var(--title-font);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     /* positioning */
     text-align: center;
 }
@@ -230,10 +226,100 @@ code {
 }
 
 
+button {
+    /* typography */
+    color: var(--color);
+    text-decoration: none !important;
+    /* font-size: var(--button-padding); */
+
+    /* box-model stuff */
+    padding: var(--button-padding);
+    background-color: transparent;
+    overflow: clip;
+
+    /* manipulation stuff */
+    backdrop-filter: var(--button-backdrop-filter);
+
+    /* misc */
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: calc(var(--radius) / 2);
+    transition: 125ms;
+
+    /* mix-blend-mode: screen; */
+}
+
+button:hover {
+    /* box-model stuff */
+    /* background-color: var(--button-background-color); */
+
+    /* manipulation stuff */
+    backdrop-filter: var(--button-hover-backdrop-filter);
+
+    /* misc */
+    /* border-color: var(--scrollbar-color); */
+    /* border-color: var(--color); */
+    box-shadow: var(--shadow);
+}
+
+button:focus,
+button:active {
+    border-color: var(--accent-color);
+}
+
+button:active {
+    /* box-model stuff */
+    /* background-color: var(--button-background-color); */
+
+    /* manipulation stuff */
+    /* backdrop-filter: brightness(1.5); */
+
+    /* misc */
+    box-shadow: none;
+}
+
+button:before {
+    content: "";
+
+    /* display */
+    display: block;
+
+    /* positioning */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* box-model stuff */
+    width: 0;
+    padding-top: 0;
+    background-color: var(--button-overlay-color);
+
+    /* misc */
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    transition: 1s;
+}
+
+
+button:active:before {
+    /* box-model stuff */
+    width: 120%;
+    padding-top: 120%;
+
+    /* misc */
+    transition: width .2s ease-out, padding-top .2s ease-out;
+}
+
+
 a {
     /* typography */
-    color: var(--link-color);
+    color: var(--accent-color);
     text-decoration: none;
+
+    /* misc */
+    border-radius: calc(var(--radius) / 2);
 }
 
 a:hover {
@@ -242,20 +328,10 @@ a:hover {
 }
 
 a:focus {
-    /* typography */
-    color: var(--transparent-bg-color);
-    
-    /* box-model stuff */
-    background-color: var(--link-color);
+    /* manipulation stuff */
+    backdrop-filter: brightness(0.75);
 }
 
-a:focus:visited {
-    /* typography */
-    color: var(--transparent-bg-color);
-    
-    /* box-model stuff */
-    background-color: var(--visited-link-color) !important;
-}
 
 a:visited {
     /* typography */
