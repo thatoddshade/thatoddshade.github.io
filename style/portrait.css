@@ -1,43 +1,7 @@
 @import "variables.css";
 
-/* #description {
-    font-size: calc(var(--description-font-size) * 1.5) !important;
-}
-
-.cards>div {
-    margin-left: 8px;
-    margin-right: 8px;
-}
-
-.cards {
-    align-items: stretch;
-} */
-
-/* #logo img {
-    src: url("a") !important;
-} */
-
-/* make section font size greater */
-/*  */
-
-
-
-/* * {
-    background: red !important;
-} */
-
-
-
-/* :root {
-    --header
-} */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1280px) {
     :root {
-        --header-font-size: 16px;
-        --header-padding: var(--header-padding);
-    }
-
-    footer {
-        font-size-adjust: 0.25;
+        --button-font-size: 32px !important;
     }
 }
