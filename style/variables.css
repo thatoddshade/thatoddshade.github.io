@@ -1,74 +1,37 @@
-/* set variables */
+@import "font.css";
 
-/* light theme color sheme */
-@media (prefers-color-scheme: light) {
-    :root {
-        /* typography */
-        --color: #2e222f;
-        --second-color: #3e3546;
-        --link-color: #374e4a;
-        --visited-link-color: #6b3e75;
-
-        /* box-model stuff */
-        --bg-color: #ffffff;
-        --transparent-bg-color: #ffffff60;
-
-        /* misc */
-        --scrollbar-color: #9babb2;
-        --scrollbar-bg-color: #c7dcd0;
-    }
-}
-
-/* dark theme color sheme */
-@media (prefers-color-scheme: dark) {
-    :root {
-        /* typography */
-        --color: #ffffff;
-        --second-color: #c7dcd0;
-        --link-color: #b2ba90;
-        --visited-link-color: #eaaded;
-
-        /* box-model stuff */
-        --bg-color: #2e222f;
-        --transparent-bg-color: #2e222f60;
-
-        /* misc */
-        --scrollbar-color: #625565;
-        --scrollbar-bg-color: #3e3546;
-
-    }
-}
-
-/* constant variables */
 :root {
-    /* display */
-    /* --card-columns: repeat(auto-fill, 200px); */
-
     /* typography */
-    --title-font: "Zilla Slab", serif;
-    --body-font: "Inter", sans-serif;
-    --code-font: "Fira Sans", lucida;
-    --regular-font-size: 16px;
-    --navigation-font-size: 32px;
-    --description-font-size: 32px;
-    /* --card-font-size: 20px; */
-
+    --color: #ffffff;
+    --second-color: #c7dcd0;
+    --accent-color: #ffffff77;
+    --visited-link-color: #eaaded;
 
     /* box-model stuff */
-    --nav-width: 100%;
-    --nav-height: 75px;
+    --background-color: #000000;
+    --button-overlay-color: #00000033;
     --regular-margin: 16px;
-    --description-padding: 64px;
-    --regular-padding: 32px;
-    /* --card-min-width: 42%; */
-    /* --card-gap: 36px; */
+    --button-padding: 16px;
+    --header-padding: 64px;
 
     /* manipulation stuff */
-    --blur: blur(50px);
+    --button-backdrop-filter: brightness(1.25);
+    --button-hover-backdrop-filter: brightness(1.75);
+
+    /* misc */
+    --scrollbar-color: #fff;
+    --scrollbar-background-color: #000;
+
+    /* typography */
+    --button-font-size: 16px;
+    --header-font-size: 32px;
+    --main-font: "Zilla Slab", serif;
+
+    /* manipulation stuff */
+    --blur: blur(2px);
+    --opacity: 0.38;
 
     /* misc */
     --radius: 25px;
-    --shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
-    /* --trans: 0.75s; */
-    /* --second-trans: 1.5s; */
+    --shadow: 0px 0px 16px rgba(0, 0, 0, 1);
 }
