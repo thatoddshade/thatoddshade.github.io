@@ -1,5 +1,6 @@
 # thatoddshade.github.io
 
-ThatOddShade's official official website repository.
+ThatOddShade's official official web site repository.
 
-Using [Jekyll](https://jekyllrb.com/).
+Using [Zola](https://www.getzola.org/).
+
