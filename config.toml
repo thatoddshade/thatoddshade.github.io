@@ -9,7 +9,7 @@ description = "whatever I want to put here will be here."
 default_language = "en"
 
 # Whether to automatically compile all Sass files in the sass directory
-compile_sass = false
+compile_sass = true
 
 # When set to "true", the generated HTML files are minified.
 minify_html = true
