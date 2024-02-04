@@ -1,6 +1,13 @@
+@import "flexoki.css"
+
 * {
     // color: blue;  // the hello world of css
     font-family: "Cantarell";
+}
+
+body {
+	background-color: flexoki-paper;
+	color: flexoki-black;
 }
 
 nav > ul > li {
