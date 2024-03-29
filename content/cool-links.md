@@ -1,4 +1,6 @@
-# Cool links
++++
+title = "Cool links"
++++
 
 - [Steph Ango](https://stephango.com/)
 - [nexxe](https://www.nexxel.dev/)
