@@ -1,6 +1,6 @@
 # thatoddshade.github.io
 
-ThatOddShade's official official web site repository.
+the [thatoddshade.github.io](https://thatoddshade.github.io/ "my COOL and EPIC web thing") git repository.
 
-Using [Zola](https://www.getzola.org/).
+because of objective superiority of every Rust project ever made, using [Zola](https://www.getzola.org/).
 
