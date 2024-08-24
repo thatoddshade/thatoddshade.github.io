@@ -1,0 +1,26 @@
+{% extends "index.html" %}
+
+{% block title %}{{ config.title }} | {{ page.title }}{% endblock title %}
+{% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
+
+{% block header %}
+<header class="space">
+    <a href="{{ config.base_url }}">&LeftArrow; home</a>
+</header>
+{% endblock header %}
+
+{% block content %}
+<main>
+
+    <h1>{{ page.title }}</h1>
+
+    {% if page.date %}
+    <!--<p class="secondary">{{ page.date | date(format="%-d %B, %Y") }}</p>-->
+    <p class="secondary">{{ page.date | date(format="%Y-%m-%d") }}</p>
+    {% endif %}
+
+    <div class="space"></div>
+    {{ page.content | safe }}
+
+</main>
+{% endblock content %}
