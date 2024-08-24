@@ -2,7 +2,7 @@
 base_url = "https://thatoddshade.github.io/"
 
 # The site title and description; used in feeds by default.
-title = "ThatOddShade's web site"
+title = "thatoddshade's website"
 description = "whatever I want to put here will be here."
 
 # The default language; used in feeds.
