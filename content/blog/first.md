@@ -1,6 +1,7 @@
 +++
-title = "making a “blog”?"
-date = 2024-01-05
+title = "hello, world."
+date = 2024-08-25
 +++
 
-setting up my zola. I do not know what I am going to do with it.
+it was thirty two minutes after a midnight when I started typing this line;
+17% remain in my laptop's battery.
