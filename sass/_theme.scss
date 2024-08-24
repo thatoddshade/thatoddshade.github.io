@@ -1,0 +1,151 @@
+@import "flexoki";
+
+$foreground-light: $flexoki-black;
+$background-light: $flexoki-paper;
+$secondary-light: $flexoki-950;
+$tertiary-light: $flexoki-100;
+$accent-light: $flexoki-cyan-600;
+
+$foreground-dark: $flexoki-200;
+$background-dark: $flexoki-black;
+$secondary-dark: $flexoki-50;
+$tertiary-dark: $flexoki-900;
+$accent-dark: $flexoki-cyan-400;
+
+@mixin light-theme {
+    color: $foreground-light;
+    background-color: $background-light;
+
+    .secondary {
+        color: $secondary-light;
+    }
+
+    a, a:link, a:visited {
+        color: $accent-light;
+    }
+
+    a:hover {
+        color: darken($accent-light, 30%);
+    }
+
+    blockquote {
+        border-left: 2px solid $secondary-light;
+    }
+
+    code {
+        background-color: $tertiary-light;
+    }
+
+    pre code {
+        background-color: transparent;
+    }
+
+    .footnote-definition sup {
+        color: $secondary-light;
+    }
+
+    table {
+        th, td {
+            border-color: darken($tertiary-light, 5%);
+        }
+
+        thead, tr:nth-child(even) {
+            background-color: lighten($tertiary-light, 10%);
+        }
+    }
+}
+
+@mixin dark-theme {
+    color: $foreground-dark;
+    background-color: $background-dark;
+
+    .secondary {
+        color: $secondary-dark;
+    }
+
+    a, a:link, a:visited {
+        color: $accent-dark;
+    }
+
+    a:hover {
+        color: lighten($accent-dark, 10%);
+    }
+
+    blockquote {
+        border-left: 2px solid $secondary-dark;
+    }
+
+    code {
+        background-color: $tertiary-dark;
+    }
+
+    pre code {
+        background-color: transparent;
+    }
+
+    .footnote-definition sup {
+        color: $secondary-dark;
+    }
+
+    table {
+        th, td {
+            border-color: $tertiary-dark;
+        }
+
+        thead, tr:nth-child(even) {
+            background-color: darken($tertiary-dark, 15%);
+        }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        @include light-theme;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        @include dark-theme;
+    }
+}
+
+.dark-mode-buttons {
+    position: absolute;
+
+    top: 1em;
+    right: 1em;
+}
+
+.dark-mode-button {
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+/*body:not(.dark-mode) {
+    @include light-theme;
+
+    #dark-mode-on {
+        display: inline;
+    }
+
+    #dark-mode-off {
+        display: none;
+    }
+}
+
+body.dark-mode {
+    @include dark-theme;
+
+    #dark-mode-on {
+        display: none;
+    }
+
+    #dark-mode-off {
+        display: inline;
+    }
+}*/
