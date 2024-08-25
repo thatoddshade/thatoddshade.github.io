@@ -55,7 +55,7 @@
 		{% if blog.pages %}
 		<h2>recent posts</h2>
 		<ul>
-			{% for post in blog.pages | slice(end=20) %}
+			{% for post in blog.pages | slice(end=5) %}
 			<li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</ul>
