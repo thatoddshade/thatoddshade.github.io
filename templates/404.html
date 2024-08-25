@@ -1,6 +1,6 @@
 {% extends "page.html" %}
 
-{% block title %}not found ◆ {{ config.title }}{% endblock title %}
+{% block title %}not found{{ config.extra.title_separator }}{{ config.title }}{% endblock title %}
 
 {% block content %}
 <main>

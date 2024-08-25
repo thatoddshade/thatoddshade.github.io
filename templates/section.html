@@ -1,6 +1,6 @@
 {% extends "page.html" %}
 
-{% block title %}{{ section.title }} ◆ {{ config.title }}{% endblock title %}
+{% block title %}{{ section.title }}{{ config.extra.title_separator }}{{ config.title }}{% endblock title %}
 
 {% block content %}
 <main>
