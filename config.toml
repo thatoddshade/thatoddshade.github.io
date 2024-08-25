@@ -1,28 +1,17 @@
-# The URL the site will be built for
 base_url = "https://thatoddshade.github.io/"
 
-# The site title and description; used in feeds by default.
 title = "thatoddshade's website"
 description = "whatever I want to put here will be here."
 
-# The default language; used in feeds.
 default_language = "en"
-
-# Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
-
-# When set to "true", the generated HTML files are minified.
 minify_html = true
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-
 highlight_theme = "agola-dark"
 
 [extra]
-# Put all your custom variables here
 links = [
 	{ title = "e-mail", href = "mailto:thatoddshade.website-contact@proton.me" },
 	{ title = "GitHub", href = "https://github.com/thatoddshade" },
