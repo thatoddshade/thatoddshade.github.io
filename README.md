@@ -1,6 +1,4 @@
 # thatoddshade.github.io
 
-the [thatoddshade.github.io](https://thatoddshade.github.io/ "my COOL and EPIC web thing") git repository.
-
-because of objective superiority of every Rust project ever made, using [Zola](https://www.getzola.org/).
+the git repository for [thatoddshade.github.io](https://thatoddshade.github.io/), a website that, because of every Rust project's totally objective superiority, is made with [zola](https://www.getzola.org/).
 
