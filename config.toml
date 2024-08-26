@@ -13,7 +13,7 @@ highlight_theme = "agola-dark"
 
 [extra]
 links = [
-	{ title = "e-mail", href = "mailto:thatoddshade.website-contact@proton.me" },
+	{ title = "e-mail", href = "mailto:thatoddshade+contact@proton.me" },
 	{ title = "GitHub", href = "https://github.com/thatoddshade" },
 ]
 
