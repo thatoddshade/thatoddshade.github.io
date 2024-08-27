@@ -13,139 +13,104 @@ $tertiary-dark: $flexoki-900;
 $accent-dark: $flexoki-cyan-400;
 
 @mixin light-theme {
-    color: $foreground-light;
-    background-color: $background-light;
+	color: $foreground-light;
+	background-color: $background-light;
 
-    .secondary {
-        color: $secondary-light;
-    }
+	border: 0.375ex solid $secondary-light;
 
-    a, a:link, a:visited {
-        color: $accent-light;
-    }
+	.secondary {
+		color: $secondary-light;
+	}
 
-    a:hover {
-        color: darken($accent-light, 30%);
-    }
+	a, a:link, a:visited {
+		color: $accent-light;
+	}
 
-    blockquote {
-        border-left: 2px solid $secondary-light;
-    }
+	a:hover {
+		color: darken($accent-light, 30%);
+	}
 
-    code {
-        background-color: $tertiary-light;
-    }
+	blockquote {
+		border-inline-start: 2px solid $secondary-light;
+	}
 
-    pre code {
-        background-color: transparent;
-    }
+	code {
+		background-color: $tertiary-light;
+	}
 
-    .footnote-definition sup {
-        color: $secondary-light;
-    }
+	pre code {
+		background-color: transparent;
+	}
 
-    table {
-        th, td {
-            border-color: darken($tertiary-light, 5%);
-        }
+	.footnote-definition sup {
+		color: $secondary-light;
+	}
 
-        thead, tr:nth-child(even) {
-            background-color: lighten($tertiary-light, 10%);
-        }
-    }
+	table {
+		th, td {
+			border-color: darken($tertiary-light, 5%);
+		}
+
+		thead, tr:nth-child(even) {
+			background-color: lighten($tertiary-light, 10%);
+		}
+	}
 }
 
 @mixin dark-theme {
-    color: $foreground-dark;
-    background-color: $background-dark;
+	color: $foreground-dark;
+	background-color: $background-dark;
 
-    .secondary {
-        color: $secondary-dark;
-    }
+	border: 0.375ex solid $secondary-dark;
 
-    a, a:link, a:visited {
-        color: $accent-dark;
-    }
+	.secondary {
+		color: $secondary-dark;
+	}
 
-    a:hover {
-        color: lighten($accent-dark, 10%);
-    }
+	a, a:link, a:visited {
+		color: $accent-dark;
+	}
 
-    blockquote {
-        border-left: 2px solid $secondary-dark;
-    }
+	a:hover {
+		color: lighten($accent-dark, 10%);
+	}
 
-    code {
-        background-color: $tertiary-dark;
-    }
+	blockquote {
+		border-inline-start: 2px solid $secondary-dark;
+	}
 
-    pre code {
-        background-color: transparent;
-    }
+	code {
+		background-color: $tertiary-dark;
+	}
 
-    .footnote-definition sup {
-        color: $secondary-dark;
-    }
+	pre code {
+		background-color: transparent;
+	}
 
-    table {
-        th, td {
-            border-color: $tertiary-dark;
-        }
+	.footnote-definition sup {
+		color: $secondary-dark;
+	}
 
-        thead, tr:nth-child(even) {
-            background-color: darken($tertiary-dark, 15%);
-        }
-    }
+	table {
+		th, td {
+			border-color: $tertiary-dark;
+		}
+
+		thead, tr:nth-child(even) {
+			background-color: darken($tertiary-dark, 15%);
+		}
+	}
 }
 
 @media (prefers-color-scheme: light) {
-    body {
-        @include light-theme;
-    }
+	body {
+		@include light-theme;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-    body {
-        @include dark-theme;
-    }
+	body {
+		@include dark-theme;
+	}
 }
 
-.dark-mode-buttons {
-    position: absolute;
-
-    top: 1em;
-    right: 1em;
-}
-
-.dark-mode-button {
-    border: none;
-    background-color: transparent;
-
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-/*body:not(.dark-mode) {
-    @include light-theme;
-
-    #dark-mode-on {
-        display: inline;
-    }
-
-    #dark-mode-off {
-        display: none;
-    }
-}
-
-body.dark-mode {
-    @include dark-theme;
-
-    #dark-mode-on {
-        display: none;
-    }
-
-    #dark-mode-off {
-        display: inline;
-    }
-}*/
