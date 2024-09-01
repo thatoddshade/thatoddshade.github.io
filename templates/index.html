@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 	{% endblock extra_head %}
 
+	<link rel="icon" type="image/png" href="https://github.com/thatoddshade.png">
+
 	{% block feed_link %}
 	{% if config.generate_feed %}
 	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}">
