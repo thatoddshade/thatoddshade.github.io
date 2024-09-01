@@ -13,6 +13,12 @@
 
 	<link rel="icon" type="image/png" href="https://github.com/thatoddshade.png">
 
+	{% if config.extra.links %}
+	{% for link in config.extra.links %}
+	<link rel="me" href="{{ link.href }}">
+	{% endfor %}
+	{% endif %}
+
 	{% block feed_link %}
 	{% if config.generate_feed %}
 	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}">
