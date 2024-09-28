@@ -33,11 +33,8 @@
 		<h1>{{ config.title }}</h1>
 
 		{% set linked_pages = section.pages | filter(attribute="extra.in_header") %}
-		{% if config.extra.links or linked_pages %}
+		{% if linked_pages %}
 		<nav class="header-links">
-			{% for link in config.extra.links %}
-			<a href="{{ link.href }}">{{ link.title }}</a>
-			{% endfor %}
 			{% for page in linked_pages %}
 			<a href="{{ page.permalink }}">{{ page.title }}</a>
 			{% endfor %}
