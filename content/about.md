@@ -11,6 +11,14 @@ extra.in_header = true
 1. later, it became [a somewhat more decent one with epic blur effects](https://web.archive.org/web/20230326153840/https://thatoddshade.github.io/en/) (those are in at least one of every front-end developer's phases.);
 2. what can currently be seen at [thatoddshade.is-a.dev](https://thatoddshade.is-a.dev) is built from some [Markdown](https://commonmark.org), [Sass](https://sass-lang.com) and HTML with [Zola](https://www.getzola.org);
 
+<img src="/images/stamps/computer_love.png" alt="I love to do stuff on the computer" width="auto" height="64" class="invert">
+<img src="/images/stamps/so_i_made_this.png" alt="so I made this" width="auto" height="64" class="invert">
+;
+<img src="/images/stamps/please_enjoy.png" alt="enjoy" width="auto" height="64">
+<img src="/images/stamps/as_long_as_you.png" alt="as long as you" width="auto" height="64">
+<img src="/images/stamps/wish.png" alt="wish" width="auto" height="64">
+.
+
 ## me
 
 I have more than one web identity, *thatoddshade* being the one I use on [this website](#website) and [other places](/links).
