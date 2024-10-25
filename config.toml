@@ -18,5 +18,7 @@ links = [
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
 ]
 
+photo = "https://github.com/thatoddshade.png"
+
 # appended between a `page.title` and `config.title`
 title_separator = " \\ "
