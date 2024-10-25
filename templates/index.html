@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="description" content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}">
+	<meta name="description" content="
+		{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
+	"/>
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
 	{% block extra_head %}
-	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
+	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}" />
 	{% endblock extra_head %}
 
-	<link rel="icon" type="image/png" href="{{ config.extra.photo }}">
+	<link rel="icon" type="image/png" href="{{ config.extra.photo }}" />
 
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
-	<link rel="me" href="{{ link.href }}">
+	<link rel="me" href="{{ link.href }}" />
 	{% endfor %}
 	{% endif %}
 
