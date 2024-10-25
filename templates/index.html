@@ -24,7 +24,7 @@
 
 	{% block feed_link %}
 	{% if config.generate_feed %}
-	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}">
+	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}" />
 	{% endif %}
 	{% endblock %}
 
