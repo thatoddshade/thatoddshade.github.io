@@ -27,10 +27,23 @@
 
 </head>
 <body>
+
+
 	{% block header %}
 	<header class="space">
+		<div class="h-card">
+			<link class="u-url" href="{{ config.base_url }}" />
 
-		<h1>{{ config.title }}</h1>
+			<h1 class="p-name">{{ config.title }}</h1>
+			<link class="u-photo" href="{{ config.extra.photo }}" />
+
+			<link class="dt-bday" title="--05-26" />
+
+			<link class="p-gender-identity" title="M" />
+			<link class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" title="he" />
+
+		</div>
+
 
 		{% set linked_pages = section.pages | filter(attribute="extra.in_header") %}
 		{% if linked_pages %}
