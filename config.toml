@@ -12,6 +12,11 @@ highlight_code = true
 highlight_theme = "agola-dark"
 
 [extra]
+homepage_links = [
+	{ title = "posts", href = "@/posts/_index.md" },
+	{ title = "about", href = "@/about.md" },
+]
+
 links = [
 	{ title = "GitHub", href = "https://github.com/thatoddshade" },
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
