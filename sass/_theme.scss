@@ -46,7 +46,7 @@ $accent-dark: $flexoki-cyan-400;
 		color: $secondary-light;
 	}
 
-	table {
+	/*table {
 		th, td {
 			border-color: darken($tertiary-light, 5%);
 		}
@@ -54,7 +54,7 @@ $accent-dark: $flexoki-cyan-400;
 		thead, tr:nth-child(even) {
 			background-color: lighten($tertiary-light, 10%);
 		}
-	}
+	}*/
 }
 
 @mixin dark-theme {
@@ -91,7 +91,7 @@ $accent-dark: $flexoki-cyan-400;
 		color: $secondary-dark;
 	}
 
-	table {
+	/*table {
 		th, td {
 			border-color: $tertiary-dark;
 		}
@@ -99,7 +99,7 @@ $accent-dark: $flexoki-cyan-400;
 		thead, tr:nth-child(even) {
 			background-color: darken($tertiary-dark, 15%);
 		}
-	}
+	}*/
 }
 
 @media (prefers-color-scheme: light) {
