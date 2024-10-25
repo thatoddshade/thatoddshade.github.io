@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @import "flexoki";
 
 $foreground-light: $flexoki-black;
@@ -24,12 +26,17 @@ $accent-dark: $flexoki-cyan-400;
 		color: $secondary-light;
 	}
 
-	a, a:link, a:visited {
-		color: $accent-light;
+	a {
+		color: $foreground-light;
+		text-decoration: underline;
 	}
 
 	a:hover {
-		color: darken($accent-light, 30%);
+		color: $accent-light;
+	}
+
+	a:focus, ::selection {
+		background-color: color.scale($accent-light, $alpha: -75%);
 	}
 
 	blockquote {
@@ -71,12 +78,17 @@ $accent-dark: $flexoki-cyan-400;
 		color: $secondary-dark;
 	}
 
-	a, a:link, a:visited {
-		color: $accent-dark;
+	a {
+		color: $foreground-dark;
+		text-decoration: underline;
 	}
 
 	a:hover {
-		color: lighten($accent-dark, 10%);
+		color: $accent-dark;
+	}
+
+	a:focus, ::selection {
+		background-color: color.scale($accent-dark, $alpha: -75%);
 	}
 
 	blockquote {
