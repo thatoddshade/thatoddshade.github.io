@@ -72,11 +72,15 @@
 
 		{% if blog.pages %}
 		<h2>recent posts</h2>
-		<ul>
+		<table>
 			{% for post in blog.pages | slice(end=5) %}
-			<li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+			<tr class="h-entry">
+				<td class="dt-published">{{ post.date }}</td>
+				<td><a class="u-url p-name" href="{{ post.permalink }}">{{ post.title }}</a></td>
+			</tr>
 			{% endfor %}
-		</ul>
+		</table>
+
 		<p><a href="{{ blog.permalink }}">all</a></p>
 		{% endif %}
 

@@ -8,15 +8,16 @@
     <h1>{{ section.title }}</h1>
 
     {% if section.pages %}
-    {% for year, posts in section.pages | group_by(attribute="year") %}
-    <h2>{{ year }}</h2>
-    <ul>
-        {% for post in posts %}
-        <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
-        {% endfor %}
-    </ul>
 
-    {% endfor %}
+    <table>
+        {% for post in section.pages %}
+		<tr class="h-entry">
+			<td class="dt-published">{{ post.date }}</td>
+			<td><a class="u-url p-name" href="{{ post.permalink }}">{{ post.title }}</a></td>
+		</tr>
+        {% endfor %}
+    </table>
+
 
     {% else %}
     <p>there is nothing here yet.</p>
