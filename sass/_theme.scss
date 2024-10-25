@@ -99,6 +99,10 @@ $accent-dark: $flexoki-cyan-400;
 		background-color: $tertiary-dark;
 	}
 
+	.invert {
+		filter: invert(1);
+	}
+
 	pre code {
 		background-color: transparent;
 	}
