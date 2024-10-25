@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}">
 	{% endblock extra_head %}
 
-	<link rel="icon" type="image/png" href="https://github.com/thatoddshade.png">
+	<link rel="icon" type="image/png" href="{{ config.extra.photo }}">
 
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
