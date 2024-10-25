@@ -7,6 +7,7 @@
 	<meta name="description" content="
 		{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
 	"/>
+
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
 	{% block extra_head %}
@@ -27,10 +28,9 @@
 	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}" />
 	{% endif %}
 	{% endblock %}
-
 </head>
-<body>
 
+<body>
 
 	{% block header %}
 	<header class="space">
