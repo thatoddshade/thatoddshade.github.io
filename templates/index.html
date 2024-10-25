@@ -35,18 +35,16 @@
 	{% block header %}
 	<header class="space">
 		<div class="h-card">
+			<link class="p-name" title="{{ config.title }}">
+			<link class="u-photo" href="{{ config.extra.photo }}" />
 			<link class="u-url" href="{{ config.base_url }}" />
 
-			<h1 class="p-name">{{ config.title }}</h1>
-			<link class="u-photo" href="{{ config.extra.photo }}" />
+			<link class="p-country-name" title="France" />
+			<time class="dt-bday" datetime="--05-26"></time>
 
-			<link class="dt-bday" title="--05-26" />
-
-			<link class="p-gender-identity" title="M" />
 			<link class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" title="he" />
-
+			<link class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" title="il" />
 		</div>
-
 
 		{% set linked_pages = section.pages | filter(attribute="extra.in_header") %}
 		{% if linked_pages %}
@@ -56,7 +54,6 @@
 			{% endfor %}
 		</nav>
 		{% endif %}
-
 	</header>
 	{% endblock header %}
 
