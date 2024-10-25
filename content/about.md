@@ -1,8 +1,6 @@
 +++
 title = "about"
 created = "2024-08-30"
-
-extra.in_header = true
 +++
 
 ## this website {#website}

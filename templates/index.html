@@ -46,11 +46,10 @@
 			<link class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" title="il" />
 		</div>
 
-		{% set linked_pages = section.pages | filter(attribute="extra.in_header") %}
-		{% if linked_pages %}
+		{% if config.extra.homepage_links %}
 		<nav class="header-links">
-			{% for page in linked_pages %}
-			<a href="{{ page.permalink }}">{{ page.title }}</a>
+			{% for link in config.extra.homepage_links %}
+			<a href="{{ get_url(path=link.href) }}">{{ link.title }}</a>
 			{% endfor %}
 		</nav>
 		{% endif %}
