@@ -15,6 +15,7 @@
 
 	<link rel="icon" type="image/png" href="{{ config.extra.photo }}" />
 
+	<!-- add a [rel-me](https://indieweb.org/rel-me) for each `config.extra.links` dictionary's `href` -->
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
 	<link rel="me" href="{{ link.href }}" />
