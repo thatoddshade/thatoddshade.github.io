@@ -4,6 +4,7 @@ title = "thatoddshade"
 description = "whatever I want to put here will be here."
 
 default_language = "en"
+
 compile_sass = true
 minify_html = true
 
