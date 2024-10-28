@@ -21,17 +21,29 @@
 			<link class="u-url" href="{{ config.base_url }}" />
 			<link class="u-photo" href="{{config.extra.photo}}" />
 		</div>
+		
+		<header class="space">
+    		<h1 class="p-name">{{ page.title }}</h1>
+	
+			{% if page.description %}
+			<p class="p-summary">{{ page.description }}</p>
+			{% endif %}
 
-    	<h1 class="p-name">{{ page.title }}</h1>
+			{% if page.date or page.updated %}
+			<p class="secondary">
+				{% if page.date %}
+				published on the
+    			<span class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</span>
+				{% endif %}
+				<br />
+				{% if page.updated %}
+				updated on the
+    			<span class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</span>
+				{% endif %}
+			</p>
+			{% endif %}
+		</header>
 
-		{% if page.date %}
-		<p class="secondary">
-			published on the
-    		<span class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</span>
-		</p>
-    	{% endif %}
-
-    	<div class="space"></div>
 		<div class="e-content">{{ page.content | safe }}</div>
 
 	</article>
