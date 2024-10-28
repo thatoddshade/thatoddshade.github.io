@@ -6,6 +6,8 @@ date = 2024-08-25
 it was thirty two minutes after a midnight when I started typing this line;
 17% remain in my laptop's battery.
 
+<!-- more -->
+
 this page's title is referencing a sentence commonly used in software
 programming as a test for displaying text; if I remember correctly, the
 exact original phrasing for it is „Hello, World!“.
