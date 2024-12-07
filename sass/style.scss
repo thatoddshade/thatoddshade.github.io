@@ -42,7 +42,7 @@ main {
 	margin-block-end: 4em;
 }
 
-/* because, by default, a `h1` font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`; for more information, see https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
+/* because, by default, a `h1` font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`. source: <https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element> */
 h1 {
 	font-size: 2em;
 }
