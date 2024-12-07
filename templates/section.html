@@ -12,8 +12,23 @@
     <table>
         {% for post in section.pages %}
 		<tr class="h-entry">
-			<td class="dt-published">{{ post.date }}</td>
-			<td><a class="u-url p-name" href="{{ post.permalink }}">{{ post.title }}</a></td>
+			<td>
+				<a class="u-url dt-published" href="{{ post.permalink }}">
+					{{ post.date }}
+				</a>
+			</td>
+			<td>
+				{% if post.title %}
+				<span class="p-name">	
+					{{ post.title }}
+				</span>
+
+				{% else %}
+				<br />
+
+				{% endif %}
+
+			</td>
 		</tr>
         {% endfor %}
     </table>
