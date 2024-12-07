@@ -27,6 +27,8 @@ links = [
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
 ]
 
+mastodon_username = "@thatoddshade@mastodon.art"
+
 photo = "https://github.com/thatoddshade.png"
 
 # appended between a `page.title` and `config.title`
