@@ -5,12 +5,12 @@
 {% block content %}
 <main>
 
-    <h1>{{ section.title }}</h1>
+	<h1>{{ section.title }}</h1>
 
-    {% if section.pages %}
+	{% if section.pages %}
 
-    <table>
-        {% for post in section.pages %}
+	<table>
+		{% for post in section.pages %}
 		<tr class="h-entry">
 			<td>
 				<a class="u-url dt-published" href="{{ post.permalink }}">
@@ -30,13 +30,13 @@
 
 			</td>
 		</tr>
-        {% endfor %}
-    </table>
+		{% endfor %}
+	</table>
 
 
-    {% else %}
-    <p>there is nothing here yet.</p>
-    {% endif %}
+	{% else %}
+	<p>there is nothing here yet.</p>
+	{% endif %}
 
 </main>
 {% endblock content %}
