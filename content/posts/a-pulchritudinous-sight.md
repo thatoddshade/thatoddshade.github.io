@@ -16,3 +16,5 @@ how unfortunate! this will change: wind flies, sun turns, leaves fall, and rocks
 will this morph into beauty? \
 will this morph into nastiness? \
 no one can know!
+
+{{ image(src="/images/camera/IMG_20240817_140650_1.jpg", alt="a picture in which can be seen clouds, the sky, trees, and mountains", class="u-photo") }}
