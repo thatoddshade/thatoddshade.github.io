@@ -23,6 +23,7 @@ homepage_links = [
 
 links = [
 	{ title = "GitHub", href = "https://github.com/thatoddshade" },
+	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade" },
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
 ]
