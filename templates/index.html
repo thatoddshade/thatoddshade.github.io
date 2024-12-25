@@ -31,20 +31,23 @@
 </head>
 
 <body>
-
 	{% block header %}
 	<header>
-		<div class="h-card">
-			<link class="p-name" title="{{ config.title }}">
-			<link class="u-photo" href="{{ config.extra.photo }}" />
-			<link class="u-url" href="{{ config.base_url }}" />
-
-			<link class="p-country-name" title="France" />
-			<time class="dt-bday" datetime="--05-26"></time>
-
-			<link class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" title="he" />
-			<link class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" title="il" />
-		</div>
+		<section class="h-card" id="bio">
+			<div>
+			<img class="u-photo" src="{{ config.extra.photo }}" />
+			<a class="u-url p-name" href="/about">
+				{{ config.title }}
+			</a>
+				<span id="pronouns">
+					<a class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" lang="en">he</a> 
+					<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" lang="fr">il</a> 
+				</span>
+				<span class="dt-bday">born on <time class="value" datetime="--05-26">a 26th of May</time></span>
+				<span></span>
+				<span class="p-country-name">living in <span class="value">France</span></span>
+			</div>
+		</section>
 
 		{% if config.extra.homepage_links %}
 		<nav class="header-links">
@@ -53,6 +56,7 @@
 			{% endfor %}
 		</nav>
 		{% endif %}
+
 	</header>
 	{% endblock header %}
 

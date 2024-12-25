@@ -1,28 +1,26 @@
 @import "theme";
 @import "jost";
 
-html, body {
+body {
+	font-family: "Jost";
+
 	margin: 0;
 	padding: 0;
 }
 
-body {
-	font-family: "Jost";
-
-	line-height: 1.2em;
-
-	margin-block: 2.5em;
-	margin-inline: 12.5%;
+body > * {
+	margin: 8px;
 }
 
-header {
-	padding-inline: 12.5%;
+/* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet */
+@media all and (max-width: 960px) {
+	main {
+		border-inline-style: none;
+	}
 }
 
-main {
-	padding-block: 2.5em;
-	padding-inline: 12.5%;
-}
+@import "header";
+@import "sidebar";
 
 .header-links {
 	a {
@@ -42,19 +40,22 @@ main {
 	margin-block-end: 4em;
 }
 
-/* because, by default, a `h1` font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`; for more information, see https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element */
+
+/* because, by default, a `h1` font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`. source: <https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element> */
 h1 {
 	font-size: 2em;
 }
 
 img {
-	max-width: 100%;
+	max-inline-size: 100%;
 }
 
+/*
 blockquote {
 	margin-inline-start: 0;
 	padding-inline-start: 1em;
 }
+*/
 
 code {
 	padding: 0.1em 0.2em;
@@ -63,11 +64,14 @@ code {
 
 pre {
 	overflow: auto;
-	/*padding: 0.3em;*/
+	/*
+	padding: 0.3em;
+	 */
 	padding: 1rem;
 
-	/*table {
-		width: 100%;
+	/*
+	table {
+		inline-size: 100%;
 
 		td {
 			padding: 0;
@@ -77,7 +81,8 @@ pre {
 			text-align: center;
 			user-select: none;
 		}
-	}*/
+	}
+	*/
 
 	mark {
 		display: block;
@@ -100,7 +105,8 @@ pre {
 	}
 }
 
-/*table {
+/*
+table {
 	border-spacing: 0;
 
 	th, td {
@@ -120,16 +126,5 @@ pre {
 	td {
 		border-block-start: none;
 	}
-}*/
-
-@media all and (max-width: 960px) {
-	body {
-		margin-inline: 0;
-		main {
-			margin-inline: 1em;
-			padding-inline: 0;
-	
-			border-inline-style: none;
-		}
-	}
 }
+*/
