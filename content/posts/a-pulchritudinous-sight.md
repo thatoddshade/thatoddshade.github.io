@@ -1,6 +1,6 @@
 +++
 title = "a pulchritudinous sight"
-created = 2024-12-24
+date = 2024-12-24
 +++
 
 these clouds! they are numerous, but in this amount, they cannot cover the blue above. \
