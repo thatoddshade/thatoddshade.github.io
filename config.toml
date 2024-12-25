@@ -4,8 +4,11 @@ title = "thatoddshade"
 description = "whatever I want to put here will be here."
 
 default_language = "en"
+
 compile_sass = true
 minify_html = true
+
+ignored_static = ["*.xcf"]
 
 [markdown]
 highlight_code = true
@@ -24,6 +27,8 @@ links = [
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
 ]
+
+mastodon_username = "@thatoddshade@mastodon.art"
 
 photo = "https://github.com/thatoddshade.png"
 
