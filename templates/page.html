@@ -34,12 +34,12 @@
 			<p class="secondary">
 				{% if page.date %}
 				published on the
-    			<span class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</span>
+    			<time class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</time>
 				{% endif %}
 				<br />
 				{% if page.updated %}
 				updated on the
-    			<span class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</span>
+    			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
 				{% endif %}
 			</p>
 			{% endif %}
