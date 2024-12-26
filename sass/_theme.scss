@@ -17,6 +17,10 @@ $accent-dark: $flexoki-cyan-400;
 @mixin light-theme {
 	color: $foreground-light;
 	background-color: $background-light;
+	
+	> * {
+		background-color: $background-light;
+	}
 
 	main {
 		border: 0.5ex solid $foreground-light;
@@ -69,6 +73,10 @@ $accent-dark: $flexoki-cyan-400;
 @mixin dark-theme {
 	color: $foreground-dark;
 	background-color: $background-dark;
+
+	> * {
+		background-color: $background-dark;
+	}
 
 	main {
 		border: 0.5ex solid $foreground-dark;
