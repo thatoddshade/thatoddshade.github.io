@@ -28,6 +28,7 @@ links = [
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
 ]
 
+imood_username = "thatoddshade"
 mastodon_username = "@thatoddshade@mastodon.art"
 
 photo = "https://github.com/thatoddshade.png"
