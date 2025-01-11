@@ -1,0 +1,1 @@
+body{margin-inline-start:360px}body>header{inline-size:360px;position:fixed;inset-inline-start:0}@media all and (max-width: 960px){body{margin-inline-start:0}body>header{position:static;inline-size:auto}}
