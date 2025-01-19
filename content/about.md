@@ -1,6 +1,7 @@
 +++
 title = "about"
 date = 2024-08-30
+updated = 2025-01-12
 description = "a page about this website and me"
 +++
 
@@ -14,9 +15,20 @@ it is and always has been stored in [a publicly available GitHub repository](htt
 
 ## me
 
-I have more than one web identity; *thatoddshade* is the one I use on [this website](#website) and [other places](/links).
+I:
+- often draw.
+- conlang[^conlang].
+- have more than one web identity; *thatoddshade*:
+    - is the one I use on [this website](#website) and other places.
+    - is the main one.
+- occasionally work on a video game with [the Godot game engine](https://godotengine.org).
+- have a *Zettelkasten*[^zettelkasten].
 
-### blinkies, buttons and stamps that are somewhat related to me {#images}
+[^conlang]: „conlang“ is both a noun that means „constructed language“ and a verb that means „construct a language/languages“; a famous conlang is Esperanto; my favourite one is [toki pona](https://tokipona.org).
+
+[^zettelkasten]: „Zettelkasten“ (a compound from „Zettel“, which means „note“, and „Kasten“, which means „box“, of which the plural is „Zettelkästen“) refers to a personal knowledge management method popularised by Niklas Luhmann; more about it can be learnt from [the Zettelkasten website](https://zettelkasten.de).
+
+### somewhat related blinkies, buttons and stamps {#images}
 
 ![EUROPEAN](/images/blinkies/nationalities/european.png "I am European.")
 ![FRENCH](/images/blinkies/languages/french.png "French is my native language.")
