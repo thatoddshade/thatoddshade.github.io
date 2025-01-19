@@ -1,5 +1,5 @@
 +++
-title = "Cool links"
+title = "cool links"
 description = "other interesting websites"
 +++
 
