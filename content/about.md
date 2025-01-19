@@ -1,6 +1,6 @@
 +++
 title = "about"
-created = "2024-08-30"
+date = 2024-08-30
 description = "a page about this website and me"
 +++
 
