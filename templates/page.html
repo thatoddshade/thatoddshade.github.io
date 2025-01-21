@@ -11,7 +11,13 @@
 
 {% block content %}
 <main>
-	<article class="h-entry">
+	<article class="h-entry"
+		{% if page.extra.lang %}
+		lang="{{ page.extra.lang }}"
+		{% else %}
+		lang="{{ page.lang }}"
+		{% endif %}
+	>
 		<meta name="fediverse:creator" content="{{ config.extra.mastodon_username }}">
 
 		<link class="u-url" href="{{ page.permalink }}" />
@@ -30,7 +36,7 @@
 			<p class="p-summary">{{ page.description }}</p>
 			{% endif %}
 
-			{% if page.date or page.updated %}
+			{% if page.date or page.updated or page.extra.syndication %}
 			<p class="secondary">
 				{% if page.date %}
 				published on the
@@ -42,6 +48,17 @@
 				{% if page.updated %}
 				updated on the
     			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
+				{% endif %}
+				<br />
+				{% if page.extra.syndication %}
+				also on:
+				<ul>
+					{% for syndication in page.extra.syndication %}
+					<li><a class="u-syndication" href="{{ syndication.href }}">
+						{{ syndication.title }}
+					</a></li>
+					{% endfor %}
+				</ul>
 				{% endif %}
 			</p>
 			{% endif %}
