@@ -1,7 +1,7 @@
----
++++
 title = "creatio ex se"
 date = 2025-01-21
----
++++
 
 „creatio ex nihilo“ is a Latin phrase meaning „creation from/out of nothing“  and often used to refer to the belief that matter can come from nothing.
 
