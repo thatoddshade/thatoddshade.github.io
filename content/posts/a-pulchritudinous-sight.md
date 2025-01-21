@@ -1,6 +1,11 @@
 +++
 title = "a pulchritudinous sight"
 date = 2024-12-24
+
+[extra]
+syndication = [
+    { title = "Mastodon", href = "https://mastodon.art/@thatoddshade/113714868661237068" },
+]
 +++
 
 these clouds! they are numerous, but in this amount, they cannot cover the blue above. \
@@ -18,5 +23,3 @@ will this morph into nastiness? \
 no one can know!
 
 {{ image(src="/images/camera/IMG_20240817_140650_1.jpg", alt="a picture in which can be seen clouds, the sky, trees, and mountains", class="u-photo") }}
-
-this thing is <a class="u-syndication" href="https://mastodon.art/@thatoddshade/113714868661237068">also on mastodon</a>.

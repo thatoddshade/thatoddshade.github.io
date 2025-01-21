@@ -36,7 +36,7 @@
 			<p class="p-summary">{{ page.description }}</p>
 			{% endif %}
 
-			{% if page.date or page.updated %}
+			{% if page.date or page.updated or page.extra.syndication %}
 			<p class="secondary">
 				{% if page.date %}
 				published on the
@@ -46,6 +46,17 @@
 				{% if page.updated %}
 				updated on the
     			<span class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</span>
+				{% endif %}
+				<br />
+				{% if page.extra.syndication %}
+				also on:
+				<ul>
+					{% for syndication in page.extra.syndication %}
+					<li><a class="u-syndication" href="{{ syndication.href }}">
+						{{ syndication.title }}
+					</a></li>
+					{% endfor %}
+				</ul>
 				{% endif %}
 			</p>
 			{% endif %}
