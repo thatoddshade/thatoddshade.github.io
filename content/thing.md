@@ -1,3 +1,6 @@
++++
++++
+
 just like canion.blog/guy
 
 „I'm a linguistics thing!“
