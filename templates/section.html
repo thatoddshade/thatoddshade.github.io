@@ -28,7 +28,14 @@
 
 				{% else %}
 				<br />
+				{% endif %}
 
+				{% if post.extra.repost_of %}
+				<p class="u-repost-of">
+					repost of <a href="{{ post.extra.repost_of }}">
+						{{ post.extra.repost_of }}
+					</a>
+				</p>
 				{% endif %}
 
 				{% if post.description %}
