@@ -1,18 +1,16 @@
 @use "sass:color";
 
-@import "flexoki";
+$foreground-light: #100f0f;
+$background-light: #fffcf0;
+$secondary-light: #6f6e69;
+$tertiary-light: #e6e4d9;
+$accent-light: #24837b;
 
-$foreground-light: $flexoki-black;
-$background-light: $flexoki-paper;
-$secondary-light: $flexoki-600;
-$tertiary-light: $flexoki-100;
-$accent-light: $flexoki-cyan-600;
-
-$foreground-dark: $flexoki-200;
-$background-dark: $flexoki-black;
-$secondary-dark: $flexoki-500;
-$tertiary-dark: $flexoki-900;
-$accent-dark: $flexoki-cyan-400;
+$foreground-dark: #cecdc3;
+$background-dark: #100f0f;
+$secondary-dark: #878580;
+$tertiary-dark: #282726;
+$accent-dark: #3aa99f;
 
 @mixin light-theme {
 	color: $foreground-light;
