@@ -40,10 +40,10 @@
 
 				{% if post.description %}
 				<span class="p-summary">{{ post.description }}</span>
-				{% else %}
+				{% endif %}
+
 				{% if post.summary %}
 				<span class="p-summary">{{ post.summary | safe }}</span>
-				{% endif %}
 				{% endif %}
 
 			</article></td>
