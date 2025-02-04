@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}" />
 <link rel="stylesheet" href="{{ get_url(path='section.css', cachebust=true) }}" />
 {% endblock extra_head %}
+
 {% block content %}
 <main>
 
@@ -21,18 +22,26 @@
 					{{ post.date }}
 				</a>
 			</td>
-			<td>
+			<td><article>
 				{% if post.title %}
-				<span class="p-name">	
+				<h1 class="p-name">	
 					{{ post.title }}
-				</span>
+				</h1>
 
 				{% else %}
 				<br />
 
 				{% endif %}
 
-			</td>
+				{% if post.description %}
+				<span class="p-summary">{{ post.description }}</span>
+				{% else %}
+				{% if post.summary %}
+				<span class="p-summary">{{ post.summary | safe }}</span>
+				{% endif %}
+				{% endif %}
+
+			</article></td>
 		</tr>
 		{% endfor %}
 	</table>
