@@ -10,6 +10,11 @@ minify_html = true
 
 ignored_static = ["*.xcf"]
 
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+
+author = "thatoddshade"
+
 [markdown]
 highlight_code = true
 highlight_theme = "agola-dark"
