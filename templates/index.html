@@ -31,6 +31,8 @@
 </head>
 
 <body>
+	<a href="#maincontent" id="skip">skip to main content</a>
+
 	{% block header %}
 	<header>
 		<section class="h-card" id="bio">
@@ -78,7 +80,7 @@
 
 	{% block content %}
 	{% if section.content %}
-	<main>
+	<main id="maincontent">
 		{% if section.content %}
 		<div>
 			{{ section.content | safe }}

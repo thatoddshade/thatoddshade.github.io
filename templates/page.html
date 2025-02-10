@@ -10,7 +10,6 @@
 {% endblock header %}
 
 {% block content %}
-<main>
 	<article class="h-entry"
 		{% if page.extra.lang %}
 		lang="{{ page.extra.lang }}"
@@ -19,6 +18,7 @@
 		{% endif %}
 	>
 		<meta name="fediverse:creator" content="{{ config.extra.mastodon_username }}">
+<main id="maincontent"
 
 		<link class="u-url" href="{{ page.permalink }}" />
 

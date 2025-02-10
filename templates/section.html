@@ -8,7 +8,6 @@
 {% endblock extra_head %}
 
 {% block content %}
-<main>
 	<h1>{{ section.title }}</h1>
 
 	{% if section.pages %}
@@ -65,8 +64,9 @@
 		{% endfor %}
 	</table>
 
+<section id="maincontent">
 	{% else %}
 	<p>this section is empty.</p>
 	{% endif %}
-</main>
+</section>
 {% endblock content %}
