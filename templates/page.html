@@ -63,15 +63,15 @@
     			<time class="dt-published">
 					{{ page.date | date(format="%Y-%m-%d") }}
 				</time>
-				{% endif %}
-
 				<br />
+				{% endif %}
 
 				{% if page.updated %}
 				updated on the
     			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
-				{% endif %}
 				<br />
+				{% endif %}
+
 				{% if page.extra.syndication %}
 				also on:
 				<ul>
