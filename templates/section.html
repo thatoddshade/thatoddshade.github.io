@@ -50,7 +50,14 @@
 				{% endif %}
 
 				{% if post.summary %}
-				<span class="p-summary">{{ post.summary | safe }}</span>
+				<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
+				{% if post.description %}
+				<span>
+				{% else %}
+				<span class="p-summary">
+				{% endif %}
+					{{ post.summary | safe }}
+				</span>
 				{% endif %}
 
 			</article></td>
