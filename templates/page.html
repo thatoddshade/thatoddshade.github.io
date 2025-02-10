@@ -60,7 +60,9 @@
 			<p class="secondary">
 				{% if page.date %}
 				published on the
-    			<time class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</time>
+    			<time class="dt-published">
+					{{ page.date | date(format="%Y-%m-%d") }}
+				</time>
 				{% endif %}
 
 				<br />
