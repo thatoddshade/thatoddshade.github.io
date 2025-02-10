@@ -16,11 +16,11 @@ $accent-dark: #3aa99f;
 	color: $foreground-light;
 	background-color: $background-light;
 	
-	> * {
+	> header, main {
 		background-color: $background-light;
 	}
 
-	main {
+	> main {
 		border: 0.5ex solid $foreground-light;
 	}
 
