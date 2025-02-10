@@ -81,11 +81,7 @@
 	{% block content %}
 	{% if section.content %}
 	<main id="maincontent">
-		{% if section.content %}
-		<div>
-			{{ section.content | safe }}
-		</div>
-		{% endif %}
+		{{ section.content | safe }}
 	</main>
 	{% endif %}
 	{% endblock content %}
