@@ -8,65 +8,66 @@
 {% endblock extra_head %}
 
 {% block content %}
-	<h1>{{ section.title }}</h1>
+<main id="maincontent">
+	<hgroup>
+		<h1>{{ section.title }}</h1>
 
-	{% if section.pages %}
-	<table>
-		{% for post in section.pages %}
-		<tr class="h-entry">
-			<td>
-				<a class="u-url dt-published" href="{{ post.permalink }}">
-					{{ post.date }}
-				</a>
-			</td>
-			<td><article>
-				{% if post.extra.bookmark_of %}
-				<p class="u-bookmark-of">
-					bookmark of <a href="{{ post.extra.bookmark_of }}">
-						{{ post.extra.bookmark_of }}
-					</a>
-				</p>
-				{% endif %}
-
-				{% if post.extra.repost_of %}
-				<p class="u-repost-of">
-					repost of <a href="{{ post.extra.repost_of }}">
-						{{ post.extra.repost_of }}
-					</a>
-				</p>
-				{% endif %}
-
-				{% if post.title %}
-				<h1 class="p-name">	
-					{{ post.title }}
-				</h1>
-				{% endif %}
-
-				{% if post.description %}
-				<span class="p-summary">
-					{{ post.description }}
-				</span>
-				{% endif %}
-
-				{% if post.summary %}
-				<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
-				{% if post.description %}
-				<span>
-				{% else %}
-				<span class="p-summary">
-				{% endif %}
-					{{ post.summary | safe }}
-				</span>
-				{% endif %}
-
-			</article></td>
-		</tr>
-		{% endfor %}
-	</table>
-
-<section id="maincontent">
+		{% if section.description%}
+		<p>{{ section.description }}</p>
+		{% endif %}
+	</hgroup>
+	
+	{% if section.pages %}	
+	{% for post in section.pages %}
+	<hr />
+	<article class="h-entry">
+		<a class="u-url dt-published" href="{{ post.permalink }}">
+			{{ post.date }}
+		</a>
+	
+		{% if post.extra.bookmark_of %}
+		<p class="u-bookmark-of">
+			bookmark of <a href="{{ post.extra.bookmark_of }}">
+				{{ post.extra.bookmark_of }}
+			</a>
+		</p>
+		{% endif %}
+	
+		{% if post.extra.repost_of %}
+		<p class="u-repost-of">
+			repost of <a href="{{ post.extra.repost_of }}">
+				{{ post.extra.repost_of }}
+			</a>
+		</p>
+		{% endif %}
+	
+		{% if post.title %}
+		<h1 class="p-name">	
+			{{ post.title }}
+		</h1>
+		{% endif %}
+	
+		{% if post.description %}
+		<span class="p-summary">
+			{{ post.description }}
+		</span>
+		{% endif %}
+	
+		{% if post.summary %}
+		<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
+		{% if post.description %}
+		<span>
+		{% else %}
+		<span class="p-summary">
+		{% endif %}
+			{{ post.summary | safe }}
+		</span>
+		{% endif %}
+	</article>
+	{% endfor %}
+	
 	{% else %}
 	<p>this section is empty.</p>
 	{% endif %}
-</section>
+</main>
 {% endblock content %}
