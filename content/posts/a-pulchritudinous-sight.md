@@ -9,6 +9,7 @@ syndication = [
 +++
 
 these clouds! they are numerous, but in this amount, they cannot cover the blue above. \
+<!-- more -->
 this blue! it is bold, but it does not make the eye look away from the trees. \
 these trees! on them are many colours; among them, each one is different. what entertainment for the eye! \
 my eyes! so excited by this pulchritudinous sight.

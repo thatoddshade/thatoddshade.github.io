@@ -7,6 +7,7 @@ these are pictures that I took with my phone on the 18th. \
 enjoy.
 
 ![2024-10-18 18:41:57](/images/camera/IMG_20241018_184157.jpg)
+<!-- more -->
 ![2024-10-18 18:43:36](/images/camera/IMG_20241018_184336_1.jpg)
 ![2024-10-18 18:45:02](/images/camera/IMG_20241018_184502.jpg)
 ![2024-10-18 18:45:12](/images/camera/IMG_20241018_184512_1.jpg)

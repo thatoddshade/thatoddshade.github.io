@@ -10,60 +10,83 @@
 {% endblock header %}
 
 {% block content %}
-<main>
-	<article class="h-entry"
-		{% if page.extra.lang %}
-		lang="{{ page.extra.lang }}"
-		{% else %}
-		lang="{{ page.lang }}"
-		{% endif %}
-	>
-		<meta name="fediverse:creator" content="{{ config.extra.mastodon_username }}">
+<main id="maincontent"
+	class="h-entry"
 
-		<link class="u-url" href="{{ page.permalink }}" />
+	{% if page.extra.lang %}
+	lang="{{ page.extra.lang }}"
+	{% else %}
+	lang="{{ page.lang }}"
+	{% endif %}
+>
+	<link class="u-url" href="{{ page.permalink }}" />
 
-		<!-- a p-author with an embedded h-card -->
-		<div class="p-author h-card">
-			<link class="p-name" title="{{ config.title }}" />
-			<link class="u-url" href="{{ config.base_url }}" />
-			<link class="u-photo" href="{{config.extra.photo}}" />
-		</div>
-		
-		<header class="space">
-    		<h1 class="p-name">{{ page.title }}</h1>
+	<meta name="fediverse:creator" content="{{ config.extra.mastodon_username }}">
+	<div class="p-author h-card">
+		<link class="p-name" title="{{ config.title }}" />
+		<link class="u-url" href="{{ config.base_url }}" />
+		<link class="u-photo" href="{{config.extra.photo}}" />
+	</div>
 	
-			{% if page.description %}
-			<p class="p-summary">{{ page.description }}</p>
+	<hgroup>
+		{% if page.extra.like_of %}
+		<p>
+			like of <a class="u-like-of" href="{{ page.extra.like_of}}">
+				{{ page.extra.like_of }}
+			</a>
+		</p>
+		{% endif %}
+
+		{% if page.extra.repost_of %}
+		<p>
+			repost of <a class="u-repost-of" href="{{ page.extra.repost_of }}">
+				{{ page.extra.repost_of }}
+			</a>
+		</p>
+		{% endif %}
+
+		{% if page.title %}	
+		<h1 class="p-name">
+			{{ page.title }}
+		</h1>
+		{% endif %}
+	
+		{% if page.description %}
+		<p class="p-summary">
+			{{ page.description }}
+		</p>
+		{% endif %}
+
+		{% if page.date or page.updated or page.extra.syndication %}
+		<p class="secondary">
+			{% if page.date %}
+			published on the
+			<time class="dt-published">
+				{{ page.date | date(format="%Y-%m-%d") }}
+			</time>
+			<br />
 			{% endif %}
 
-			{% if page.date or page.updated or page.extra.syndication %}
-			<p class="secondary">
-				{% if page.date %}
-				published on the
-    			<span class="dt-published">{{ page.date | date(format="%Y-%m-%d") }}</span>
-				{% endif %}
-				<br />
-				{% if page.updated %}
-				updated on the
-    			<span class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</span>
-				{% endif %}
-				<br />
-				{% if page.extra.syndication %}
-				also on:
-				<ul>
-					{% for syndication in page.extra.syndication %}
-					<li><a class="u-syndication" href="{{ syndication.href }}">
-						{{ syndication.title }}
-					</a></li>
-					{% endfor %}
-				</ul>
-				{% endif %}
-			</p>
+			{% if page.updated %}
+			updated on the
+			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
+			<br />
 			{% endif %}
-		</header>
 
-		<div class="e-content">{{ page.content | safe }}</div>
+			{% if page.extra.syndication %}
+			also on:
+			<ul>
+				{% for syndication in page.extra.syndication %}
+				<li><a class="u-syndication" href="{{ syndication.href }}">
+					{{ syndication.title }}
+				</a></li>
+				{% endfor %}
+			</ul>
+			{% endif %}
+		</p>
+		{% endif %}
+	</hgroup>
 
-	</article>
+	<div class="e-content">{{ page.content | safe }}</div>
 </main>
 {% endblock content %}
