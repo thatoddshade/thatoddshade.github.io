@@ -1,5 +1,4 @@
 +++
-title = "The Alice and Bob After Dinner Speech"
 date = 2025-01-24
 
 [extra]
