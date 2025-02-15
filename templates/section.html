@@ -20,47 +20,49 @@
 	{% if section.pages %}	
 	{% for post in section.pages %}
 	<article class="h-entry">
-		<a class="u-url dt-published" href="{{ post.permalink }}">
-			{{ post.date }}
-		</a>
+		<hgroup>
+			<p><a class="u-url dt-published" href="{{ post.permalink }}">
+				{{ post.date }}
+			</a></p>
+
+			{% if post.extra.like_of %}
+			<p>
+				like of <a class="u-like-of" href="{{ post.extra.like_of}}">
+					{{ post.extra.like_of }}
+				</a>
+			</p>
+			{% endif %}
 	
-		{% if post.extra.like_of %}
-		<p>
-			like of <a class="u-like-of" href="{{ post.extra.like_of}}">
-				{{ post.extra.like_of }}
-			</a>
-		</p>
-		{% endif %}
-	
-		{% if post.extra.repost_of %}
-		<p>
-			repost of <a class="u-repost-of" href="{{ post.extra.repost_of }}">
-				{{ post.extra.repost_of }}
-			</a>
-		</p>
-		{% endif %}
-	
-		{% if post.title %}
-		<h1 class="p-name">	
-			{{ post.title }}
-		</h1>
-		{% endif %}
-	
-		{% if post.description %}
-		<span class="p-summary">
-			{{ post.description }}
-		</span>
-		{% endif %}
+			{% if post.extra.repost_of %}
+			<p>
+				repost of <a class="u-repost-of" href="{{ post.extra.repost_of }}">
+					{{ post.extra.repost_of }}
+				</a>
+			</p>
+			{% endif %}
+
+			{% if post.description %}
+			<p class="p-summary">
+				{{ post.description }}
+			</p>
+			{% endif %}
+
+			{% if post.title %}
+			<h1 class="p-name"><a href="{{ post.permalink }}">
+				{{ post.title }}
+			</a></h1>
+			{% endif %}
+		</hgroup>
 	
 		{% if post.summary %}
 		<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
 		{% if post.description %}
-		<span>
+		<div>
 		{% else %}
-		<span class="p-summary">
+		<div class="p-summary">
 		{% endif %}
 			{{ post.summary | safe }}
-		</span>
+		</div>
 		{% endif %}
 	</article>
 	{% endfor %}
