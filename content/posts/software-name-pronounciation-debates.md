@@ -1,4 +1,5 @@
 +++
+draft = true
 title = "software name pronounciation debates should have more actual linguistic knowledge involved"
 +++
 
