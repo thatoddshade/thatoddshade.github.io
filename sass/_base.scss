@@ -1,0 +1,14 @@
+@import "jost";
+
+body {
+	font-family: "Jost";
+
+	margin: 0;
+	padding: 0;
+	background-image: url("/images/backgrounds/1.png");
+	background-attachment: fixed;
+}
+
+body > * {
+	margin: 8px;
+}
