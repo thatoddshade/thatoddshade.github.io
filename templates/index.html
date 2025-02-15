@@ -52,28 +52,29 @@
 		</section>
 
 		<section>
-			<span>feeling</span>
+			<p>
+				feeling
+				<br />
+				<a href="https://www.imood.com/users/{{ config.extra.imood_username }}" rel="me" title="current mood" id="imood">
+					<img
+						src="https://moods.imood.com/display/uname-thatoddshade/fg-af3029/bg-fffcf0/trans-1/imood.gif"
+						alt="the current mood of thatoddshade at imood.com" border="0"
+					/>
+				</a>
+			</p>
 
-			<br />
-
-			<a href="https://www.imood.com/users/{{ config.extra.imood_username }}" rel="me" title="current mood">
-				<img
-					src="https://moods.imood.com/display/uname-thatoddshade/fg-af3029/bg-fffcf0/trans-1/imood.gif"
-					alt="the current mood of thatoddshade at imood.com" border="0"
-				/>
-			</a>
 			<a href='https://www.free-website-hit-counter.com'>
 				<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4431&s=29' border='0' alt='free website hit counter' class="invert" />
 			</a>
-		</section>
 
-		{% if config.extra.homepage_links %}
-		<nav class="header-links">
-			{% for link in config.extra.homepage_links %}
-			<a href="{{ get_url(path=link.href) }}">{{ link.title }}</a>
-			{% endfor %}
-		</nav>
-		{% endif %}
+			{% if config.extra.homepage_links %}
+			<nav class="header-links">
+				{% for link in config.extra.homepage_links %}
+				<a href="{{ get_url(path=link.href) }}">{{ link.title }}</a>
+				{% endfor %}
+			</nav>
+			{% endif %}
+		</section>
 
 	</header>
 	{% endblock header %}
