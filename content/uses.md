@@ -1,4 +1,5 @@
 +++
+draft = true
 title = "software used by me"
 date = 2025-02-15
 +++
@@ -6,7 +7,7 @@ date = 2025-02-15
 I use:
 - Firefox
 - Godot
-- neovim
+- Neovim
 - zellij
 - WSL
 - GIMP
