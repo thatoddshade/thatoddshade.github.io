@@ -1,5 +1,5 @@
 +++
 title = "posts"
-description = "posts that redefine one's vision of life and reality… or just waste time"
+description = "articles, notes, likes, reposts and photos"
 sort_by = "date"
 +++
