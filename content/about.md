@@ -27,7 +27,7 @@ I:
 
 [^conlang]: „conlang“ is both a noun that means „constructed language“ and a verb that means „construct a language/languages“; a famous conlang is Esperanto; my favourite one is [toki pona](https://tokipona.org).
 
-[^zettelkasten]: „Zettelkasten“ (a compound from „Zettel“, which means „note“, and „Kasten“, which means „box“, of which the plural is „Zettelkästen“) refers to a personal knowledge management method popularised by Niklas Luhmann; more about it can be learnt from [the Zettelkasten website](https://zettelkasten.de).
+[^zettelkasten]: „Zettelkasten“ (a German compound from „Zettel“, which means „note“, and „Kasten“, which means „box“, of which the plural is „Zettelkästen“) refers to a personal knowledge management method popularised by Niklas Luhmann; more about it can be learnt from [the Zettelkasten website](https://zettelkasten.de).
 
 ### somewhat related blinkies, buttons and stamps {#images}
 
