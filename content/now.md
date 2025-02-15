@@ -1,7 +1,7 @@
 +++
 title = "now"
 date = 2024-10-30
-description = "a page for what I am, have, do, want and experience now "
+description = "about what I do now"
 
 updated = 2024-10-30
 +++
