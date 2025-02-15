@@ -1,0 +1,73 @@
+@use "sass:color";
+
+$foreground-dark: #cecdc3;
+$background-dark: #000000;
+$secondary-dark: #878580;
+$tertiary-dark: #282726;
+$accent-dark: #3aa99f;
+
+@mixin dark-theme {
+	color: $foreground-dark;
+	background-color: $background-dark;
+
+	> header, > main, > footer {
+		background-color: $background-dark;
+	}
+
+	main {
+		border: 0.5ex solid $foreground-dark;
+	}
+
+	.secondary {
+		color: $secondary-dark;
+	}
+
+	a {
+		color: $foreground-dark;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: $accent-dark;
+	}
+
+	a:focus, ::selection {
+		background-color: color.scale($accent-dark, $alpha: -75%);
+	}
+
+	blockquote {
+		border-inline-start: 2px solid $secondary-dark;
+	}
+
+	code {
+		background-color: $tertiary-dark;
+	}
+
+	.invert {
+		filter: invert(1);
+	}
+
+	pre code {
+		background-color: transparent;
+	}
+
+	.footnote-definition sup {
+		color: $secondary-dark;
+	}
+
+	/*table {
+		th, td {
+			border-color: $tertiary-dark;
+		}
+
+		thead, tr:nth-child(even) {
+			background-color: darken($tertiary-dark, 15%);
+		}
+	}*/
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		@include dark-theme;
+	}
+}
