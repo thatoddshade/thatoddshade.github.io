@@ -1,7 +1,7 @@
 +++
 title = "about"
 date = 2024-08-30
-updated = 2025-01-12
+updated = 2025-02-15
 description = "a page about this website and me"
 +++
 
@@ -9,7 +9,8 @@ description = "a page about this website and me"
 
 it originally started with [an untastefully purple page with an unhealthy amount of external content and tons of awful CSS](https://web.archive.org/web/20230110095501/https://thatoddshade.github.io/); \
 later, it became [a somewhat more decent one with epic blur effects](https://web.archive.org/web/20230326153840/https://thatoddshade.github.io/en/) (those are in at least one of every front-end developer's phases.); \
-what can currently be seen on it is built from some [Markdown](https://commonmark.org), [Sass](https://sass-lang.com) and HTML with [Zola](https://www.getzola.org).
+
+the way in which it is currently made can be seen at [the „colophon“ page](/colophon).
 
 it is and always has been stored in [a publicly available GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io).
 
