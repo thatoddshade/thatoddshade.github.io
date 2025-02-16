@@ -67,10 +67,21 @@
 			</a>
 
 			{% if config.extra.homepage_links %}
-			<nav class="header-links">
-				{% for link in config.extra.homepage_links %}
-				<a href="{{ get_url(path=link.href) }}">{{ link.title }}</a>
-				{% endfor %}
+			<nav id="header-navigation">
+				<ul>
+					{% for link in config.extra.homepage_links %}
+					<li>
+						<a
+							href="{{ get_url(path=link.href) }}"
+							{% if get_url(path=link.href) == config.base_url %}
+							aria-current="page"
+							{% endif %}
+						>
+							{{ link.title }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
 			</nav>
 			{% endif %}
 		</section>

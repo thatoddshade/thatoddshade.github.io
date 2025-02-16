@@ -43,3 +43,18 @@
 		text-decoration: none;
 	}
 }
+
+#header-navigation > ul {
+	margin: 0;
+	padding: 0;
+
+	> li {
+		list-style-type: none;
+		display: inline-block;
+		margin-inline-end: 0.5em;
+	}
+
+	> li:last-of-type {
+		margin-inline-end: 0;
+	}
+}
