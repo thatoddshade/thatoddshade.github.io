@@ -1,0 +1,74 @@
+@use "sass:color";
+
+$foreground-light: #000000;
+$background-light: #fffcf0;
+$secondary-light: #6f6e69;
+$tertiary-light: #e6e4d9;
+$accent-light: #24837b;
+
+@mixin light-theme {
+	color: $foreground-light;
+	background-color: $background-light;
+	
+	> header, > main {
+		background-color: $background-light;
+	}
+
+	> main {
+		border: 4px solid $foreground-light;
+		box-shadow: 8px 8px color.change($foreground-light, $alpha: 0.625);
+	}
+
+	.secondary {
+		color: $secondary-light;
+	}
+
+	a {
+		color: $foreground-light;
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: $accent-light;
+	}
+
+	a:focus, ::selection {
+		background-color: color.scale($accent-light, $alpha: -75%);
+	}
+
+	blockquote {
+		border-inline-start: 2px solid $secondary-light;
+	}
+
+	code {
+		background-color: $tertiary-light;
+	}
+
+	/*
+	this is where the `dark-theme` mixin has `.invert`.
+	*/
+
+	pre code {
+		background-color: transparent;
+	}
+
+	.footnote-definition sup {
+		color: $secondary-light;
+	}
+
+	/*table {
+		th, td {
+			border-color: darken($tertiary-light, 5%);
+		}
+
+		thead, tr:nth-child(even) {
+			background-color: lighten($tertiary-light, 10%);
+		}
+	}*/
+}
+
+@media (prefers-color-scheme: light) {
+	body {
+		@include light-theme;
+	}
+}

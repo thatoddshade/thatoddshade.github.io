@@ -1,0 +1,27 @@
+@use "jost";
+@use "settings";
+
+body {
+	font-family: "Jost";
+
+	margin: 0;
+	padding: 0;
+	background-image: url("/images/backgrounds/1.png");
+	background-attachment: fixed;
+
+	> header, > main, > footer {
+		margin: settings.$margin;
+	}
+
+	> main {
+		padding: 4px;
+	}
+}
+
+/* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */
+@media all and (max-width: 960px) {
+	body > main {
+		border-inline-style: none !important;
+		margin-inline: 0;
+	}
+}

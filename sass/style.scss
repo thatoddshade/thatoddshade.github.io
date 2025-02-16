@@ -1,31 +1,9 @@
-@import "skip";
-
-@import "theme";
-@import "jost";
-
-body {
-	font-family: "Jost";
-
-	margin: 0;
-	padding: 0;
-	background-image: url("/images/backgrounds/1.png");
-	background-attachment: fixed;
-}
-
-body > * {
-	margin: 8px;
-}
-
-/* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */
-@media all and (max-width: 960px) {
-	main {
-		border-inline-style: none !important;
-		margin-inline: 0;
-	}
-}
-
-@import "header";
-@import "sidebar";
+@use "skip";
+@use "theme";
+@use "base";
+@use "header";
+@use "sidebar";
+@use "space";
 
 .header-links {
 	a {
@@ -37,15 +15,6 @@ body > * {
 	}
 }
 
-.space {
-	margin-block-end: 2em;
-}
-
-.doublespace {
-	margin-block-end: 4em;
-}
-
-
 /* this is here because, by default, an `h1`'s font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`. source is <https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element>. */
 h1 {
 	font-size: 2em;
@@ -55,12 +24,10 @@ img {
 	max-inline-size: 100%;
 }
 
-/*
 blockquote {
 	margin-inline-start: 0;
 	padding-inline-start: 1em;
 }
-*/
 
 code {
 	padding: 0.1em 0.2em;
