@@ -1,15 +1,21 @@
-article {
-	border-block-start: 2px solid currentcolor;
-	padding-block: 0.25em;
-
-	h1 {
-		font-size: 1.5em;
-		> a {
-			text-decoration: none;
-		}
+body > main {
+	> hgroup {
+		border-block-end: 1px solid currentcolor;
 	}
 
-	img {
-		max-block-size: 60ch;		
+	article {
+		border-block-start: 2px solid currentcolor;
+		padding-block: 0.25em;
+	
+		h1 {
+			font-size: 1.5em;
+			> a {
+				text-decoration: none;
+			}
+		}
+	
+		img {
+			max-block-size: 60ch;		
+		}
 	}
 }
