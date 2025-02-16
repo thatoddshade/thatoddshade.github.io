@@ -16,6 +16,7 @@ $accent-dark: #3aa99f;
 
 	main {
 		border: 4px solid $foreground-dark;
+		/* this is where the `light-theme` mixin has `box-shadow`. */
 	}
 
 	.secondary {
