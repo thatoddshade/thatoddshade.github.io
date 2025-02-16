@@ -38,5 +38,8 @@
 }
 
 #imood {
-	text-decoration: none;
+	margin-block-start: 0;
+	> a {
+		text-decoration: none;
+	}
 }
