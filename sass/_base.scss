@@ -1,4 +1,5 @@
 @use "jost";
+@use "settings";
 
 body {
 	font-family: "Jost";
@@ -9,7 +10,7 @@ body {
 	background-attachment: fixed;
 
 	> header, > main, > footer {
-		margin: 8px;
+		margin: settings.$margin;
 	}
 
 	> main {
