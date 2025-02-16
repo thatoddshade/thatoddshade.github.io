@@ -52,6 +52,10 @@
 		margin-inline-end: 0.5em;
 	}
 
+	> li[aria-current="page"] > a {
+		text-decoration: none;
+	}
+
 	> li:last-of-type {
 		margin-inline-end: 0;
 	}
