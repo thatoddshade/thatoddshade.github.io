@@ -19,7 +19,12 @@
 	<!-- add a [rel-me](https://indieweb.org/rel-me) for each `config.extra.links` dictionary's `href` -->
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
-	<link rel="me" href="{{ link.href }}" title="{{ link.title }}" />
+	<link
+		rel="me"
+		title="{{ link.title }}"
+		href="{{ link.href }}"
+		{% if link.hreflang %}hreflang="{{ link.hreflang }}"{% endif %}
+	/>
 	{% endfor %}
 	{% endif %}
 
