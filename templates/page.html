@@ -74,17 +74,20 @@
 
 	<div class="e-content">{{ page.content | safe }}</div>
 
-	<p>	
-		{% if page.extra.syndication %}
-		also on:
+	{% if page.extra.syndication %}
+	<div id="syndication">	
+		<p>also on:</p>
 		<ul>
 			{% for syndication in page.extra.syndication %}
-			<li><a class="u-syndication" href="{{ syndication.href }}">
-				{{ syndication.title }}
-			</a></li>
+			<li>
+				<a
+					class="u-syndication"
+					href="{{ syndication.href }}"
+				>{{ syndication.title }}</a>
+			</li>
 			{% endfor %}
 		</ul>
-		{% endif %}
-	</p>
+	</div>
+	{% endif %}
 </main>
 {% endblock content %}

@@ -91,6 +91,36 @@ table {
 }
 */
 
+#syndication {
+	> p {
+		margin-block-end: 0;
+	}
+
+	> ul {
+		margin-block-start: 0;
+		padding-inline-start: 2ch;
+
+		/*
+		make it so that the list looks like this:
+
+		· first item;
+		· second item;
+		· penultimate item; and
+		· last item.
+
+		*/
+		> li::after {
+			content: ";";
+		}
+		> li:nth-last-of-type(2)::after {
+			content: "; and";
+		}
+		> li:last-of-type::after {
+			content: ".";
+		}
+	}
+}
+
 rt {
 	font-size: 0.75em;
 }
