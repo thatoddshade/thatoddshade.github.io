@@ -90,6 +90,26 @@
 			>
 				living in <span class="value">France</span>
 			</p>
+
+			{% if config.extra.links %}
+			<details>
+				<summary>links</summary>
+				<ul>
+					{% for link in config.extra.links %}
+					<li>
+						<a
+							rel="me"
+							class="u-url"
+							href="{{ link.href }}"
+							{% if link.hreflang %}
+							hreflang="{{ link.hreflang }}"
+							{% endif %}
+						>{{ link.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</details>
+			{% endif %}
 		</section>
 
 		<section>
