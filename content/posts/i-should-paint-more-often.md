@@ -1,5 +1,10 @@
 +++
 date = 2025-02-20
+
+[extra]
+syndication = [
+   { title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114037924717044196" },
+]
 +++
 
 I should paint more often.
