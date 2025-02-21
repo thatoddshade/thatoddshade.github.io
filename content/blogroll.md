@@ -1,10 +1,8 @@
 +++
-title = "cool links"
-description = "other interesting websites"
+title = "blogroll"
+description = "interesting websites"
+date = 2025-02-21
 +++
 
-# personal websites
-
 - [Steph Ango](https://stephango.com/ "the one whose colourscheme, Flexoki, inspired my website's")
-- [nexxe](https://www.nexxel.dev/)
-- [frantic.im](https://frantic.im/ "the one whose lack of clutter inspired my website's")
+- [Pavyka](https://papiroflexiacandybars.carrd.co/)
