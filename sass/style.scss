@@ -91,34 +91,35 @@ table {
 }
 */
 
-#syndication {
-	> p {
-		margin-block-end: 0;
+#syndication > p {
+	margin-block-end: 0;
+}
+
+/*
+make it so that the list items look like this:
+
+· first item;
+· second item;
+· penultimate item; and
+· last item.
+
+(this is intended for `ol` and `ul`.)
+*/
+.list-with-punctuation {
+	> li::after {
+		content: ";";
 	}
-
-	> ul {
-		margin-block-start: 0;
-		padding-inline-start: 2ch;
-
-		/*
-		make it so that the list looks like this:
-
-		· first item;
-		· second item;
-		· penultimate item; and
-		· last item.
-
-		*/
-		> li::after {
-			content: ";";
-		}
-		> li:nth-last-of-type(2)::after {
-			content: "; and";
-		}
-		> li:last-of-type::after {
-			content: ".";
-		}
+	> li:nth-last-of-type(2)::after {
+		content: "; and";
 	}
+	> li:last-of-type::after {
+		content: ".";
+	}
+}
+
+.list-with-reduced-spacing {
+	margin-block-start: 0;
+	padding-inline-start: 2ch;
 }
 
 rt {
