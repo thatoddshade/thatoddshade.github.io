@@ -110,13 +110,13 @@ make it so that the list items look like this:
 (this is intended for `ol` and `ul`.)
 */
 .list-with-punctuation {
-	> li::after {
+	> ::after {
 		content: ";";
 	}
-	> li:nth-last-of-type(2)::after {
+	> :has(+ :last-of-type)::after {
 		content: "; and";
 	}
-	> li:last-of-type::after {
+	> :last-of-type::after {
 		content: ".";
 	}
 }
