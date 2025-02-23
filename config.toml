@@ -25,7 +25,8 @@ homepage_links = [
 
 links = [
 	{ title = "GitHub", href = "https://github.com/thatoddshade", hreflang = "en" },
-	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade", hreflang = "en" },
+	{ title = "itch.io", href = "https://thatoddshade.itch.io/", hreflang = "en"},
+	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
 	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
 	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
