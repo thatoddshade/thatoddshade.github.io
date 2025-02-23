@@ -3,8 +3,8 @@ date = 2025-02-23
 
 [extra]
 syndication = [
-	{ title = "imood", href = "https://www.imood.com/users/thatoddshade/moods/1740333467000000"}
-	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114054915331127700"}
+	{ title = "imood", href = "https://www.imood.com/users/thatoddshade/moods/1740333467000000"},
+	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114054915331127700"},
 ]
 +++
 
