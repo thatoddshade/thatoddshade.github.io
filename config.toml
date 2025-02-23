@@ -23,6 +23,8 @@ homepage_links = [
 	{ title = "about", href = "@/about.md" },
 ]
 
+hfeed = "/posts"
+
 links = [
 	{ title = "GitHub", href = "https://github.com/thatoddshade", hreflang = "en" },
 	{ title = "itch.io", href = "https://thatoddshade.itch.io/", hreflang = "en"},
