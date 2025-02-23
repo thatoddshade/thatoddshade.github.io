@@ -1,6 +1,16 @@
 {% extends "index.html" %}
 
-{% block title %}{{ page.title }}{{ config.extra.title_separator }}{{ config.title }}{% endblock title %}
+{% block title %}
+{% if page.title %}
+{{ page.title }}
+{% elif page.extra.like_of %}
+like of {{ page.extra.like_of }}
+{% else %}
+{{ page.content | striptags | truncate(length=32)}}
+{% endif %}
+{{ config.extra.title_separator }}{{ config.title }}
+{% endblock title %}
+
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
 {% block content %}
