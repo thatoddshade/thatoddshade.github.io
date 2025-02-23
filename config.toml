@@ -28,6 +28,7 @@ links = [
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade", hreflang = "en" },
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
 	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
+	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
 	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
 	{ title = "Wikipedia (en)", href = "https://en.wikipedia.org/wiki/User:Thatoddshade", hreflang = "en" },
 ]
