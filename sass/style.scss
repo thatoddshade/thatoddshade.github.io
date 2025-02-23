@@ -91,6 +91,10 @@ table {
 }
 */
 
+rt {
+	font-size: 0.75em;
+}
+
 #syndication > p {
 	margin-block-end: 0;
 }
@@ -122,6 +126,7 @@ make it so that the list items look like this:
 	padding-inline-start: 2ch;
 }
 
-rt {
-	font-size: 0.75em;
+
+#continue-reading + p {
+	margin-block-start: 0;
 }
