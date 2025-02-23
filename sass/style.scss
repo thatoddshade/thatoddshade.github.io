@@ -94,3 +94,34 @@ table {
 rt {
 	font-size: 0.75em;
 }
+
+#syndication > p {
+	margin-block-end: 0;
+}
+
+/*
+make it so that the list items look like this:
+
+· first item;
+· second item;
+· penultimate item; and
+· last item.
+
+(this is intended for `ol` and `ul`.)
+*/
+.list-with-punctuation {
+	> ::after {
+		content: ";";
+	}
+	> :has(+ :last-of-type)::after {
+		content: "; and";
+	}
+	> :last-of-type::after {
+		content: ".";
+	}
+}
+
+.list-with-reduced-spacing {
+	margin-block-start: 0;
+	padding-inline-start: 2ch;
+}

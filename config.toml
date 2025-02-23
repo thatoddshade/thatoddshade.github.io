@@ -18,6 +18,7 @@ highlight_theme = "agola-dark"
 homepage_links = [
 	{ title = "home", href = "@/_index.md" },
 	{ title = "posts", href = "@/posts/_index.md" },
+	{ title = "blogroll", href = "@/blogroll.md" },
 	{ title = "now", href = "@/now.md" },
 	{ title = "about", href = "@/about.md" },
 ]

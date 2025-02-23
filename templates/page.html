@@ -15,7 +15,11 @@
 >
 	<link class="u-url" href="{{ page.permalink }}" />
 
-	<meta name="fediverse:creator" content="{{ config.extra.mastodon_username }}">
+	<meta
+		name="fediverse:creator"
+		content="{{ config.extra.mastodon_username }}"
+	>
+
 	<div class="p-author h-card">
 		<link class="p-name" title="{{ config.title }}" />
 		<link class="u-url" href="{{ config.base_url }}" />
@@ -74,17 +78,24 @@
 
 	<div class="e-content">{{ page.content | safe }}</div>
 
-	<p>	
-		{% if page.extra.syndication %}
-		also on:
-		<ul>
+	{% if page.extra.syndication %}
+	<div id="syndication">	
+		<p>
+			<abbr
+				title="these platforms may allow commenting/replying, which can be done to give feedback, request for an edit or state any kind of thought."
+			>also on</abbr>:
+		</p>
+		<ul class="list-with-punctuation list-with-reduced-spacing">
 			{% for syndication in page.extra.syndication %}
-			<li><a class="u-syndication" href="{{ syndication.href }}">
-				{{ syndication.title }}
-			</a></li>
+			<li>
+				<a
+					class="u-syndication"
+					href="{{ syndication.href }}"
+				>{{ syndication.title }}</a>
+			</li>
 			{% endfor %}
 		</ul>
-		{% endif %}
-	</p>
+	</div>
+	{% endif %}
 </main>
 {% endblock content %}
