@@ -4,7 +4,7 @@ updated = 2025-02-21
 
 [extra]
 syndication = [
-   { title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114037924717044196" },
+	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114037924717044196" },
 ]
 +++
 
@@ -17,8 +17,7 @@ Hundun from the
 the bird-like ones around are completely unrelated; they are somewhat inspired by
 Julia Soboleva's paintings.
 
-{{ photo(src="/images/camera/IMG_20250219_232817.jpg", alt="the current state of the painting") }}
-<!-- more -->
+{{ photo(src="/images/camera/IMG_20250219_232817.jpg", alt="the current state of the painting") }}	<!-- more -->
 {{ photo(src="/images/camera/IMG_20250219_182752.jpg", alt="the pencil upscale of the miniature with added blue paint") }}
 {{ photo(src="/images/camera/IMG_20250219_234151.jpg", alt="a miniature of the painting, the pencil drawing copied with a blue pen with added bird-like creatures staring at the wolf") }}
 {{ photo(src="/images/camera/IMG_20250219_234208.jpg", alt="a copy of the original pencil drawing on calque") }}
