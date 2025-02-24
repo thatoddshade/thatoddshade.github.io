@@ -41,6 +41,17 @@
 			</p>
 			{% endif %}
 
+			{% if post.extra.in_reply_to %}
+			{% for replied_to in post.extra.in_reply_to %}
+			<p>reply to 
+				<a
+					class="u-in-reply-to"
+					href="{{ replied_to.url }}"
+				>{% if replied_to.name %}{{ replied_to.name }}{% else %}{{ replied_to.url }}{% endif %}</a>
+			</p>
+			{% endfor %}
+			{% endif %}
+
 			{% if post.description %}
 			<p class="p-summary">
 				{{ post.description }}

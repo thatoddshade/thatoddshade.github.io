@@ -84,6 +84,17 @@ like of {{ page.extra.like_of }}
 		</p>
 		{% endif %}
 
+		{% if page.extra.in_reply_to %}
+		{% for replied_to in page.extra.in_reply_to %}
+		<p>reply to 
+			<a
+				class="u-in-reply-to"
+				href="{{ replied_to.url }}"
+			>{% if replied_to.name %}{{ replied_to.name }}{% else %}{{ replied_to.url }}{% endif %}</a>
+		</p>
+		{% endfor %}
+		{% endif %}
+
 		{% if page.description %}
 		<p class="p-summary">
 			{{ page.description }}
