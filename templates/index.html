@@ -4,14 +4,23 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta name="description" content="
-		{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}
-	"/>
+	<meta 
+		name="description" 
+		content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}"
+	/>
 
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
+	<link rel="webmention" href="https://webmention.io/thatoddshade.is-a.dev/webmention" />
+
 	{% block extra_head %}
-	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}" />
+	<link
+		rel="stylesheet"
+		href="{{ get_url(path='style.css', cachebust=true) }}"
+	/>
+
+	<link rel="feed" href="{{ config.extra.hfeed }}" />
+
 	{% endblock extra_head %}
 
 	<link rel="icon" type="image/png" href="{{ config.extra.photo }}" />
@@ -19,70 +28,168 @@
 	<!-- add a [rel-me](https://indieweb.org/rel-me) for each `config.extra.links` dictionary's `href` -->
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
-	<link rel="me" href="{{ link.href }}" />
+	<link
+		rel="me"
+		title="{{ link.title }}"
+		href="{{ link.href }}"
+		{% if link.hreflang %}hreflang="{{ link.hreflang }}"{% endif %}
+	/>
 	{% endfor %}
 	{% endif %}
 
 	{% block feed_link %}
 	{% if config.generate_feed %}
-	<link rel="alternate" type="application/atom+xml" title="feed" href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}" />
+	<link
+		rel="alternate"
+		type="application/atom+xml"
+		title="feed"
+		href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}"
+	/>
 	{% endif %}
 	{% endblock %}
 </head>
 
 <body>
+	<a href="#maincontent" id="skip">skip to main content</a>
+
 	{% block header %}
 	<header>
 		<section class="h-card" id="bio">
-			<div>
-			<img class="u-photo" src="{{ config.extra.photo }}" />
-			<a class="u-url p-name" href="/about">
-				{{ config.title }}
-			</a>
-				<span id="pronouns">
-					<a class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" lang="en">he</a> 
-					<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" lang="fr">il</a> 
-				</span>
-				<span class="dt-bday">born on <time class="value" datetime="--05-26">a 26th of May</time></span>
-				<span></span>
-				<span class="p-country-name">living in <span class="value">France</span></span>
-			</div>
+			<img
+				class="u-photo"
+				src="{{ config.extra.photo }}"
+				alt="a vector illustration depicting a green hood worn by a creature of darkness"
+			/>
+			<p>
+				<a class="u-uid u-url p-name" href="/">{{ config.title }}</a>
+			</p>
+			<p id="pronouns">
+				<a
+					class="u-pronoun"
+					href="https://en.wiktionary.org/wiki/he#Pronoun"
+					hreflang="en"
+					lang="en"
+				>
+					he
+				</a> 
+				<a
+					class="u-pronoun"
+					href="https://fr.wiktionary.org/wiki/il#Pronom_personnel"
+					hreflang="fr"
+					lang="fr"
+				>
+					il
+				</a>
+			</p>
+
+			<p
+				class="dt-bday"
+			>
+				born on <time class="value" datetime="--05-26">a 26th of May</time>
+			</p>
+
+			<br />
+
+			<p
+				class="p-country-name"
+			>
+				living in <span class="value">France</span>
+			</p>
+
+			{% if config.extra.links %}
+			<details>
+				<summary>links</summary>
+				<ul class="list-with-punctuation list-with-reduced-spacing">
+					{% for link in config.extra.links %}
+					<li>
+						<a
+							rel="me"
+							class="u-url"
+							href="{{ link.href }}"
+							{% if link.hreflang %}
+							hreflang="{{ link.hreflang }}"
+							{% endif %}
+						>{{ link.title }}</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</details>
+			{% endif %}
 		</section>
 
 		<section>
+			<p id="imood">
+				feeling
+				<a href="https://www.imood.com/users/{{ config.extra.imood_username }}">
+					<img
+						src="https://moods.imood.com/display/uname-thatoddshade/fg-af3029/bg-fffcf0/trans-1/imood.gif"
+						alt="the current mood of thatoddshade at imood.com"
+						border="0"
+					/>
+				</a>
+			</p>
+			<link
+				rel="me"
+				title="imood.com"
+				href="https://www.imood.com/users/{{ config.extra.imood_username }}"
+				hreflang="en"
+			/>
+
 			<a href='https://www.free-website-hit-counter.com'>
 				<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4431&s=29' border='0' alt='free website hit counter' class="invert" />
 			</a>
+
+			{% if config.extra.homepage_links %}
+			<nav id="header-navigation">
+				<ul>
+					{% for link in config.extra.homepage_links %}
+					{% if page.path %}
+					{% set current_path = page.path %}
+					{% elif section.path %}
+					{% set current_path = section.path %}
+					{% else %}
+					{% set current_path = config.base_url %}
+					{% endif %}
+					{% set is_current_page = get_url(path=link.href) == get_url(path=current_path) ~ "/" %}
+					<li
+						{% if is_current_page == true %}
+						aria-current="page"
+						{% endif %}
+					>
+						<a
+							href="{{ get_url(path=link.href) }}"
+						>
+							{% if is_current_page == true %}
+							<abbr title="current page">
+							{% endif %}
+								{{ link.title }}
+							{% if is_current_page == true %}
+							</abbr>
+							{% endif %}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</nav>
+			{% endif %}
 		</section>
-
-		{% if config.extra.homepage_links %}
-		<nav class="header-links">
-			{% for link in config.extra.homepage_links %}
-			<a href="{{ get_url(path=link.href) }}">{{ link.title }}</a>
-			{% endfor %}
-		</nav>
-		{% endif %}
-
 	</header>
 	{% endblock header %}
 
 	{% block content %}
-	{% if section.content or blog.pages %}
-	<main>
-		{% if section.content %}
-		<div>
-			{{ section.content | safe }}
-		</div>
-		{% endif %}
+	{% if section.content %}
+	<main id="maincontent">
+		{{ section.content | safe }}
 	</main>
 	{% endif %}
 	{% endblock content %}
 
 	{% block brainmade %}
-	<a href="https://brainmade.org">
-		<img src="/images/buttons/brainmade.png" alt="a logo of a human with a seed germinating in their head, with the word „BRAINMADE“ next to it" title="when you see this logo on any artwork, whether painting, poetry, or prose, you know that it was made by a human just like you." />
-	</a>
-	{% endblock brainmade %}
-
+	<footer>
+		<a href="https://brainmade.org" title="this website was made by a being with a brain.">
+			<img src="/images/buttons/brainmade.png" alt="a logo of a human with a seed germinating in their head, with the word „BRAINMADE“ next to it" />
+		</a>
+	</footer>
+	{% endblock footer %}
 </body>
 </html>

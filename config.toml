@@ -16,21 +16,30 @@ highlight_theme = "agola-dark"
 
 [extra]
 homepage_links = [
+	{ title = "home", href = "@/_index.md" },
 	{ title = "posts", href = "@/posts/_index.md" },
+	{ title = "blogroll", href = "@/blogroll.md" },
 	{ title = "now", href = "@/now.md" },
 	{ title = "about", href = "@/about.md" },
 ]
 
+hfeed = "/posts"
+
 links = [
-	{ title = "GitHub", href = "https://github.com/thatoddshade" },
-	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade" },
+	{ title = "GitHub", href = "https://github.com/thatoddshade", hreflang = "en" },
+	{ title = "itch.io", href = "https://thatoddshade.itch.io/", hreflang = "en"},
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
-	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/" },
+	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
+	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
+	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
+	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
+	{ title = "Wikipedia (en)", href = "https://en.wikipedia.org/wiki/User:Thatoddshade", hreflang = "en" },
 ]
 
+imood_username = "thatoddshade"
 mastodon_username = "@thatoddshade@mastodon.art"
 
-photo = "https://github.com/thatoddshade.png"
+photo = "/images/photo.png"
 
 # appended between a `page.title` and `config.title`
 title_separator = " \\ "

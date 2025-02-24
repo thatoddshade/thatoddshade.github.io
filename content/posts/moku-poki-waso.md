@@ -30,3 +30,5 @@ epiku a!
 “.
 
 sitelen nanpa tu wan taso li kepeken e sitelen Lasina. sitelen ante ale li kepeken e sitelen pona.", class="u-photo") }}
+
+<!-- more -->

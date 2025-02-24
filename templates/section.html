@@ -2,41 +2,73 @@
 
 {% block title %}{{ section.title }}{{ config.extra.title_separator }}{{ config.title }}{% endblock title %}
 
+{% block extra_head %}
+<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}" />
+<link rel="stylesheet" href="{{ get_url(path='section.css', cachebust=true) }}" />
+{% endblock extra_head %}
+
 {% block content %}
-<main>
+<main class="h-feed" id="maincontent">
+	<hgroup>
+		<h1 class="p-name">{{ section.title }}</h1>
 
-	<h1>{{ section.title }}</h1>
+		{% if section.description%}
+		<p class="p-summary">{{ section.description }}</p>
+		{% endif %}
+	</hgroup>
+	
+	{% if section.pages %}	
+	{% for post in section.pages %}
+	<article class="h-entry">
+		<hgroup>
+			<p><a class="u-url dt-published" href="{{ post.permalink }}">
+				{{ post.date }}
+			</a></p>
 
-	{% if section.pages %}
-
-	<table>
-		{% for post in section.pages %}
-		<tr class="h-entry">
-			<td>
-				<a class="u-url dt-published" href="{{ post.permalink }}">
-					{{ post.date }}
+			{% if post.extra.like_of %}
+			<p>
+				like of <a class="u-like-of" href="{{ post.extra.like_of}}">
+					{{ post.extra.like_of }}
 				</a>
-			</td>
-			<td>
-				{% if post.title %}
-				<span class="p-name">	
-					{{ post.title }}
-				</span>
+			</p>
+			{% endif %}
+	
+			{% if post.extra.repost_of %}
+			<p>
+				repost of <a class="u-repost-of" href="{{ post.extra.repost_of }}">
+					{{ post.extra.repost_of }}
+				</a>
+			</p>
+			{% endif %}
 
-				{% else %}
-				<br />
+			{% if post.description %}
+			<p class="p-summary">
+				{{ post.description }}
+			</p>
+			{% endif %}
 
-				{% endif %}
+			{% if post.title %}
+			<h1 class="p-name"><a href="{{ post.permalink }}">
+				{{ post.title }}
+			</a></h1>
+			{% endif %}
+		</hgroup>
 
-			</td>
-		</tr>
-		{% endfor %}
-	</table>
-
-
+		{% if post.summary %}
+		<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
+		{% if post.description %}
+		<div>
+		{% else %}
+		<div class="p-summary">
+		{% endif %}
+			{{ post.summary | safe }}
+		</div>
+		{% endif %}
+	</article>
+	{% endfor %}
+	
 	{% else %}
-	<p>there is nothing here yet.</p>
+	<p>this section is empty.</p>
 	{% endif %}
-
 </main>
 {% endblock content %}

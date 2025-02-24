@@ -1,10 +1,11 @@
+@use "settings";
 $sidebar-inline-size: 360px;
 
 body {
 	margin-inline-start: $sidebar-inline-size;
 
 	> header {
-		inline-size: $sidebar-inline-size;
+		inline-size: $sidebar-inline-size - settings.$margin;
 
 		position: fixed;
 		inset-inline-start: 0;
