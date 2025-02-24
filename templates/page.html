@@ -30,8 +30,6 @@ like of {{ page.extra.like_of }}
 		content="{{ config.extra.mastodon_username }}"
 	>
 
-	<link rel="webmention" href="https://brid.gy/publish/mastodon">
-
 	<div class="p-author h-card">
 		<link class="p-name" title="{{ config.title }}" />
 		<link class="u-uid u-url" href="{{ config.base_url }}" />
@@ -97,6 +95,13 @@ like of {{ page.extra.like_of }}
 			{{ page.title }}
 		</h1>
 		{% endif %}	
+
+		{# list the websites supported by brid.gy #}
+		{% for website in ["bluesky", "flickr", "github", "mastodon"]%}	
+		{% if page.extra.publish_on[website] %}
+		<a href="https://brid.gy/publish/{{ website }}"></a>
+		{% endif %}
+		{% endfor %}
 	</hgroup>
 
 	<div class="e-content">{{ page.content | safe }}</div>

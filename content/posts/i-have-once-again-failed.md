@@ -1,11 +1,16 @@
 +++
 date = 2025-02-23
 
-[extra]
-syndication = [
-	{ title = "imood", href = "https://www.imood.com/users/thatoddshade/moods/1740333467000000"},
-	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade/114054915331127700"},
-]
+[extra.publish_on]
+mastodon = true
+
+[[extra.syndication]]
+title = "imood"
+href = "https://www.imood.com/users/thatoddshade/moods/1740333467000000"
+
+[[extra.syndication]]
+title = "Mastodon"
+href = "https://mastodon.art/@thatoddshade/114054915331127700"
 +++
 
 I have once again failed at managing my time; now, I am in a rush to accomplish what I could easily have done during those time spent by mindlessly scrolling.
