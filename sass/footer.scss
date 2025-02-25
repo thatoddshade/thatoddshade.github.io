@@ -1,0 +1,11 @@
+@use "john";
+
+body > footer {
+	position: relative;
+}
+
+#brainmade {
+	position: absolute;
+	inset-inline-start: 0;
+	inset-block-start: 0;
+}
