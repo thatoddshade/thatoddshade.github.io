@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+Allow: /
+Sitemap: https://thatoddshade.is-a.dev/sitemap.xml
