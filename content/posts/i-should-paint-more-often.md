@@ -1,6 +1,6 @@
 +++
 date = 2025-02-20
-updated = 2025-02-21
+updated = 2025-02-26
 
 [extra]
 syndication = [
@@ -11,7 +11,7 @@ syndication = [
 I should paint more often.
 
 this is a gouache painting. \
-the wolf-like character in the middle is ~stolen from~ inspired by
+the wolf-like character in the middle is ~~stolen from~~ inspired by
 Hundun from the
 <cite>{{ ruby(base="有兽焉", text="Yǒu Shòu Yān") }}</cite> manhua[^1].
 the bird-like ones around are completely unrelated; they are somewhat inspired by
