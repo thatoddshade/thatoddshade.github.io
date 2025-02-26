@@ -1,4 +1,5 @@
 +++
+aliases = ["fr", "en"]
 +++
 
 <center>
