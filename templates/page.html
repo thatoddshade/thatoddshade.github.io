@@ -97,7 +97,7 @@ like of {{ page.extra.like_of }}
 
 		{% if page.description %}
 		<p class="p-summary">
-			{{ page.description }}
+			{{ page.description | safe }}
 		</p>
 		{% endif %}
 

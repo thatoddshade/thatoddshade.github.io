@@ -13,7 +13,7 @@
 		<h1 class="p-name">{{ section.title }}</h1>
 
 		{% if section.description%}
-		<p class="p-summary">{{ section.description }}</p>
+		<p class="p-summary">{{ section.description | safe }}</p>
 		{% endif %}
 	</hgroup>
 	
@@ -54,7 +54,7 @@
 
 			{% if post.description %}
 			<p class="p-summary">
-				{{ post.description }}
+				{{ post.description | safe }}
 			</p>
 			{% endif %}
 
