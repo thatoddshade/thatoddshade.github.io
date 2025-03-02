@@ -35,6 +35,7 @@ links = [
 	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
 	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
 	{ title = "Wikipedia (en)", href = "https://en.wikipedia.org/wiki/User:Thatoddshade", hreflang = "en" },
+	{ title = "tumblr", href = "https://www.tumblr.com/blog/thatoddshade" }
 ]
 
 imood_username = "thatoddshade"
