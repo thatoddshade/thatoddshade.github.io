@@ -1,10 +1,15 @@
 {% if page.extra.in_reply_to %}
-{% for replied_to in page.extra.in_reply_to %}
-<p>in reply to 
-	<a
-		class="u-in-reply-to"
-		href="{{ replied_to.url }}"
-	>{% if replied_to.name %}{{ replied_to.name }}{% else %}{{ replied_to.url }}{% endif %}</a>
-</p>
-{% endfor %}
+<div class="replied-to-list">
+	<p>in reply to:</p>
+	<ul class="list-with-punctuation list-with-reduced-spacing">
+		{% for replied_to in page.extra.in_reply_to %}
+		<li>
+			<a
+				class="u-in-reply-to"
+				href="{{ replied_to.url }}"
+			>{% if replied_to.name %}{{ replied_to.name }}{% else %}{{ replied_to.url }}{% endif %}</a>
+		</li>
+		{% endfor %}
+	</ul>
+</div>
 {% endif %}

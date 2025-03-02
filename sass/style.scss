@@ -96,7 +96,10 @@ rt {
 	font-size: 0.75em;
 }
 
-#syndication > p {
+#syndication > p,
+.liked-list > p,
+.replied-to-list > p,
+{
 	margin-block-end: 0;
 }
 
