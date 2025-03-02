@@ -1,0 +1,5 @@
+{% if page.description %}
+<p class="p-summary">
+	{{ page.description | markdown | safe }}
+</p>
+{% endif %}

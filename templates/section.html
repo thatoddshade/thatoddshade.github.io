@@ -18,62 +18,30 @@
 	</hgroup>
 	
 	{% if section.pages %}	
-	{% for post in section.pages %}
+	{% for page in section.pages %}
 	<article class="h-entry">
 		<hgroup>
-			<p><a class="u-url dt-published" href="{{ post.permalink }}">
-				{{ post.date }}
+			<p><a class="u-url dt-published" href="{{ page.permalink }}">
+				{{ page.date }}
 			</a></p>
 
-			{% if post.extra.like_of %}
-			<p>
-				like of <a class="u-like-of" href="{{ post.extra.like_of}}">
-					{{ post.extra.like_of }}
-				</a>
-			</p>
-			{% endif %}
-	
-			{% if post.extra.repost_of %}
-			<p>
-				repost of <a class="u-repost-of" href="{{ post.extra.repost_of }}">
-					{{ post.extra.repost_of }}
-				</a>
-			</p>
-			{% endif %}
+			{% include "like.html" %}
+			{% include "reply.html" %}
+			{% include "summary.html" %}
 
-			{% if post.extra.in_reply_to %}
-			{% for replied_to in post.extra.in_reply_to %}
-			<p>in reply to 
-				<a
-					class="u-in-reply-to"
-					href="{{ replied_to.url }}"
-				>{% if replied_to.name %}{{ replied_to.name }}{% else %}{{ replied_to.url }}{% endif %}</a>
-			</p>
-			{% endfor %}
-			{% endif %}
-
-			{% if post.description %}
-			<p class="p-summary">
-				{{ post.description | safe }}
-			</p>
-			{% endif %}
-
-			{% if post.title %}
-			<h1 class="p-name"><a href="{{ post.permalink }}">
-				{{ post.title }}
+			{% if page.title %}
+			<h1 class="p-name"><a href="{{ page.permalink }}">
+				{{ page.title }}
 			</a></h1>
 			{% endif %}
 		</hgroup>
 
-		{% if post.summary %}
-		<!-- if there is not `post.description`, use `post.summary` for `p-summary` -->
-		{% if post.description %}
-		<div>
-		{% else %}
-		<div class="p-summary">
-		{% endif %}
-			{{ post.summary | safe }}
-		</div>
+		{% include "repost.html" %}
+
+		{# zola's `page.summary` corresponds to all the content before `<!-- more -->`. #}
+		{# it is not to be confused with the `p-summary` microformat, which I set to zola's `page.description`. #}
+		{% if page.summary %}
+		<div>{{ page.summary | safe }}</div>
 		{% endif %}
 	</article>
 	{% endfor %}
