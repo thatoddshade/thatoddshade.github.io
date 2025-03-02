@@ -1,7 +1,7 @@
 +++
 title = "colophon"
 date = 2025-02-15
-updated = 2025-02-28T01:12:30Z
+updated = 2025-03-02T15:38:00Z
 description = "on how this website is made"
 +++
 
@@ -9,7 +9,7 @@ description = "on how this website is made"
 
 to edit plaintext files, I use [Neovim](https://neovim.io).
 
-posts are written in [Markdown](https://commonmark.org). \
+page content is written in [Markdown](https://commonmark.org). \
 styling is written in [Sass](https://sass-lang.com).
 
 generating is done with [Zola](https://www.getzola.org).
@@ -24,16 +24,16 @@ to receive webmentions, I use [webmention.io](https://webmention.io).
 
 ## most importantly
 
-no, not love.
-
-hatred.
-
-burning and flaming hatred.
-
-hatred towards those eyes which dare see one as something which they are not, a being of of a steady mind.
-
-hatred towards those mouthes which restlessly entertain themselves with their sarcastical blathering.
-
-…
-
-and also some computer time.
+> no, not love.
+>
+> hatred.
+>
+> burning and flaming hatred.
+>
+> hatred towards those eyes which dare see one as something which they are not, a being of of a steady mind.
+>
+> hatred towards those mouthes which restlessly entertain themselves with their sarcastical blathering.
+>
+> …
+>
+> and also some computer time.
