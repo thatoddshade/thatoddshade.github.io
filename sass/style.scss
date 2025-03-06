@@ -129,3 +129,7 @@ make it so that the list items look like this:
 	margin-block-start: 0;
 	padding-inline-start: 2ch;
 }
+
+.pixelated {
+	image-rendering: pixelated;
+}
