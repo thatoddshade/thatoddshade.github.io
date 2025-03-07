@@ -1,6 +1,7 @@
 +++
 draft = true
 title = "software name pronounciation debates should have more actual linguistic knowledge involved"
+draft = true
 +++
 
 searching „gnu pronounciation“ on a search engine may make one find, among the top results, a page on the official GNU website, [*How To Pronounce GNU*](https://www.gnu.org/gnu/pronunciation.en.html), about, as the name implies, the „right“ way to pronounce „GNU“.
