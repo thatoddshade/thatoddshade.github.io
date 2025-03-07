@@ -1,4 +1,6 @@
 +++
+# TODO: check if ZOLA can deduce DATE from FILENAME
+# date = 2024-12-04
 +++
 
-{{ image(src="/images/camera/IMG_20241204_215310.jpg", alt="drawings", class="u-photo") }}
+{{ photo(src="/images/camera/IMG_20241204_215310.jpg", alt="drawings") }}
