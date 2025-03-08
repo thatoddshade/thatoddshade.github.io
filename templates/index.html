@@ -9,6 +9,10 @@
 		content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}"
 	/>
 
+	<meta property="og:url" content="{{ current_url | default(value=config.base_url ~ "404") }}">
+	{# <meta property="og:image" content="{{ config.extra.photo }}"> #}
+	<meta property="og:site_name" content="{{ config.title }}">
+
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
 	<link rel="webmention" href="https://webmention.io/thatoddshade.is-a.dev/webmention" />
