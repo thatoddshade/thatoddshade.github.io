@@ -6,4 +6,4 @@ lang = "fr"
 +++
 
 je viens de brûler une étoile. c'était magnifique. \
-la force dorée dévorait le papier avec maîtrise.
+la force dorée dévorait le papier avec maîtrise. <!-- more -->
