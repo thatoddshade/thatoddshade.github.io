@@ -1,0 +1,16 @@
+{% if page.read_of %}
+<div class="read">
+	<p>read:</p>
+	<ul>
+	{% for read in page.read_of %}
+		{% if read.url and read.name %}
+		<li><a class="p-read-of" href="{{ read.url }}"><cite class="p-name">{{ read.name }}</cite></a></li>
+		{% elif read.url %}
+		<li><a href="{{ read.url }}">{{ read.url }}</a></li>
+		{% elif read.name %}
+		<li><cite class="p-read-of">{{ read.name }}</cite></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+	</div>
+{% endif %}
