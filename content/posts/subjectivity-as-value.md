@@ -3,6 +3,7 @@ title = "subjectivity as value"
 date = "2024-09-18"
 updated = "2024-10-27"
 description = "an article about why paraphrases and the news are not as valuable as art and others' opinion"
+draft = true
 +++
 
 une interprétation purement  
