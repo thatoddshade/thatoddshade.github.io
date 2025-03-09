@@ -17,6 +17,7 @@ highlight_theme = "agola-dark"
 [extra]
 homepage_links = [
 	{ title = "home", href = "@/_index.md" },
+	{ title = "slipbox", href = "@/slipbox/_index.md" },
 	{ title = "posts", href = "@/posts/_index.md" },
 	{ title = "blogroll", href = "@/blogroll.md" },
 	{ title = "colophon", href = "@/colophon.md" },
