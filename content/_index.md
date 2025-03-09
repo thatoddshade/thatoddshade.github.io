@@ -6,20 +6,20 @@ aliases = ["fr", "en"]
 
 <img src="/images/logo.gif" alt="„thatoddshade“ uglily written by me" class="invert">
 
-![take a chill pill](/images/buttons/chill_pill.gif)
-![CLIQUER ICI](/images/buttons/cliquer_ici.gif)
-![Google Chrome IS EVIL!](/images/buttons/google_chrome_is_evil.gif)
-![Internet Explorer IS EVIL!](/images/buttons/internet_explorer/is_evil.gif)
-![Site Best Viewed With A Computer Monitor](/images/buttons/best_viewed_with_a_computer_monitor.gif)
+{{ image(alt="take a chill pill", src="/images/buttons/chill_pill.gif", class="pixelated") }}
+{{ image(alt="CLIQUER ICI", src="/images/buttons/cliquer_ici.gif", class="pixelated") }}
+{{ image(alt="Google Chrome IS EVIL!", src="/images/buttons/google_chrome_is_evil.gif", class="pixelated") }}
+{{ image(alt="Internet Explorer IS EVIL!", src="/images/buttons/internet_explorer/is_evil.gif", class="pixelated") }}
+{{ image(alt="Site Best Viewed With A Computer Monitor", src="/images/buttons/best_viewed_with_a_computer_monitor.gif", class="pixelated") }}
 
-![the stamp next to this stamp is lying.](/images/stamps/next_stamp_lie.png)
-![you are an idiot ☺☺☺](/images/stamps/you_are_an_idiot.gif)
-![Vaccǐnate y♡ur fuckǐng chǐldren](/images/stamps/vaccinate_your_fucking_children.png)
-![Don't Forget To Save](/images/stamps/dont_forget_to_save.gif)
+{{ image(alt="the stamp next to this stamp is lying.", src="/images/stamps/next_stamp_lie.png", class="pixelated") }}
+{{ image(alt="you are an idiot ☺☺☺", src="/images/stamps/you_are_an_idiot.gif", class="pixelated") }}
+{{ image(alt="Vaccǐnate y♡ur fuckǐng chǐldren", src="/images/stamps/vaccinate_your_fucking_children.png", class="pixelated") }}
+{{ image(alt="Don't Forget To Save", src="/images/stamps/dont_forget_to_save.gif", class="pixelated") }}
 
-![place him on your site immediately](/images/place_him_on_your_site_immediately.png)
-![Please Enjoy](/images/please_enjoy.png)
+{{ image(alt="place him on your site immediately", src="/images/place_him_on_your_site_immediately.png", class="pixelated") }}
+{{ image(alt="Please Enjoy", src="/images/please_enjoy.png", class="pixelated") }}
 
-![Think For Yourself.](/images/blinkies/think_for_yourself.gif)
+{{ image(alt="Think For Yourself.", src="/images/blinkies/think_for_yourself.gif", class="pixelated") }}
 
 </center>

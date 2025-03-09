@@ -9,9 +9,18 @@
 		content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}"
 	/>
 
+	<meta property="og:url" content="{{ current_url | default(value=config.base_url ~ "404") }}">
+	{# <meta property="og:image" content="{{ config.extra.photo }}"> #}
+	<meta property="og:site_name" content="{{ config.title }}">
+
 	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
 
+	<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+	<link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+
 	<link rel="webmention" href="https://webmention.io/thatoddshade.is-a.dev/webmention" />
+
+	<link rel="microsub" href="https://aperture.p3k.io/microsub/1024" />
 
 	{% block extra_head %}
 	<link
@@ -125,6 +134,7 @@
 						src="https://moods.imood.com/display/uname-thatoddshade/fg-af3029/bg-fffcf0/trans-1/imood.gif"
 						alt="the current mood of thatoddshade at imood.com"
 						border="0"
+						class="pixelated"
 					/>
 				</a>
 			</p>
@@ -136,7 +146,7 @@
 			/>
 
 			<a href='https://www.free-website-hit-counter.com'>
-				<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4431&s=29' border='0' alt='free website hit counter' class="invert" />
+				<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4431&s=29' border='0' alt='free website hit counter' class="invert pixelated" />
 			</a>
 
 			{% if config.extra.homepage_links %}
@@ -188,7 +198,7 @@
 	<footer>
 		<iframe src="https://john.citrons.xyz/embed?ref=thatoddshade.is-a.dev" id="johnvertisement"></iframe>
 		<a href="https://brainmade.org" title="this website was made by a being with a brain." id="brainmade">
-			<img src="/images/buttons/brainmade.png" alt="a logo of a human with a seed germinating in their head, with the word „BRAINMADE“ next to it" />
+			<img src="/images/buttons/brainmade.png" alt="a logo of a human with a seed germinating in their head, with the word „BRAINMADE“ next to it" class="pixelated" />
 		</a>
 	</footer>
 	{% endblock footer %}

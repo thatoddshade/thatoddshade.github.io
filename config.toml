@@ -32,11 +32,13 @@ links = [
 	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
 	{ title = "modrinth", href = "https://modrinth.com/users/thatoddshade", hreflang = "en" },
+	{ title = "Stack Overflow", href = "https://stackoverflow.com/users/20547839/thatoddshade" },
 	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
 	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
 	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
 	{ title = "Wikipedia (en)", href = "https://en.wikipedia.org/wiki/User:Thatoddshade", hreflang = "en" },
-	{ title = "tumblr", href = "https://www.tumblr.com/blog/thatoddshade" }
+	{ title = "tumblr", href = "https://www.tumblr.com/blog/thatoddshade" },
+	{ title = "Gravatar", href = "https://gravatar.com/thatoddshade" },
 ]
 
 imood_username = "thatoddshade"
