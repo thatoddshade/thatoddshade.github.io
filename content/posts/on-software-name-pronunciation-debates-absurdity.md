@@ -1,6 +1,6 @@
 +++
 title = "on the absurdity of debates about how a software's name should be pronounced"
-aliases = "posts/software-name-pronunciation-debates"
+aliases = ["posts/software-name-pronunciation-debates"]
 draft = true
 
 updated = 2025-03-07T22:06:00+01:00
