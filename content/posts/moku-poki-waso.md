@@ -11,7 +11,7 @@ syndication = [
 sina kulupu o \
 🥚 ni li epiku ala epiku
 
-{{ image(src="/images/2024-12-15_22-20.png", alt="sitelen ni la, luka jo moku poki tan waso, en sitelen tu wan li lon.
+{{ photo(src="/images/2024-12-15_22-20.png", alt="sitelen ni la, luka jo moku poki tan waso, en sitelen tu wan li lon.
 
 sitelen nanpa wan li toki e ni:
 „
@@ -29,6 +29,6 @@ sitelen nanpa tu wan li toki e ni:
 epiku a!
 “.
 
-sitelen nanpa tu wan taso li kepeken e sitelen Lasina. sitelen ante ale li kepeken e sitelen pona.", class="u-photo") }}
+sitelen nanpa tu wan taso li kepeken e sitelen Lasina. sitelen ante ale li kepeken e sitelen pona.", class="pixelated") }}
 
 <!-- more -->
