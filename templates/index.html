@@ -64,14 +64,20 @@
 	{% block header %}
 	<header>
 		<section class="h-card" id="bio">
-			<img
-				class="u-photo"
-				src="{{ config.extra.photo }}"
-				alt="a vector illustration depicting a green hood worn by a creature of darkness"
-			/>
-			<p>
-				<a class="u-uid u-url p-name" href="/">{{ config.title }}</a>
-			</p>
+			<div>
+				<img
+					class="u-photo"
+					src="{{ config.extra.photo }}"
+					alt="a vector illustration depicting a green hood worn by a creature of darkness"
+
+					id = "icon"
+				/>
+
+				<h1 id="logotype">
+					<a class="u-uid u-url p-name" href="/">{{ config.title }}</a>
+				</h1>
+			</div>
+
 			<p id="pronouns">
 				<a
 					class="u-pronoun"

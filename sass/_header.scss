@@ -10,8 +10,8 @@
 		}
 	}*/
 
-		display: grid;
-		grid-template-columns: 64px 256px;
+		display: flex;
+		/*grid-template-columns: 64px 256px;*/
 
 		row-gap: 0;
 		column-gap: 16px;
@@ -19,16 +19,16 @@
 		> * {
 			margin-block: auto;
 		}
+}
 
-		img.u-photo {
-			inline-size: 64px;
-		}
+#icon {
+	inline-size: 64px;
+}
 
-		.u-url.p-name {
-			font-size: 2em;
-			text-decoration: none;
-			font-weight: bold;
-		}
+#logotype > * {
+	font-size: 2rem;
+	text-decoration: none;
+	font-weight: bold;
 }
 
 #pronouns {
