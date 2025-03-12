@@ -33,6 +33,7 @@ links = [
 	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
 	{ title = "modrinth", href = "https://modrinth.com/users/thatoddshade", hreflang = "en" },
 	{ title = "Stack Overflow", href = "https://stackoverflow.com/users/20547839/thatoddshade" },
+	{ title = "OpenStreetMap", href="https://www.openstreetmap.org/user/thatoddshade" },
 	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
 	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
 	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
