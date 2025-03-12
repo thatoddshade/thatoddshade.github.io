@@ -6,8 +6,8 @@ name = "As a map of my brain..."
 url = "https://www.reddit.com/r/Zettelkasten/comments/1iwk50h/as_a_map_of_my_brain/"
 
 [[extra.syndication]]
-title = "reddit"
-href = "https://www.reddit.com/r/Zettelkasten/comments/1iwk50h/as_a_map_of_my_brain/mfh9gdh/"
+name = "reddit"
+url = "https://www.reddit.com/r/Zettelkasten/comments/1iwk50h/as_a_map_of_my_brain/mfh9gdh/"
 +++
 
 I feel like I am always focused on one specific thing, thinking about one
