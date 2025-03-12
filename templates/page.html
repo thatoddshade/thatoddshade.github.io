@@ -75,7 +75,7 @@
 		</h1>
 		{% endif %}	
 
-		{# list the websites supported by brid.gy #}
+		{# list of the websites supported by brid.gy #}
 		{% for website in ["bluesky", "flickr", "github", "mastodon"]%}	
 		{% if page.extra.publish_on[website] %}
 		<a href="https://brid.gy/publish/{{ website }}"></a>
