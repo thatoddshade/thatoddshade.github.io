@@ -2,6 +2,7 @@
 date = 2025-03-12T15:38:00+01:00
 title = "`http` and `https` equivalents of a single URL seen as different"
 
+[extra]
 [[in_reply_to]]
 name = "Issues · aaronpk/Aperture"
 url = "https://github.com/aaronpk/Aperture/issues"
