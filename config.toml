@@ -27,19 +27,19 @@ homepage_links = [
 hfeed = "/posts"
 
 links = [
-	{ title = "GitHub", href = "https://github.com/thatoddshade", hreflang = "en" },
-	{ title = "itch.io", href = "https://thatoddshade.itch.io/", hreflang = "en"},
-	{ title = "YouTube", href = "https://www.youtube.com/@thatoddshade" },
-	{ title = "reddit", href = "https://www.reddit.com/user/That-Odd-Shade/", hreflang = "en" },
-	{ title = "modrinth", href = "https://modrinth.com/users/thatoddshade", hreflang = "en" },
-	{ title = "Stack Overflow", href = "https://stackoverflow.com/users/20547839/thatoddshade" },
-	{ title = "OpenStreetMap", href="https://www.openstreetmap.org/user/thatoddshade" },
-	{ title = "Mastodon", href = "https://mastodon.art/@thatoddshade", hreflang = "en" },
-	{ title = "sourcehut", href = "https://sr.ht/~thatoddshade/", hreflang = "en" },
-	{ title = "Wikipédia (fr)", href = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", hreflang = "fr" },
-	{ title = "Wikipedia (en)", href = "https://en.wikipedia.org/wiki/User:Thatoddshade", hreflang = "en" },
-	{ title = "tumblr", href = "https://www.tumblr.com/blog/thatoddshade" },
-	{ title = "Gravatar", href = "https://gravatar.com/thatoddshade" },
+	{ name = "GitHub", url = "https://github.com/thatoddshade", lang = "en" },
+	{ name = "itch.io", url = "https://thatoddshade.itch.io/", lang = "en"},
+	{ name = "YouTube", url = "https://www.youtube.com/@thatoddshade" },
+	{ name = "reddit", url = "https://www.reddit.com/user/That-Odd-Shade/", lang = "en" },
+	{ name = "modrinth", url = "https://modrinth.com/users/thatoddshade", lang = "en" },
+	{ name = "Stack Overflow", url = "https://stackoverflow.com/users/20547839/thatoddshade" },
+	{ name = "OpenStreetMap", url="https://www.openstreetmap.org/user/thatoddshade" },
+	{ name = "Mastodon", url = "https://mastodon.art/@thatoddshade", lang = "en" },
+	{ name = "sourcehut", url = "https://sr.ht/~thatoddshade/", lang = "en" },
+	{ name = "Wikipédia (fr)", url = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", lang = "fr" },
+	{ name = "Wikipedia (en)", url = "https://en.wikipedia.org/wiki/User:Thatoddshade", lang = "en" },
+	{ name = "tumblr", url = "https://www.tumblr.com/blog/thatoddshade" },
+	{ name = "Gravatar", url = "https://gravatar.com/thatoddshade" },
 ]
 
 imood_username = "thatoddshade"

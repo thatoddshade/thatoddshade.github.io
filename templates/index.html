@@ -42,9 +42,9 @@
 	{% for link in config.extra.links %}
 	<link
 		rel="me"
-		title="{{ link.title }}"
-		href="{{ link.href }}"
-		{% if link.hreflang %}hreflang="{{ link.hreflang }}"{% endif %}
+		title="{{ link.name }}"
+		href="{{ link.url }}"
+		{% if link.lang %}hreflang="{{ link.lang }}"{% endif %}
 	/>
 	{% endfor %}
 	{% endif %}
@@ -117,11 +117,11 @@
 						<a
 							rel="me"
 							class="u-url"
-							href="{{ link.href }}"
-							{% if link.hreflang %}
-							hreflang="{{ link.hreflang }}"
+							href="{{ link.url }}"
+							{% if link.lang %}
+							hreflang="{{ link.lang }}"
 							{% endif %}
-						>{{ link.title }}</a>
+						>{{ link.name }}</a>
 					</li>
 					{% endfor %}
 				</ul>
