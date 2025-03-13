@@ -21,9 +21,7 @@
 	{% for page in section.pages %}
 	<article class="h-entry">
 		<hgroup>
-			<p><a class="u-url dt-published" href="{{ page.permalink }}">
-				{{ page.date }}
-			</a></p>
+			<p><a class="u-url" href="{{ page.permalink }}"><time class="dt-published">{{ page.date }}</time></a></p>
 
 			{% include "like.html" %}
 			{% include "reply.html" %}
