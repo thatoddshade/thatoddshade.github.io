@@ -39,7 +39,10 @@
 		{# zola's `page.summary` corresponds to all the content before `<!-- more -->`. #}
 		{# it is not to be confused with the `p-summary` microformat, which I set to zola's `page.description`. #}
 		{% if page.summary %}
-		<div>{{ page.summary | safe }}</div>
+		<div>
+			{{ page.summary | safe }}
+			<p>…</p>
+		</div>
 		{% endif %}
 	</article>
 	{% endfor %}
