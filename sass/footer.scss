@@ -1,5 +1,6 @@
 @use "john";
 
+/* setting an element's `position` to something other than `static` redefines that which is the origin for the children */
 body > footer {
 	position: relative;
 }
