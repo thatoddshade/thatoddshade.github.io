@@ -59,8 +59,10 @@
 			{% endif %}
 
 			{% if page.updated %}
-			<abbr title="updated on the">u:</abbr>
-			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
+			<span>
+				<abbr title="this page was last updated on the">u</abbr>:
+				<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
+			</span>
 			{% endif %}
 		</p>
 		{% endif %}
