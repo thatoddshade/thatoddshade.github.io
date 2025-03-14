@@ -48,10 +48,9 @@
 		{% if page.date or page.updated %}
 		<p>
 			{% if page.date %}
-			<abbr title="this page was published on the">p:</abbr>
-			<time class="dt-published">
-				{{ page.date | date(format="%Y-%m-%dT%T%Z") }}
-			</time>
+			<span>
+				{% include "publication_date.html" %}
+			</span>
 			{% endif %}
 
 			{% if page.date and page.updated %}
