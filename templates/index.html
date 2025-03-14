@@ -67,45 +67,38 @@
 	{% block header %}
 	<header>
 		<section class="h-card" id="bio">
-			<img
-				class="u-photo"
-				src="{{ config.extra.photo }}"
-				alt="a vector illustration depicting a green hood worn by a creature of darkness"
-			/>
-			<p>
-				<a class="u-uid u-url p-name" href="/">{{ config.title }}</a>
-			</p>
+			<div id="logo">
+				<img
+					class="u-photo"
+					src="{{ config.extra.photo }}"
+					alt="a vector illustration depicting a green hood worn by a creature of darkness"
+				/>
+				<p><a class="u-uid u-url p-name" href="/">{{ config.title }}</a></p>
+			</div>
+
 			<p id="pronouns">
 				<a
 					class="u-pronoun"
 					href="https://en.wiktionary.org/wiki/he#Pronoun"
 					hreflang="en"
 					lang="en"
-				>
-					he
-				</a> 
+				>he</a> 
 				<a
 					class="u-pronoun"
 					href="https://fr.wiktionary.org/wiki/il#Pronom_personnel"
 					hreflang="fr"
 					lang="fr"
-				>
-					il
-				</a>
+				>il</a>
 			</p>
 
-			<p
-				class="dt-bday"
-			>
-				born on <time class="value" datetime="--05-26">a 26th of May</time>
-			</p>
+			<p>
+				<span class="dt-bday">
+					born on <time class="value" datetime="--05-26">a 26th of May</time>
+				</span>
 
-			<br />
+				<br/>
 
-			<p
-				class="p-country-name"
-			>
-				living in <span class="value">France</span>
+				<span class="p-country-name">living in <span class="value">France</span></span>
 			</p>
 
 			{% if config.extra.links %}

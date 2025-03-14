@@ -10,25 +10,27 @@
 		}
 	}*/
 
-		display: grid;
-		grid-template-columns: 64px 256px;
+	> #logo {
+		display: flex;
+		/*grid-template-columns: 64px 256px;*/
 
-		row-gap: 0;
+		/*row-gap: 0;      */
 		column-gap: 16px;
-
+		
 		> * {
 			margin-block: auto;
-		}
+		}	
 
-		img.u-photo {
+		> img {
 			inline-size: 64px;
 		}
 
-		.u-url.p-name {
+		> p a {
 			font-size: 2em;
 			text-decoration: none;
 			font-weight: bold;
 		}
+	}
 }
 
 #pronouns {
