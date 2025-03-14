@@ -2,7 +2,7 @@
 
 {% block title %}
 {% if page.title %}{{ page.title }}
-{% elif page.extra.like_of %}like of {% if page.extra.like_of[0].name %}{{ page.extra.like_of[0].name }}{% else %}{{ page.extra.like_of[0].url }}{% endif %}
+{% elif page.extra.like_of %}like of {{ page.extra.like_of.name | default(value=page.extra.like_of[0].name) | default(value=page.extra.like_of.url) | default(value=page.extra.like_of[0].url) }}
 {% else %}{{ page.content | striptags | truncate(length=32)}}
 {% endif %}
 {{ config.extra.title_separator }}{{ config.title }}
