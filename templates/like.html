@@ -12,7 +12,7 @@
 		by
 		<span class="p-author h-card">
 			{% if liked.author.url%}
-			<a class="u-url p-name" href="{{ liked.author.url }}">{{ page.extra.repost_of.author.name }}</a>
+			<a class="u-url p-name" href="{{ liked.author.url }}">{{ liked.author.name }}</a>
 			{% else %}
 			<span class="p-name">{{ liked.author.name }}</span>{% endif %}</span>{% endif %}{% if liked.content %}:<blockquote>{{ liked.content | markdown | safe }}</blockquote></div>{% else %}.{% endif %}
 	</p>
@@ -32,7 +32,7 @@
 			by
 			<span class="p-author h-card">
 				{% if liked.author.url%}
-				<a class="u-url p-name" href="{{ liked.author.url }}">{{ page.extra.repost_of.author.name }}</a>
+				<a class="u-url p-name" href="{{ liked.author.url }}">{{ liked.author.name }}</a>
 				{% else %}
 				<span class="p-name">{{ liked.author.name }}</span>
 				{%- endif -%}
