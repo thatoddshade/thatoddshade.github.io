@@ -1,1 +1,1 @@
-<a class="h-card" href="{{ url }}">{{ name }}</a>
+<a class="h-card" href="{{ url }}">{% if photo %}<img src="{{ photo }}" />{% endif %}{{ name | get(key=body) }}</a>
