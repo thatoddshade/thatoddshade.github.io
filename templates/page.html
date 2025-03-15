@@ -1,10 +1,10 @@
 {% extends "index.html" %}
 
 {% block title %}
-{% if page.title %}{{ page.title }}
-{% elif page.extra.like_of %}like of {{ page.extra.like_of.name | default(value=page.extra.like_of[0].name) | default(value=page.extra.like_of.url) | default(value=page.extra.like_of[0].url) }}
-{% else %}{{ page.content | striptags | truncate(length=32)}}
-{% endif %}
+{%- if page.title -%}{{ page.title }}
+{%- elif page.extra.like_of -%}like of {% include "liked_title.html" %}
+{%- else -%}{{ page.content | striptags | truncate(length=32)}}
+{%- endif -%}
 {{ config.extra.title_separator }}{{ config.title }}
 {% endblock title %}
 
