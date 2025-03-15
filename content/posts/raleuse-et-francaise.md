@@ -4,6 +4,7 @@ date = 2024-12-04T21:53:10+01:00
 [extra]
 lang = "fr"
 publish_on.mastodon = true
+publish_on.tumblr = true
 +++
 
 > raleuse et française
