@@ -5,7 +5,7 @@ date = 2025-03-16T18:16:00+01:00
 publish_on.mastodon = true
 
 in_reply_to.url = "https://xoxo.zone/@kevinmarks.com@bsky.brid.gy/114120682840795901"
-in_reply_to.url.content = """
+in_reply_to.content = """
 After Joel Morris's fake whiteboard being taken as real on here, how about we post our own (real) odd whiteboard diagrams that made sense at the time. Here's one of mine from 2008.
 
 {{ photo(src="https://xoxo-media.sfo2.cdn.digitaloceanspaces.com/cache/media_attachments/files/114/120/682/661/543/682/small/7550758b9a7d1373.jpeg", alt="3 rectangular boxes with circles connected by arrows inside. The left one is labelled "mework" , the centre "public net", the right "personal" arrows labelled "me" connect them right to left.
