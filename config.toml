@@ -31,7 +31,7 @@ links = [
 	{ name = "itch.io", url = "https://thatoddshade.itch.io/", lang = "en"},
 	{ name = "YouTube", url = "https://www.youtube.com/@thatoddshade" },
 	{ name = "reddit", url = "https://www.reddit.com/user/That-Odd-Shade/", lang = "en" },
-	{ name = "modrinth", url = "https://modrinth.com/users/thatoddshade", lang = "en" },
+	{ name = "modrinth", url = "https://modrinth.com/user/thatoddshade", lang = "en" },
 	{ name = "Stack Overflow", url = "https://stackoverflow.com/users/20547839/thatoddshade" },
 	{ name = "Gravatar", url = "https://gravatar.com/thatoddshade" },
 	{ name = "OpenStreetMap", url="https://www.openstreetmap.org/user/thatoddshade" },
