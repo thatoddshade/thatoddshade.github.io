@@ -10,4 +10,8 @@ url = "https://github.com/TheZoraiz/ascii-image-converter"
 
 author.name = "Zoraiz Hassan"
 author.url = "https://github.com/TheZoraiz"
+
+[[extra.syndication]]
+name = "GitHub"
+url = "https://github.com/TheZoraiz/ascii-image-converter/stargazers"
 +++
