@@ -15,19 +15,16 @@ body {
 	}
 
 	> main {
+		border-radius: 16px;
 		padding: 4px;
 	}
 }
 
 /* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */
 @media all and (max-width: 960px) {
-	body {
-		> main {
-			border-inline-style: none !important;
-		}
-
-		> main, > footer {
-			margin-inline: 0;
-		}
+	body > main {
+		border-radius: 0;
+		border-inline-style: none !important;
+		margin-inline: 0;
 	}
 }
