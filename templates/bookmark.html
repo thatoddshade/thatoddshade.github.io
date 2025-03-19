@@ -1,0 +1,31 @@
+{% if page.extra.bookmark_of %}
+<div class="bookmarked-list">
+	<p>bookmark of:</p>
+	<ul class="list-with-punctuation list-with-reduced-spacing">
+		{% for bookmarked in page.extra.bookmark_of %}
+		<li class="u-bookmark-of h-cite">
+			<a class="u-url" href="{{ bookmarked.url }}">
+				{% if bookmarked.name %}<span class="p-name">{{ bookmarked.name }}</span>
+				{%- else %}{{ bookmarked.url }}
+				{%- endif -%}
+			</a>
+			{% if bookmarked.author %}
+			by
+			<span class="p-author h-card">
+				{% if bookmarked.author.url%}
+				<a class="u-url p-name" href="{{ bookmarked.author.url }}">{{ page.extra.repost_of.author.name }}</a>
+				{% else %}
+				<span class="p-name">{{ bookmarked.author.name }}</span>
+				{%- endif -%}
+			</span>
+			{% endif %}
+			{%- if bookmarked.content %}:
+			<blockquote>
+				{{ bookmarked.content | markdown | safe }}
+			</blockquote>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
