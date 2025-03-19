@@ -12,7 +12,7 @@ ignored_static = ["*.xcf"]
 
 [markdown]
 highlight_code = true
-highlight_theme = "agola-dark"
+highlight_theme = "1337"
 
 [extra]
 homepage_links = [
