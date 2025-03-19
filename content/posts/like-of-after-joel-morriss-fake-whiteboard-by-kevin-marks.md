@@ -2,7 +2,9 @@
 date = 2025-03-16T18:16:00+01:00
 extra.publish_on.mastodon = true
 
-[[extra.like_of]]
+aliases = ["posts/in-reply-to-after-joel-morriss-fake-whiteboard-by-kevin-marks"]
+
+[extra.like_of]
 url = "https://fed.brid.gy/r/https://bsky.app/profile/did:plc:kn4dz4f67maytvsbcnbry36k/post/3ljrshtev2c2t"
 content = """
 After Joel Morris's fake whiteboard being taken as real on here, how about we post our own (real) odd whiteboard diagrams that made sense at the time. Here's one of mine from 2008.

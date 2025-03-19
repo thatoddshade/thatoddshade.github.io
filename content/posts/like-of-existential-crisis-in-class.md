@@ -1,7 +1,7 @@
 +++
 date = 2025-03-11T19:44:00+01:00
 
-[[extra.like_of]]
+[extra.like_of]
 url = "https://www.youtube.com/watch?v=NESBtODxNVA"
 name = "Existential Crisis in Class"
 +++
