@@ -1,7 +1,7 @@
 +++
 title = "colophon"
 date = 2025-02-15
-updated = 2025-03-02T15:38:00Z
+updated = 2025-03-18T09:43:50+01:00
 description = "on how this website is made"
 +++
 
@@ -30,7 +30,7 @@ to receive webmentions, I use [webmention.io](https://webmention.io).
 >
 > burning and flaming hatred.
 >
-> hatred towards those eyes which dare see one as something which they are not, a being of of a steady mind.
+> hatred towards those of whom the eyes dare see one as something which they are not, a being of a steady mind.
 >
 > hatred towards those mouthes which restlessly entertain themselves with their sarcastical blathering.
 >
