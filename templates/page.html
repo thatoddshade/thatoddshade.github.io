@@ -1,10 +1,11 @@
 {% extends "index.html" %}
 
 {% block title %}
-{% if page.title %}{{ page.title }}
-{% elif page.extra.like_of %}like of {% if page.extra.like_of[0].name %}{{ page.extra.like_of[0].name }}{% else %}{{ page.extra.like_of[0].url }}{% endif %}
-{% else %}{{ page.content | striptags | truncate(length=32)}}
-{% endif %}
+{%- if page.title -%}{{ page.title }}
+{%- elif page.extra.like_of -%}like of {% include "liked_title.html" %}
+{%- elif page.extra.repost_of -%}repost of {% include "reposted_title.html" %}
+{%- else -%}{{ page.content | striptags | truncate(length=32)}}
+{%- endif -%}
 {{ config.extra.title_separator }}{{ config.title }}
 {% endblock title %}
 
@@ -48,10 +49,9 @@
 		{% if page.date or page.updated %}
 		<p>
 			{% if page.date %}
-			<abbr title="this page was published on the">p:</abbr>
-			<time class="dt-published">
-				{{ page.date }}
-			</time>
+			<span>
+				{% include "publication_date.html" %}
+			</span>
 			{% endif %}
 
 			{% if page.date and page.updated %}
@@ -59,8 +59,10 @@
 			{% endif %}
 
 			{% if page.updated %}
-			<abbr title="updated on the">u:</abbr>
-			<time class="dt-updated">{{ page.updated }}</time>
+			<span>
+				<abbr title="this page was last updated on the">u</abbr>:
+				<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
+			</span>
 			{% endif %}
 		</p>
 		{% endif %}

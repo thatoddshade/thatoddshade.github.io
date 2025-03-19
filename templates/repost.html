@@ -1,6 +1,7 @@
 {% if page.extra.repost_of %}
 <div class="h-cite u-repost-of">
-	repost of <a class="u-url" href="{{ page.extra.repost_of.url }}">{% if page.extra.repost_of.name %}{{ page.extra.repost_of.name }}{% else %}{{ page.extra.repost_of.url }}{% endif %}</a>
+	<p class="repost">repost of
+	<a class="u-url" href="{{ page.extra.repost_of.url }}">{% if page.extra.repost_of.name %}{{ page.extra.repost_of.name }}{% else %}{{ page.extra.repost_of.url }}{% endif %}</a>
 	{% if page.extra.repost_of.author %}
 	by
 	<span class="p-author h-card">

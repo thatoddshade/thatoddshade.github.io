@@ -1,0 +1,19 @@
+{%- if page.extra.like_of.name -%}
+{{ page.extra.like_of.name -}}
+
+{%- elif page.extra.like_of[0].name -%}
+{{ page.extra.like_of[0].name }}
+
+{%- elif page.extra.like_of.content -%}
+„{{ page.extra.like_of.content | striptags | truncate(length=32) }}“
+
+{%- elif page.extra.like_of[0].content -%}
+„{{ page.extra.like_of.content | striptags | truncate(length=32) }}“
+
+{%- elif page.extra.like_of.url -%}
+{{ page.extra.like_of.url }}
+
+{%- elif page.extra.like_of[0].url -%}
+{{ page.extra.like_of[0].url }}
+
+{%- endif -%}

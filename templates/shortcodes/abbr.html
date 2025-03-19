@@ -3,9 +3,7 @@
 	title="{{ title }}"
 	{% endif %}
 >
-	{% if body %}
-	{{ body }}
-	{% else %}
-	{{ content }}
+	{% if body %}{{ body | safe }}
+	{% else %}{{ base | safe }}
 	{% endif %}
 </abbr>
