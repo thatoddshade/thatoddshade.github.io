@@ -52,8 +52,27 @@ $accent-light: #24837b;
 		background-color: transparent;
 	}
 
-	.footnote-definition sup {
-		color: $secondary-light;
+	.footnote-reference {
+		> a {
+			padding-inline: 0.25ch;
+			color: $background-light;
+			background-color: $foreground-light;
+
+			text-decoration: none;
+		}
+
+		> a:hover {
+			background-color: $accent-light;
+		}
+	}
+	
+	.footnote-definition-label {
+		padding-inline-start: 0.125ch;
+	}
+
+	.footnote-definition-label::after {
+		padding-inline-end: 0.125ch;
+		content: ": ";
 	}
 
 	/*table {

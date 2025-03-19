@@ -52,8 +52,27 @@ $accent-dark: #3aa99f;
 		background-color: transparent;
 	}
 
-	.footnote-definition sup {
-		color: $secondary-dark;
+	.footnote-reference {
+		> a {
+			padding-inline: 0.25ch;
+			color: $background-dark;
+			background-color: $foreground-dark;
+
+			text-decoration: none;
+		}
+
+		> a:hover {
+			background-color: $accent-dark;
+		}
+	}
+
+	.footnote-definition-label {
+		padding-inline-start: 0.125ch;
+	}
+
+	.footnote-definition-label::after {
+		padding-inline-end: 0.125ch;
+		content: ": ";
 	}
 
 	/*table {
