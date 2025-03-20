@@ -97,9 +97,11 @@ rt {
 	font-size: 0.75em;
 }
 
-#syndication > p,
+.bookmarked-list > p,
 .liked-list > p,
 .replied-to-list > p,
+.replied-to-list > p,
+#syndication > p,
 {
 	margin-block-end: 0;
 }
