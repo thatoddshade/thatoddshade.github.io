@@ -67,8 +67,6 @@
 		</p>
 		{% endif %}
 
-		{% include "like.html" %}
-		{% include "reply.html" %}
 		{% include "summary.html" %}
 
 		{% if page.title %}	
@@ -84,8 +82,6 @@
 		{% endif %}
 		{% endfor %}
 	</hgroup>
-
-	{% include "repost.html" %}
 
 	<div class="e-content">{{ page.content | safe }}</div>
 

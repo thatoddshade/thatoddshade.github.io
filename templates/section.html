@@ -21,14 +21,10 @@
 	{% for page in section.pages %}
 	<article class="h-entry">
 		<hgroup>
-			<p>
-				<a class="u-url" href="{{ page.permalink }}">
-					{% include "publication_date.html" %}
-				</a>
-			</p>
-
-			{% include "like.html" %}
-			{% include "reply.html" %}
+			<p><a class="u-url" href="{{ page.permalink }}">
+				{% include "publication_date.html" %}
+			</a></p>
+			
 			{% include "summary.html" %}
 
 			{% if page.title %}
@@ -38,7 +34,6 @@
 			{% endif %}
 		</hgroup>
 
-		{% include "repost.html" %}
 
 		{# zola's `page.summary` corresponds to all the content before `<!-- more -->`. #}
 		{# it is not to be confused with the `p-summary` microformat, which I set to zola's `page.description`. #}
