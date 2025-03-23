@@ -21,10 +21,10 @@ pages' template can be found at ./templates/page.html
 	- `name`, a string;
 	- `author`, an object which can have `url` and must have `name`; and
 	- `content`.
-- to like, set `extra.like_of` to an array of objects each having:
+- to like, set `extra.like_of` to an object that has / array of objects each having:
 	- `url`, a string; and
 	- `name`, a string.
-- to reply, set `extra.in_reply_to` to an array of objects each having:
+- to reply, set `extra.in_reply_to` to an object that has / array of objects each having:
 	- `url`, a string; and
 	- `name`, a string.
 - to automatically POSSE via brid.gy, set `extra.publish_on` to an object which can have, to set what platform to publish on, the following set to true:
