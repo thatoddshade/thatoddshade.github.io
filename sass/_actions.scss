@@ -13,3 +13,4 @@
 .like::before	{ mask: url("/images/like.svg"); }
 .reply::before	{ content: " ↵ "; }
 .repost::before	{ mask: url("/images/repost.svg"); }
+.watch::before	{ content: " 👁️ "; }

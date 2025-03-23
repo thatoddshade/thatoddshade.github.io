@@ -1,0 +1,46 @@
+{% if page.extra.watch_of %}
+{% if page.extra.watch_of is object %}
+{% set watched = page.extra.watch_of %}
+<div class="u-watch-of h-cite">
+	<p class="watch">watched
+		<a class="u-url" href="{{ watched.url }}">
+			{% if watched.name %}<cite class="p-name">{{ watched.name }}</cite>
+			{%- else %}{{ watched.url }}
+			{%- endif -%}
+		</a>
+		{% if watched.author %}
+		by
+		<span class="p-author h-card">
+			{% if watched.author.url%}
+			<a class="u-url p-name" href="{{ watched.author.url }}">{{ watched.author.name }}</a>
+			{% else %}
+			<span class="p-name">{{ watched.author.name }}</span>{% endif %}</span>{% endif %}
+	</p>
+</div>
+{% else %}
+<div class="watched-list">
+	<p class="watch">watch of:</p>
+	<ul class="list-with-punctuation list-with-reduced-spacing">
+		{% for watched in page.extra.watch_of %}
+		<li class="u-watch-of h-cite">
+			<a class="u-url" href="{{ watched.url }}">
+				{% if watched.name %}<cite class="p-name">{{ watched.name }}</cite>
+				{%- else %}{{ watched.url }}
+				{%- endif -%}
+			</a>
+			{% if watched.author %}
+			by
+			<span class="p-author h-card">
+				{% if watched.author.url%}
+				<a class="u-url p-name" href="{{ watched.author.url }}">{{ watched.author.name }}</a>
+				{% else %}
+				<span class="p-name">{{ watched.author.name }}</span>
+				{%- endif -%}
+			</span>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
+{% endif %}
