@@ -46,7 +46,7 @@ links = [
 imood_username = "thatoddshade"
 mastodon_username = "@thatoddshade@mastodon.art"
 
-photo = "/images/photo.png"
+photo = "/images/photo.svg"
 
 # appended between a `page.title` and `config.title`
 title_separator = " \\ "
