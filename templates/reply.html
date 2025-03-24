@@ -1,4 +1,27 @@
 {% if page.extra.in_reply_to %}
+{% if page.extra.in_reply_to is object%}
+{% set replied_to = page.extra.in_reply_to %}
+<div class="u-in-reply-to h-cite">
+	<p class="reply">in reply to
+		<a class="u-url" href="{{ replied_to.url }}">
+			{% if replied_to.name %}<span class="p-name">{{ replied_to.name }}</span>{% else %}{{ replied_to.url }}{% endif %}</a>
+		{% if replied_to.author %}
+		by
+		<span class="p-author h-card">
+			{% if replied_to.author.url%}
+			<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.in_reply_to.author.name }}</a>
+			{% else %}
+			<span class="p-name">{{ replied_to.author.name }}</span>
+			{%- endif -%}
+		</span>
+		{% endif %}
+		{%- if replied_to.content %}:
+		<blockquote>
+			{{ replied_to.content | markdown | safe }}
+		</blockquote>
+		{% endif %}
+</div>
+{% else %}
 <div class="replied-to-list">
 	<p class="reply">in reply to:</p>
 	<ul class="list-with-punctuation list-with-reduced-spacing">
@@ -12,7 +35,7 @@
 			by
 			<span class="p-author h-card">
 				{% if replied_to.author.url%}
-				<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.repost_of.author.name }}</a>
+				<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.in_reply_to.author.name }}</a>
 				{% else %}
 				<span class="p-name">{{ replied_to.author.name }}</span>
 				{%- endif -%}
@@ -27,4 +50,5 @@
 		{% endfor %}
 	</ul>
 </div>
+{% endif %}
 {% endif %}
