@@ -19,18 +19,18 @@
 	
 	{% if section.pages %}	
 	{% for page in section.pages %}
-	<article class="h-entry">
+	<article class="post h-entry">
 		<hgroup>
-			<p><a class="u-url" href="{{ page.permalink }}">
+			<h1 class="time"><a class="u-url" href="{{ page.permalink }}">
 				{% include "publication_date.html" %}
-			</a></p>
+			</a></h1>
 			
 			{% include "summary.html" %}
 
 			{% if page.title %}
-			<h1 class="p-name"><a href="{{ page.permalink }}">
+			<p class="p-name"><a href="{{ page.permalink }}">
 				{{ page.title }}
-			</a></h1>
+			</a></p>
 			{% endif %}
 		</hgroup>
 

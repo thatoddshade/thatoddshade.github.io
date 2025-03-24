@@ -13,7 +13,7 @@
 
 {% block content %}
 <main id="maincontent"
-	class="h-entry"
+	class="post h-entry"
 
 	{% if page.extra.lang %}
 	lang="{{ page.extra.lang }}"
@@ -47,21 +47,16 @@
 	
 	<hgroup>
 		{% if page.date or page.updated %}
-		<p>
+		<p class="time">
 			{% if page.date %}
 			<span>
 				{% include "publication_date.html" %}
 			</span>
 			{% endif %}
 
-			{% if page.date and page.updated %}
-			<br />
-			{% endif %}
-
 			{% if page.updated %}
 			<span>
-				<abbr title="this page was last updated on the">u</abbr>:
-				<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
+				*<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
 			</span>
 			{% endif %}
 		</p>

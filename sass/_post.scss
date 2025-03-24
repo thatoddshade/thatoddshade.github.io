@@ -1,0 +1,10 @@
+.post > hgroup {
+	.time {
+		font-size: 1em;
+		font-weight: bold;
+
+		:has(.dt-updated) {
+			float: inline-end;
+		}
+	}
+}
