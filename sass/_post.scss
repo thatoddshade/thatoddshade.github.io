@@ -3,7 +3,7 @@
 		font-size: 1em;
 		font-weight: bold;
 
-		:has(.dt-updated) {
+		.updated {
 			float: inline-end;
 		}
 	}

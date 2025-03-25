@@ -48,17 +48,7 @@
 	<hgroup>
 		{% if page.date or page.updated %}
 		<p class="time">
-			{% if page.date %}
-			<span>
-				{% include "publication_date.html" %}
-			</span>
-			{% endif %}
-
-			{% if page.updated %}
-			<span>
-				*<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%dT%T%Z") }}</time>
-			</span>
-			{% endif %}
+			{% include "page_date.html" %}
 		</p>
 		{% endif %}
 
