@@ -36,6 +36,13 @@
 
 #pronouns {
 	text-align-last: justify;
+
+	li::after {
+		content: "/";
+	}
+	> li:last-of-type::after {
+		content: "";
+	}
 }
 
 #imood {
@@ -45,21 +52,26 @@
 	}
 }
 
-#header-navigation > ul {
+#pronouns, #header-navigation > ul {
 	margin: 0;
 	padding: 0;
 
 	> li {
 		list-style-type: none;
 		display: inline flow-root;
-		margin-inline-end: 0.5em;
 	}
+}
 
-	> li[aria-current="page"] > a {
-		text-decoration: none;
+#header-navigation > ul {
+	> li {
+		margin-inline-end: 1ch;
 	}
-
 	> li:last-of-type {
 		margin-inline-end: 0;
 	}
+	> li[aria-current="page"] > a {
+		text-decoration: none;
+	}
 }
+
+

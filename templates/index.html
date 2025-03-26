@@ -76,20 +76,20 @@
 				<p><a class="u-uid u-url p-name p-nickname" href="/">{{ config.title }}</a></p>
 			</div>
 
-			<p id="pronouns">
-				<a
-					class="u-pronoun"
-					href="https://en.wiktionary.org/wiki/he#Pronoun"
-					hreflang="en"
-					lang="en"
-				>he</a> 
-				<a
-					class="u-pronoun"
-					href="https://fr.wiktionary.org/wiki/il#Pronom_personnel"
-					hreflang="fr"
-					lang="fr"
-				>il</a>
-			</p>
+			<ul id="pronouns">
+				<li>
+					<a class="u-pronoun" href="https://en.wiktionary.org/wiki/he#Pronoun" hreflang="en" lang="en" >he</a>
+				</li>
+				<li>
+					<a class="u-pronoun" href="https://en.wiktionary.org/wiki/they#Pronoun" hreflang="en" lang="en">they</a>
+				</li>
+				<li>
+					<a class="u-pronoun" href="https://en.wiktionary.org/wiki/it#Pronoun" hreflang="en" lang="en">it</a>
+				</li>
+				<li>
+					<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" lang="fr">il</a>
+				</li>
+			</ul>
 
 			<p>
 				<span class="dt-bday">born on <time class="value" datetime="--05-26">a 26th of May</time></span>,
@@ -160,13 +160,7 @@
 						<a
 							href="{{ get_url(path=link.href) }}"
 						>
-							{% if is_current_page == true %}
-							<abbr title="current page">
-							{% endif %}
-								{{ link.title }}
-							{% if is_current_page == true %}
-							</abbr>
-							{% endif %}
+							{{ link.title }}
 						</a>
 					</li>
 					{% endfor %}
