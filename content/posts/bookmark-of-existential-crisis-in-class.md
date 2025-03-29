@@ -1,7 +1,8 @@
 +++
 date = 2025-03-11T19:44:00+01:00
+aliases = ["posts/like-of-existential-crisis-in-class"]
 
-[extra.like_of]
+[extra.bookmark_of]
 url = "https://www.youtube.com/watch?v=NESBtODxNVA"
 name = "Existential Crisis in Class"
 +++
