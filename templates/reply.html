@@ -27,7 +27,7 @@
 			by
 			<span class="p-author h-card">
 				{% if replied_to.author.url%}
-				<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.repost_of.author.name }}</a>
+				<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.in_reply_to.author.name }}</a>
 				{% else %}
 				<span class="p-name">{{ replied_to.author.name }}</span>
 				{%- endif -%}

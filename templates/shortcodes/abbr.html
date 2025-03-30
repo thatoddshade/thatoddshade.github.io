@@ -2,8 +2,4 @@
 	{% if title %}
 	title="{{ title }}"
 	{% endif %}
->
-	{% if body %}{{ body | safe }}
-	{% else %}{{ base | safe }}
-	{% endif %}
-</abbr>
+>{{ body | safe}}</abbr>

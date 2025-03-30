@@ -6,11 +6,17 @@ body > main {
 	article {
 		border-block-start: 2px solid currentcolor;
 		padding-block: 0.25em;
-	
-		h1 {
-			font-size: 1.5em;
-			> a {
-				text-decoration: none;
+
+		> hgroup {
+			p.p-name {
+				font-size: 1.5em;
+				font-weight: bold;
+			}
+
+			p.p-name, h1:has(time) {
+				> a {
+					text-decoration: none;
+				}
 			}
 		}
 	

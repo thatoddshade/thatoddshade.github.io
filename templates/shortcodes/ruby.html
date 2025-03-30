@@ -1,1 +1,1 @@
-<ruby>{{ base }} <rp>(</rp><rt>{{ text }}</rt><rp>)</rp></ruby>
+<ruby>{{ body | default(value=base | safe ) }} <rp>(</rp><rt>{{ text }}</rt><rp>)</rp></ruby>

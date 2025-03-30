@@ -4,6 +4,8 @@ updated = 2025-03-23T17:39:00Z
 
 description = "some aimless writing"
 title = "„hello, world.“"
+
+aliases = ["blog/hello-world"]
 +++
 
 it was thirty two minutes after a midnight when I started typing this line;
