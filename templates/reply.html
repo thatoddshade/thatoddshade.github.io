@@ -1,17 +1,25 @@
 {% if page.extra.in_reply_to %}
 {% if page.extra.in_reply_to is object %}
 {% set replied_to = page.extra.in_reply_to %}
-<div class="in-reply-to h-cite">
+<div class="u-in-reply-to h-cite">
 	<p class="reply">in reply to
-	<a class="u-url" href="{{ replied_to.url }}">{{ '<span class="p-name">' ~ replied_to.name ~ '</span>' | default(value=replied_to.url)}}</a>
+		<a class="u-url" href="{{ replied_to.url }}">
+			{% if replied_to.name %}<span class="p-name">{{ replied_to.name }}</span>{% else %}{{ replied_to.url }}{% endif %}</a>
 		{% if replied_to.author %}
-		by 
+		by
 		<span class="p-author h-card">
 			{% if replied_to.author.url%}
-			<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ replied_to.author.name }}</a>
-			{%- else %}<span class="p-name">{{ replied_to.author.name }}</span>{% endif %}</span>{% endif %}{% if replied_to.content %}:<blockquote>{{ replied_to.content | markdown | safe }}</blockquote>
-		{%- else %}.{% endif %}
-	</p>
+			<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ page.extra.in_reply_to.author.name }}</a>
+			{% else %}
+			<span class="p-name">{{ replied_to.author.name }}</span>
+			{%- endif -%}
+		</span>
+		{% endif %}
+		{%- if replied_to.content %}:
+		<blockquote>
+			{{ replied_to.content | markdown | safe }}
+		</blockquote>
+		{% endif %}
 </div>
 {% else %}
 <div class="replied-to-list">
