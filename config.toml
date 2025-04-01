@@ -20,6 +20,8 @@ homepage_links = [
 	{ title = "slipbox", href = "@/slipbox/_index.md" },
 	{ title = "posts", href = "@/posts/_index.md" },
 	{ title = "blogroll", href = "@/blogroll.md" },
+	{ title = "people", href = "@/people.md" },
+	{ title = "uses", href = "@/uses.md" },
 	{ title = "colophon", href = "@/colophon.md" },
 	{ title = "about", href = "@/about.md" },
 ]
