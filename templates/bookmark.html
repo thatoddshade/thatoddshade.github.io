@@ -1,0 +1,51 @@
+{% if page.extra.bookmark_of %}
+{% if page.extra.bookmark_of is object %}
+{% set bookmarked = page.extra.bookmark_of %}
+<div class="u-bookmark-of h-cite">
+	<p class="bookmark">bookmark of 
+		<a class="u-url" href="{{ bookmarked.url }}">
+			{% if bookmarked.name %}<span class="p-name">{{ bookmarked.name }}</span>
+			{%- else %}{{ bookmarked.url }}
+			{%- endif -%}
+		</a>
+		{% if bookmarked.author %}
+		by
+		<span class="p-author h-card">
+			{% if bookmarked.author.url%}
+			<a class="u-url p-name" href="{{ bookmarked.author.url }}">{{ bookmarked.author.name }}</a>
+			{% else %}<span class="p-name">{{ bookmarked.author.name }}</span>{% endif %}</span>{% endif %}{% if bookmarked.content %}:<blockquote>{{ bookmarked.content | markdown | safe }}</blockquote></div>{% else %}.
+		{% endif %}
+	</p>
+</div>
+{% else %}
+<div class="bookmarked-list">
+	<p class="bookmark">bookmark of:</p>
+	<ul class="list-with-punctuation list-with-reduced-spacing">
+		{% for bookmarked in page.extra.bookmark_of %}
+		<li class="u-bookmark-of h-cite">
+			<a class="u-url" href="{{ bookmarked.url }}">
+				{% if bookmarked.name %}<span class="p-name">{{ bookmarked.name }}</span>
+				{%- else %}{{ bookmarked.url }}
+				{%- endif -%}
+			</a>
+			{% if bookmarked.author %}
+			by
+			<span class="p-author h-card">
+				{% if bookmarked.author.url%}
+				<a class="u-url p-name" href="{{ bookmarked.author.url }}">{{ bookmarked.author.name }}</a>
+				{% else %}
+				<span class="p-name">{{ bookmarked.author.name }}</span>
+				{%- endif -%}
+			</span>
+			{% endif %}
+			{%- if bookmarked.content %}:
+			<blockquote>
+				{{ bookmarked.content | markdown | safe }}
+			</blockquote>
+			{% endif %}
+		</li>
+		{% endfor %}
+	</ul>
+</div>
+{% endif %}
+{% endif %}

@@ -1,7 +1,7 @@
 +++
 date = 2025-03-09T22:53:00+01:00
 
-[[extra.like_of]]
+[extra.like_of]
 url = "https://school.marigold.town/"
 name = "MARIGOLD FREE SCHOOL"
 

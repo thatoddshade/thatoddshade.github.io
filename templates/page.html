@@ -1,10 +1,11 @@
 {% extends "index.html" %}
 
 {% block title %}
-{% if page.title %}{{ page.title }}
-{% elif page.extra.like_of %}like of {% if page.extra.like_of[0].name %}{{ page.extra.like_of[0].name }}{% else %}{{ page.extra.like_of[0].url }}{% endif %}
-{% else %}{{ page.content | striptags | truncate(length=32)}}
-{% endif %}
+{%- if page.title -%}{{ page.title }}
+{%- elif page.extra.like_of -%}like of {% include "liked_title.html" %}
+{%- elif page.extra.repost_of -%}repost of {% include "reposted_title.html" %}
+{%- else -%}{{ page.content | striptags | truncate(length=32)}}
+{%- endif -%}
 {{ config.extra.title_separator }}{{ config.title }}
 {% endblock title %}
 
@@ -12,7 +13,7 @@
 
 {% block content %}
 <main id="maincontent"
-	class="h-entry"
+	class="post h-entry"
 
 	{% if page.extra.lang %}
 	lang="{{ page.extra.lang }}"
@@ -36,9 +37,9 @@
 		{% for link in config.extra.links %}
 		<link
 			class="u-url"
-			title="{{ link.title }}"
-			href="{{ link.href }}"
-			{% if link.hreflang %}hreflang="{{ link.hreflang }}"{% endif %}
+			title="{{ link.name }}"
+			href="{{ link.url }}"
+			{% if link.lang %}hreflang="{{ link.lang }}"{% endif %}
 		/>
 		{% endfor %}
 		{% endif %}
@@ -46,27 +47,11 @@
 	
 	<hgroup>
 		{% if page.date or page.updated %}
-		<p>
-			{% if page.date %}
-			published on the
-			<time class="dt-published">
-				{{ page.date | date(format="%Y-%m-%d") }}
-			</time>
-			{% endif %}
-
-			{% if page.date and page.updated %}
-			<br />
-			{% endif %}
-
-			{% if page.updated %}
-			updated on the
-			<time class="dt-updated">{{ page.updated | date(format="%Y-%m-%d") }}</time>
-			{% endif %}
+		<p class="time">
+			{% include "page_date.html" %}
 		</p>
 		{% endif %}
 
-		{% include "like.html" %}
-		{% include "reply.html" %}
 		{% include "summary.html" %}
 
 		{% if page.title %}	
@@ -75,15 +60,13 @@
 		</h1>
 		{% endif %}	
 
-		{# list the websites supported by brid.gy #}
+		{# list of the websites supported by brid.gy #}
 		{% for website in ["bluesky", "flickr", "github", "mastodon"]%}	
 		{% if page.extra.publish_on[website] %}
 		<a href="https://brid.gy/publish/{{ website }}"></a>
 		{% endif %}
 		{% endfor %}
 	</hgroup>
-
-	{% include "repost.html" %}
 
 	<div class="e-content">{{ page.content | safe }}</div>
 
@@ -99,8 +82,8 @@
 			<li>
 				<a
 					class="u-syndication"
-					href="{{ syndication.href }}"
-				>{{ syndication.title }}</a>
+					href="{{ syndication.url }}"
+				>{{ syndication.name }}</a>
 			</li>
 			{% endfor %}
 		</ul>

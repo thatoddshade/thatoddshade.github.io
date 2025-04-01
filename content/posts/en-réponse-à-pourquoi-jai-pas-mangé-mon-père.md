@@ -5,8 +5,8 @@ date = 2025-02-27T22:26:00Z
 lang = "fr"
 
 [[extra.syndication]]
-title = "YouTube"
-href = "https://www.youtube.com/watch?v=VONOXnAAEaI&lc=UgyuquJvqHZbbPApnnh4AaABAg"
+name = "YouTube"
+url = "https://www.youtube.com/watch?v=VONOXnAAEaI&lc=UgyuquJvqHZbbPApnnh4AaABAg"
 
 [[extra.in_reply_to]]
 url = "https://www.youtube.com/watch?v=VONOXnAAEaI"

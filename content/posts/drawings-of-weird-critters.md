@@ -4,7 +4,7 @@ updated = 2025-02-23
 
 [extra]
 syndication = [
-    { title = "Mastodon", href="https://mastodon.art/@thatoddshade/114009098260189546" }
+    { name = "Mastodon", url="https://mastodon.art/@thatoddshade/114009098260189546" }
 ]
 +++
 

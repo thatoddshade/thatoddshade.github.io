@@ -1,12 +1,51 @@
 {% if page.extra.like_of %}
+{% if page.extra.like_of is object %}
+{% set liked = page.extra.like_of %}
+<div class="u-like-of h-cite">
+	<p class="like">like of 
+		<a class="u-url" href="{{ liked.url }}">
+			{% if liked.name %}<span class="p-name">{{ liked.name }}</span>
+			{%- else %}{{ liked.url }}
+			{%- endif -%}
+		</a>
+		{% if liked.author %}
+		by
+		<span class="p-author h-card">
+			{% if liked.author.url%}
+			<a class="u-url p-name" href="{{ liked.author.url }}">{{ liked.author.name }}</a>
+			{%- else %}<span class="p-name">{{ liked.author.name }}</span>{% endif %}</span>{% endif %}{% if liked.content %}:<blockquote>{{ liked.content | markdown | safe }}</blockquote></div>{% else %}.
+		{% endif %}
+	</p>
+</div>
+{% else %}
 <div class="liked-list">
-	<p>like of:</p>
+	<p class="like">like of:</p>
 	<ul class="list-with-punctuation list-with-reduced-spacing">
 		{% for liked in page.extra.like_of %}
-		<li>
-			<a class="u-like-of" href="{{ liked.url }}">{% if liked.name %}{{ liked.name }}{% else %}{{ liked.url }}{% endif %}</a>
+		<li class="u-like-of h-cite">
+			<a class="u-url" href="{{ liked.url }}">
+				{% if liked.name %}<span class="p-name">{{ liked.name }}</span>
+				{%- else %}{{ liked.url }}
+				{%- endif -%}
+			</a>
+			{% if liked.author %}
+			by
+			<span class="p-author h-card">
+				{% if liked.author.url%}
+				<a class="u-url p-name" href="{{ liked.author.url }}">{{ liked.author.name }}</a>
+				{% else %}
+				<span class="p-name">{{ liked.author.name }}</span>
+				{%- endif -%}
+			</span>
+			{% endif %}
+			{%- if liked.content %}:
+			<blockquote>
+				{{ liked.content | markdown | safe }}
+			</blockquote>
+			{% endif %}
 		</li>
 		{% endfor %}
 	</ul>
 </div>
+{% endif %}
 {% endif %}

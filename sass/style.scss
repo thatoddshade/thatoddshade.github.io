@@ -5,6 +5,8 @@
 @use "sidebar";
 @use "space";
 @use "footer";
+@use "actions";
+@use "post";
 
 /* this is here because, by default, an `h1`'s font size is set to `1.5em` if it is in an `article`, an `aside`, a `nav` or a `section`. source is <https://stackoverflow.com/questions/26290849/why-is-size-of-h1-different-inside-a-section-element>. */
 h1 {
@@ -96,9 +98,11 @@ rt {
 	font-size: 0.75em;
 }
 
-#syndication > p,
+.bookmarked-list > p,
 .liked-list > p,
 .replied-to-list > p,
+.replied-to-list > p,
+#syndication > p,
 {
 	margin-block-end: 0;
 }
@@ -132,4 +136,8 @@ make it so that the list items look like this:
 
 .pixelated {
 	image-rendering: pixelated;
+}
+
+ul > li {
+	list-style-type: "– ";
 }

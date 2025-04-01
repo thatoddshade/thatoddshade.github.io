@@ -8,7 +8,7 @@ aliases = ["fr", "en"]
 
 {{ image(alt="take a chill pill", src="/images/buttons/chill_pill.gif", class="pixelated") }}
 {{ image(alt="CLIQUER ICI", src="/images/buttons/cliquer_ici.gif", class="pixelated") }}
-{{ image(alt="Google Chrome IS EVIL!", src="/images/buttons/google_chrome_is_evil.gif", class="pixelated") }}
+{{ image(alt="Google Chrome IS EVIL!", src="/images/buttons/chrome/is_evil.gif", class="pixelated") }}
 {{ image(alt="Internet Explorer IS EVIL!", src="/images/buttons/internet_explorer/is_evil.gif", class="pixelated") }}
 {{ image(alt="Site Best Viewed With A Computer Monitor", src="/images/buttons/best_viewed_with_a_computer_monitor.gif", class="pixelated") }}
 

@@ -19,29 +19,29 @@
 	
 	{% if section.pages %}	
 	{% for page in section.pages %}
-	<article class="h-entry">
+	<article class="post h-entry">
 		<hgroup>
-			<p><a class="u-url dt-published" href="{{ page.permalink }}">
-				{{ page.date }}
-			</a></p>
-
-			{% include "like.html" %}
-			{% include "reply.html" %}
+			<h1 class="time"><a class="u-url" href="{{ page.permalink }}">
+				{% include "page_date.html" %}
+			</a></h1>
+			
 			{% include "summary.html" %}
 
 			{% if page.title %}
-			<h1 class="p-name"><a href="{{ page.permalink }}">
+			<p class="p-name"><a href="{{ page.permalink }}">
 				{{ page.title }}
-			</a></h1>
+			</a></p>
 			{% endif %}
 		</hgroup>
 
-		{% include "repost.html" %}
 
 		{# zola's `page.summary` corresponds to all the content before `<!-- more -->`. #}
 		{# it is not to be confused with the `p-summary` microformat, which I set to zola's `page.description`. #}
 		{% if page.summary %}
-		<div>{{ page.summary | safe }}</div>
+		<div>
+			{{ page.summary | safe }}
+			<p>…</p>
+		</div>
 		{% endif %}
 	</article>
 	{% endfor %}

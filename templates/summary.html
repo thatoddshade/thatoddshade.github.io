@@ -1,5 +1,8 @@
-{% if page.description %}
-<p class="p-summary">
-	{{ page.description | markdown | safe }}
-</p>
-{% endif %}
+<div class="p-summary">
+	{% include "bookmark.html" -%}
+	{% include "like.html" -%}
+	{% include "reply.html" -%}
+	{% include "repost.html" -%}
+	{% include "description.html" -%}
+	{% include "watch.html" -%}
+</div>
