@@ -1,6 +1,6 @@
 +++
-draft = true
-title = "software used by me"
+title = "uses"
+description = "a list of tools that I use"
 date = 2025-02-15
 +++
 
