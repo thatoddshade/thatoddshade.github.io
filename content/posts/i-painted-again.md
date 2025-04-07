@@ -1,6 +1,9 @@
 +++
 date = 2025-04-04T20:38:00+02:00
 updated = "2025-04-07T14:21:00+02:00"
+
+[extra.publish_on]
+mastodon = true
 +++
 
 I painted again.
