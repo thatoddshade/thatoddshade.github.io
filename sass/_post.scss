@@ -1,10 +1,16 @@
-.post > hgroup {
-	.time {
-		font-size: 1em;
-		font-weight: bold;
-
-		.updated {
-			float: inline-end;
+.post {
+	> hgroup {
+		.time {
+			font-size: 1em;
+			font-weight: bold;
+	
+			.updated {
+				float: inline-end;
+			}
 		}
+	}
+
+	img {
+		max-block-size: 100vb;
 	}
 }
