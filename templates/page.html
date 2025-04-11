@@ -80,10 +80,10 @@
 		<ul class="list-with-punctuation list-with-reduced-spacing">
 			{% for syndication in page.extra.syndication %}
 			<li>
-				<a
+				{% if syndication.url %}<a
 					class="u-syndication"
 					href="{{ syndication.url }}"
-				>{{ syndication.name }}</a>
+					>{% endif %}{{ syndication.name }}{% if syndication.url %}</a>{% endif %}
 			</li>
 			{% endfor %}
 		</ul>
