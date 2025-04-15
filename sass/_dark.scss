@@ -1,47 +1,47 @@
 @use "sass:color";
 
-$foreground-dark: #cecdc3;
-$background-dark: #000000;
-$secondary-dark: #878580;
-$tertiary-dark: #282726;
-$accent-dark: #3aa99f;
+$foreground: #cecdc3;
+$background: #000000;
+$secondary: #878580;
+$tertiary: #282726;
+$accent: #3aa99f;
 
 @mixin dark-theme {
-	color: $foreground-dark;
-	background-color: $background-dark;
+	color: $foreground;
+	background-color: $background;
 
 	> header, > main {
-		background-color: $background-dark;
+		background-color: $background;
 	}
 
 	main {
-		border: 4px solid $foreground-dark;
+		border: 4px solid $foreground;
 		/* this is where the `light-theme` mixin has `box-shadow`. */
 	}
 
 	.secondary {
-		color: $secondary-dark;
+		color: $secondary;
 	}
 
 	a {
-		color: $foreground-dark;
+		color: $foreground;
 		text-decoration: underline;
 	}
 
 	a:hover {
-		color: $accent-dark;
+		color: $accent;
 	}
 
 	a:focus, ::selection {
-		background-color: color.scale($accent-dark, $alpha: -75%);
+		background-color: color.scale($accent, $alpha: -75%);
 	}
 
 	blockquote {
-		border-inline-start: 2px solid $secondary-dark;
+		border-inline-start: 2px solid $secondary;
 	}
 
 	code {
-		background-color: $tertiary-dark;
+		background-color: $tertiary;
 	}
 
 	.invert {
@@ -55,14 +55,14 @@ $accent-dark: #3aa99f;
 	.footnote-reference {
 		> a {
 			padding-inline: 0.25ch;
-			color: $background-dark;
-			background-color: $foreground-dark;
+			color: $background;
+			background-color: $foreground;
 
 			text-decoration: none;
 		}
 
 		> a:hover {
-			background-color: $accent-dark;
+			background-color: $accent;
 		}
 	}
 
@@ -77,11 +77,11 @@ $accent-dark: #3aa99f;
 
 	/*table {
 		th, td {
-			border-color: $tertiary-dark;
+			border-color: $tertiary;
 		}
 
 		thead, tr:nth-child(even) {
-			background-color: darken($tertiary-dark, 15%);
+			background-color: darken($tertiary, 15%);
 		}
 	}*/
 }
