@@ -9,18 +9,18 @@
 
 {% block content %}
 <main class="h-feed" id="maincontent">
-	<hgroup>
+	<header>
 		<h1 class="p-name">{{ section.title }}</h1>
 
 		{% if section.description%}
 		<p class="p-summary">{{ section.description | safe }}</p>
 		{% endif %}
-	</hgroup>
+	</header>
 	
 	{% if section.pages %}	
 	{% for page in section.pages %}
 	<article class="post h-entry">
-		<hgroup>
+		<header>
 			<h1 class="time"><a class="u-url" href="{{ page.permalink }}">
 				{% include "page_date.html" %}
 			</a></h1>
@@ -32,7 +32,7 @@
 				{{ page.title }}
 			</a></p>
 			{% endif %}
-		</hgroup>
+		</header>
 
 
 		{# zola's `page.summary` corresponds to all the content before `<!-- more -->`. #}
