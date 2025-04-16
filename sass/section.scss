@@ -7,16 +7,13 @@ body > main {
 		border-block-start: 2px solid currentcolor;
 		padding-block: 0.25em;
 
-		> hgroup {
-			p.p-name {
-				font-size: 1.5em;
-				font-weight: bold;
+		> header {
+			.time > a {
+				text-decoration: none;
 			}
 
-			p.p-name, h1:has(time) {
-				> a {
-					text-decoration: none;
-				}
+			h1 > a {
+				text-decoration: none;
 			}
 		}
 	

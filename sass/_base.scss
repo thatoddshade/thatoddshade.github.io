@@ -15,8 +15,8 @@ body {
 	}
 
 	> main {
-		border-radius: 16px;
-		padding: 4px;
+		border-radius: settings.$border-radius;
+		padding: settings.$padding;
 	}
 }
 

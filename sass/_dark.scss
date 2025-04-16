@@ -45,7 +45,7 @@ $accent: #3aa99f;
 	}
 
 	.invert {
-		filter: invert(1);
+		filter: invert(1) hue-rotate(180deg);
 	}
 
 	pre code {
