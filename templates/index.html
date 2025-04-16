@@ -73,7 +73,7 @@
 					src="{{ config.extra.photo }}"
 					alt="a vector illustration depicting a green hood worn by a creature of darkness"
 				/>
-				<p><a class="u-uid u-url p-name p-nickname" href="/">{{ config.title }}</a></p>
+				<h1><a class="u-uid u-url p-name p-nickname" href="/">{{ config.title }}</a></h1>
 			</div>
 
 			<ul id="pronouns">
@@ -172,11 +172,31 @@
 	{% endblock header %}
 
 	{% block content %}
-	{% if section.content %}
+	<style>
+		#maincontent {
+			text-align: center;
+			padding-block-end: 0;
+			overflow: hidden;
+		}
+
+		#leaves {
+			display: block;
+			padding-block-start: 16px;
+			block-size: 128px;
+			background-image: url("/images/leaves.avif");
+			background-size: contain;
+			background-repeat: repeat-x;
+			background-size: auto 128px;
+			background-position-y: bottom;
+			margin-inline: -4px;
+		}
+	</style>
 	<main id="maincontent">
+		{% if section.content %}
 		{{ section.content | safe }}
+		{% endif %}
+		<div class="invert "id="leaves"></div>
 	</main>
-	{% endif %}
 	{% endblock content %}
 
 	{% block brainmade %}

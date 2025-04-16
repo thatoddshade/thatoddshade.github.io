@@ -21,16 +21,16 @@
 	{% for page in section.pages %}
 	<article class="post h-entry">
 		<header>
-			<h1 class="time"><a class="u-url" href="{{ page.permalink }}">
+			<p class="time"><a class="u-url" href="{{ page.permalink }}">
 				{% include "page_date.html" %}
-			</a></h1>
+			</a></p>
 			
 			{% include "summary.html" %}
 
 			{% if page.title %}
-			<p class="p-name"><a href="{{ page.permalink }}">
+			<h1 class="p-name"><a href="{{ page.permalink }}">
 				{{ page.title }}
-			</a></p>
+			</a></h1>
 			{% endif %}
 		</header>
 
