@@ -35,3 +35,4 @@ aliases = ["fr", "en"]
 <a href="https://clownfred.zone/">{{ image(alt="Clownfred Zone", src="/images/buttons/clownfredzone.gif", class="pixelated")}}</a>
 <a href="https://tauon.dev/">{{ image(src="https://tauon.dev/images/88x31/lily.png", alt="lily :3", class="pixelated", width="88", height="31") }}</a>
 <a href="https://pancakes.gay/">{{ image(src="/images/buttons/pancakes.png", alt="pancakes", class="pixelated", width="88", height="31") }}</a>
+<a href="https://fauux.neocities.org/">{{ image(src="/images/buttons/fauux.gif", alt="fauux", class="pixelated", width="88", height="31") }}</a>
