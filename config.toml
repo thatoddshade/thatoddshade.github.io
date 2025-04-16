@@ -44,6 +44,7 @@ links = [
 	{ name = "Wikipedia (en)", url = "https://en.wikipedia.org/wiki/User:Thatoddshade", lang = "en" },
 	{ name = "tumblr", url = "https://www.tumblr.com/blog/thatoddshade" },
 	{ name = "last.fm", url = "https://www.last.fm/user/thatoddshade" },
+	{ name = "doevery.day", url = "https://doevery.day/thatoddshade", lang = "en"},
 ]
 
 imood_username = "thatoddshade"
