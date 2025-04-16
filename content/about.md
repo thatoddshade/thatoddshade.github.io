@@ -16,6 +16,11 @@ it is and always has been stored in [a publicly available GitHub repository](htt
 
 ## me
 
+<picture class="floating-on-line-end">
+<source srcset="/images/greeting.avif" type="image/avif" />
+{{ image(src="/images/greeting.png", height="315", alt="a watercolour mini-painting of me greeting by waving a hand") }}
+</picture>
+
 I:
 - often draw.
 - conlang[^conlang].
@@ -31,27 +36,27 @@ I:
 
 ### somewhat related blinkies, buttons and stamps {#badges}
 
-{{ photo(alt="I am European.", src="/images/blinkies/nationalities/european.png", class="pixelated") }}
-{{ photo(alt="French is my native language.", src="/images/blinkies/languages/french.png", class="pixelated") }}
-{{ photo(alt="English is my second language.", src="/images/blinkies/languages/english_second_language.png", class="pixelated") }}
-{{ photo(alt="I like webcore.", src="/images/blinkies/aesthetics/webcore.png", class="pixelated") }}
-{{ photo(alt="I like weirdcore.", src="/images/blinkies/aesthetics/weirdcore.png", class="pixelated") }}
-{{ photo(alt="I prefer being referred to with the „he/him“ pronouns.", src="/images/blinkies/he_slash_him.png", class="pixelated") }}
-{{ photo(alt="I am right-handed.", src="/images/blinkies/righthanded.png", class="pixelated") }} \
-{{ photo(alt="I support drawing in class", src="/images/blinkies/in_class_drawing_support.gif", class="pixelated") }}
-{{ photo(alt="I love RADIOHEAD.", src="/images/blinkies/radiohead.gif", class="pixelated") }}
+{{ image(alt="I am European.", src="/images/blinkies/nationalities/european.png", class="pixelated") }}
+{{ image(alt="French is my native language.", src="/images/blinkies/languages/french.png", class="pixelated") }}
+{{ image(alt="English is my second language.", src="/images/blinkies/languages/english_second_language.png", class="pixelated") }}
+{{ image(alt="I like webcore.", src="/images/blinkies/aesthetics/webcore.png", class="pixelated") }}
+{{ image(alt="I like weirdcore.", src="/images/blinkies/aesthetics/weirdcore.png", class="pixelated") }}
+{{ image(alt="I prefer being referred to with the „he/him“ pronouns.", src="/images/blinkies/he_slash_him.png", class="pixelated") }}
+{{ image(alt="I am right-handed.", src="/images/blinkies/righthanded.png", class="pixelated") }} \
+{{ image(alt="I support drawing in class", src="/images/blinkies/in_class_drawing_support.gif", class="pixelated") }}
+{{ image(alt="I love RADIOHEAD.", src="/images/blinkies/radiohead.gif", class="pixelated") }}
 
-{{ photo(alt="I love NEKOJIRU.", src="/images/buttons/nekojiru.gif", class="pixelated") }}
-{{ photo(alt="MSIE Makes me sick!", src="/images/buttons/internet_explorer/makes_me_sick.gif", class="pixelated") }}
-{{ photo(alt="I use HE/HIM", src="/images/buttons/i_use_he_slash_him.gif", class="pixelated") }}
-{{ photo(alt="I AM CONFUSED BUT THAT'S FINE.", src="/images/buttons/i_am_confused_but_thats_fine.gif", class="pixelated") }}
-{{ photo(alt="a written manifestation of the confusion that is mentioned by the previous button's label", src="/images/buttons/what.gif", class="pixelated") }}
+{{ image(alt="I love NEKOJIRU.", src="/images/buttons/nekojiru.gif", class="pixelated") }}
+{{ image(alt="MSIE Makes me sick!", src="/images/buttons/internet_explorer/makes_me_sick.gif", class="pixelated") }}
+{{ image(alt="I use HE/HIM", src="/images/buttons/i_use_he_slash_him.gif", class="pixelated") }}
+{{ image(alt="I AM CONFUSED BUT THAT'S FINE.", src="/images/buttons/i_am_confused_but_thats_fine.gif", class="pixelated") }}
+{{ image(alt="a written manifestation of the confusion that is mentioned by the previous button's label", src="/images/buttons/what.gif", class="pixelated") }}
 
-{{ photo(alt="I support Randomness!", src="/images/stamps/randomness_support.jpg", class="pixelated") }}
-{{ photo(alt="I LOVE STAMPS!", src="/images/stamps/stamp_love.gif", class="pixelated") }}
-{{ photo(alt="I WISH I COULD BEAT MY YOUNGER SELF WITH A LEAD PIPE.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
-{{ photo(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
-{{ photo(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ photo(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
-{{ photo(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ photo(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
+{{ image(alt="I support Randomness!", src="/images/stamps/randomness_support.jpg", class="pixelated") }}
+{{ image(alt="I LOVE STAMPS!", src="/images/stamps/stamp_love.gif", class="pixelated") }}
+{{ image(alt="I WISH I COULD BEAT MY YOUNGER SELF WITH A LEAD PIPE.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
+{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
+{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
+{{ image(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
+{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
+{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
