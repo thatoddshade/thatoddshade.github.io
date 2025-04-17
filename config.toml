@@ -46,6 +46,7 @@ links = [
 	{ name = "last.fm", url = "https://www.last.fm/user/thatoddshade" },
 	{ name = "doevery.day", url = "https://doevery.day/thatoddshade", lang = "en"},
 	{ name = "INTERNET ARCHIVE", url = "https://archive.org/details/@thatoddshade", lang = "en" },
+	{ name = "POSTCROSSING", url = "https://www.postcrossing.com/user/thatoddshade" },
 ]
 
 imood_username = "thatoddshade"
