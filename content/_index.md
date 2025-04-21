@@ -37,3 +37,4 @@ aliases = ["fr", "en"]
 <a href="https://pancakes.gay/">{{ image(src="/images/buttons/pancakes.png", alt="pancakes", class="pixelated", width="88", height="31") }}</a>
 <a href="https://fauux.neocities.org/">{{ image(src="/images/buttons/fauux.gif", alt="fauux", class="pixelated", width="88", height="31") }}</a>
 <a href="https://ribo.zone/">{{ image(src="/images/buttons/ribose.png", alt="ribose", class="pixelated", width="88", height="31") }}</a>
+<a href="https://sixey.es/">{{ image(src="/images/buttons/six_eyes.gif", alt="SIX EYES!", class="pixelated", width="88", height="31")}}</a>
