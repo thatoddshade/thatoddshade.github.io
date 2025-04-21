@@ -101,7 +101,7 @@
 				<summary>links</summary>
 				<ul class="list-with-punctuation list-with-reduced-spacing">
 					{% for link in config.extra.links %}
-					<li>
+					<li>{% if link.inactive %}<s>{% endif %}
 						<a
 							rel="me"
 							class="u-url"
@@ -109,7 +109,7 @@
 							{% if link.lang %}
 							hreflang="{{ link.lang }}"
 							{% endif %}
-						>{{ link.name }}</a>
+						>{{ link.name }}</a>{% if link.inactive %}</s>{% endif %}
 					</li>
 					{% endfor %}
 				</ul>
