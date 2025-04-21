@@ -38,7 +38,7 @@ links = [
 	{ name = "Gravatar", url = "https://gravatar.com/thatoddshade" },
 	{ name = "OpenStreetMap", url = "https://www.openstreetmap.org/user/thatoddshade" },
 	{ name = "ART FIGHT", url = "https://artfight.net/~thatoddshade"},
-	{ name = "Mastodon", url = "https://mastodon.art/@thatoddshade", lang = "en" },
+	{ name = "mastodon.art", url = "https://mastodon.art/@thatoddshade", lang = "en" },
 	{ name = "sourcehut", url = "https://sr.ht/~thatoddshade/", lang = "en" },
 	{ name = "Wikipédia (fr)", url = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", lang = "fr" },
 	{ name = "Wikipedia (en)", url = "https://en.wikipedia.org/wiki/User:Thatoddshade", lang = "en" },
@@ -47,10 +47,11 @@ links = [
 	{ name = "doevery.day", url = "https://doevery.day/thatoddshade", lang = "en"},
 	{ name = "INTERNET ARCHIVE", url = "https://archive.org/details/@thatoddshade", lang = "en" },
 	{ name = "POSTCROSSING", url = "https://www.postcrossing.com/user/thatoddshade" },
+	{ name = "mas.to", url = "https://mas.to/@thatoddshade", lang = "en" },
 ]
 
 imood_username = "thatoddshade"
-mastodon_username = "@thatoddshade@mastodon.art"
+mastodon_username = "@thatoddshade@mas.to"
 
 photo = "/images/photo.svg"
 
