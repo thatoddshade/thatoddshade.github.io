@@ -3,9 +3,9 @@
 .repost::before	{
 	content: "";
 	display: inline-block;
-	inline-size: 16px;
-	block-size: 16px;
-	margin-inline-end: 4px;
+	inline-size: 1em;
+	block-size: 1em;
+	margin-inline-end: 0.25em;
 	background-color: currentColor;
 }
 

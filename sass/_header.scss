@@ -15,14 +15,14 @@
 		/*grid-template-columns: 64px 256px;*/
 
 		/*row-gap: 0;      */
-		column-gap: 16px;
+		column-gap: 1rem;
 		
 		> * {
 			margin-block: auto;
 		}	
 
 		> img {
-			inline-size: 64px;
+			inline-size: 4rem;
 			clip-path: polygon(100% 27%, 92% 90%, 96% 100%, 50% 96%, 8.69% 83.31%, 3.12% 45.19%, 9% 17%, 53% 0%);
 		}
 
