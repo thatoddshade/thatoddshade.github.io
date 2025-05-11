@@ -1,7 +1,7 @@
 +++
 date = 2025-03-27T18:43:00+01:00
 title = "on current software as something substractive"
-description = "a retranscription of [§2025-03-27 18:43](@/slipbox/sect-2025-03-27_18-43.md)"
+description = "a retranscription of [§2025-03-27 18:43](@/slipbox/sect2025-03-27_18-43.md)"
 +++
 
 {{ photo(src="/images/camera/ENHANCE_IMG_20250327_201754859.jpg", height="360") }}
