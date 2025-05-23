@@ -150,3 +150,10 @@ ul > li {
 figure, .photo {
 	border-radius: settings.$border-radius;
 }
+
+q::before {
+	content: "„";
+}
+q::after {
+	content: "“";
+}
