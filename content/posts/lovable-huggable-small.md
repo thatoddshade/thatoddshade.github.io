@@ -88,7 +88,7 @@ ViBE</span>.
 
 attempting to collect up all of my music files, finding good sources to replace bad ones and get new ones and transferring everything via <abbr>USB</abbr> cable was a very interesting experience; it made me feel more content of everything to which I have access.
 
-even if I originally had on this device about eighty different tracks (most of which being legally[^legally] from <cite>TUNIC</cite>'s <abbr title="original soundtrack">OST</abbr>) and currently 138, my listening experience feels richer, not necessarily more varied, just *richer*: it feels like I am digging my own huge but deeply personal cavern instead of visiting and touring around an already existing mine with little signs and siderails to not get me lost.
+even if I originally had on this device about eighty different tracks (most of which being legally[^legally] from <cite>TUNIC</cite>'s <abbr title="original soundtrack">OST</abbr>) and currently <del>138</del> 253, my listening experience feels richer, not necessarily more varied, just *richer*: it feels like I am digging my own huge but deeply personal cavern instead of visiting and touring around an already existing mine with little signs and siderails to not get me lost.
 
 although I really appreciate it, my experience is somewhat flawed:
 - the back/cancel button does not work (it does not really that much though; the absolutely necessary buttons do work.);
