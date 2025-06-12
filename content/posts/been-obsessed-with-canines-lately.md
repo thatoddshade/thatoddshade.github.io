@@ -9,7 +9,7 @@ url = "https://mastodon.art/@thatoddshade/114242259498183248"
 been obsessed with canines lately.
 
 {{ photo(src="/images/camera/IMG_20250330_184511.jpg", alt="a blue pen drawing of a happy and playful canine") }}
-{{ photo(src="/images/camera/IMG_20250407_112940.jpg", alt="a drawing of Pazha, a wolf, floating in a void") }} <!-- more -->
+<!-- more --> {{ photo(src="/images/camera/IMG_20250407_112940.jpg", alt="a drawing of Pazha, a wolf, floating in a void") }}
 {{ photo(src="/images/camera/IMG_20250330_184434.jpg", alt="a blue pen drawing of an eyelid-less wolf with sharp teeth, dark fur and tall horns") }}
 {{ photo(src="/images/camera/IMG_20250330_191208.jpg", alt="a chaotic stack of all the cut out pen and black marker animal drawings") }}
 {{ photo(src="/images/camera/IMG_20250330_232403.jpg", alt="three drawings, one of a rodent holding an acorn, one of a fox positioned as if it were planning to hunt it and a one of a dog scaredly standing in the background") }}

@@ -9,8 +9,8 @@ mastodon = true
 I painted again.
 
 {{ photo(src="/images/scans/Scan_20250404 (2).png", alt="a bad scan of a painting of a black dog with hints of dark blue standing on two paws on purple grass in front of a tree with a black trunk and yellow leaves under a red sky", width="390", height="520")}}
-{{ photo(src="/images/camera/IMG_20250407_140903.jpg", alt="a bad picture a painting of a black dog with hints of dark blue standing on two paws on purple grass in front of a tree with a black trunk and yellow leaves under a red sky", width="390", height="520") }}    <!-- more -->
-{{ photo(src="/images/camera/IMG_20250326_224743.jpg", alt="some black paint on a sheet of drawing paper shaping a dog standing on two paws") }}
+{{ photo(src="/images/camera/IMG_20250407_140903.jpg", alt="a bad picture a painting of a black dog with hints of dark blue standing on two paws on purple grass in front of a tree with a black trunk and yellow leaves under a red sky", width="390", height="520") }} 
+<!-- more --> {{ photo(src="/images/camera/IMG_20250326_224743.jpg", alt="some black paint on a sheet of drawing paper shaping a dog standing on two paws") }}
 {{ photo(src="/images/camera/IMG_20250326_223451_1.jpg", alt="some black paint on a sheet of drawing paper") }}
 {{ photo(src="/images/camera/IMG_20250326_223441_1.jpg", alt="a large cut out pencil drawing of a dog standing on two paws") }}
 
