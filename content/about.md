@@ -14,6 +14,21 @@ the way in which it is currently made is explained in [the „colophon“ page](
 
 it is and always has been stored in [a publicly available GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io).
 
+### somewhat related blinkies, buttons and stamps {#website-badges}
+
+{{ image(alt="<HTML>
+Learn it today!", src="/images/buttons/html_learn_it_today.png", class="pixelated") }}
+{{ image(alt="WEBMENTIONS
+SUPPORTED", src="/images/buttons/webmentions_supported.gif", class="pixelated") }}
+{{ image(alt="MADE WITH
+CASCADING
+STYLE SHEETS", src="/images/buttons/made_with_cascading_stylesheets.gif", class="pixelated") }}
+{{ image(alt="Best viewed with
+eyes", src="/images/buttons/best_viewed_with_eyes_1.gif", class="pixelated") }}
+{{ image(alt="BEST
+viewed with
+EYES", src="/images/buttons/best_viewed_with_eyes_0.gif", class="pixelated") }}
+
 ## me
 
 <picture class="floating-on-line-end">
@@ -34,7 +49,7 @@ I:
 
 [^zettelkasten]: „Zettelkasten“ (a German compound from „Zettel“, which means „note“, and „Kasten“, which means „box“, of which the plural is „Zettelkästen“) refers to a personal knowledge management method popularised by Niklas Luhmann; more about it can be learnt from [the Zettelkasten website](https://zettelkasten.de).
 
-### somewhat related blinkies, buttons and stamps {#badges}
+### somewhat related blinkies, buttons and stamps {#me-badges}
 
 {{ image(alt="I am European.", src="/images/blinkies/nationalities/european.png", class="pixelated") }}
 {{ image(alt="French is my native language.", src="/images/blinkies/languages/french.png", class="pixelated") }}
