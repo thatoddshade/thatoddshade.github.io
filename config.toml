@@ -49,6 +49,7 @@ links = [
 	{ name = "INTERNET ARCHIVE", url = "https://archive.org/details/@thatoddshade", lang = "en" },
 	{ name = "POSTCROSSING", url = "https://www.postcrossing.com/user/thatoddshade" },
 	{ name = "mas.to", url = "https://mas.to/@thatoddshade", lang = "en" },
+	{ name = "lipu pona", url = "https://lipupona.net/ijosata", lang = "tok"},
 ]
 
 imood_username = "thatoddshade"
