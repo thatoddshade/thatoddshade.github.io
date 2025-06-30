@@ -1,4 +1,4 @@
-@use "jost";
+@use "fonts";
 @use "settings";
 
 body {
@@ -18,6 +18,10 @@ body {
 		border-radius: settings.$border-radius;
 		padding: settings.$padding;
 	}
+
+    h1, h2, h3, h4, h5, h6 {
+    font-family: "Junicode-CondMedium", sans-serif;
+    }
 }
 
 /* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */

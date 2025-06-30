@@ -1,14 +1,14 @@
 @use "sass:color";
 
 $foreground: #000000;
-$background: #fffcf0;
-$secondary: #6f6e69;
-$tertiary: #e6e4d9;
-$accent: #24837b;
+$background: #feedda;
+$secondary: #000000;
+$tertiary: #879079;
+$accent: #7d2646;
 
 @mixin light-theme {
 	color: $foreground;
-	background-color: $background;
+	background-color: $tertiary;
 	
 	> header, > main {
 		background-color: $background;
