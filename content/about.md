@@ -73,5 +73,5 @@ I:
 {{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
 {{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
 {{ image(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
-{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
+{{ image(alt="STAMP MISSING", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
+{{ image(alt="STAMP MISSING", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}

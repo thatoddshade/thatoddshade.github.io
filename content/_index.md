@@ -13,12 +13,14 @@ aliases = ["fr", "en"]
 {{ image(alt="CLIQUER ICI", src="/images/buttons/cliquer_ici.gif", class="pixelated", width="88", height="31") }}
 {{ image(alt="Google Chrome IS EVIL!", src="/images/buttons/chrome/is_evil.gif", class="pixelated", width="88", height="31") }}
 {{ image(alt="Internet Explorer IS EVIL!", src="/images/buttons/internet_explorer/is_evil.gif", class="pixelated", width="88", height="31") }}
+{{ image(alt="fuck Adobe", src="/images/buttons/fuck_adobe.gif", class="pixelated", width="88", height="31") }}
 {{ image(alt="Site Best Viewed With A Computer Monitor", src="/images/buttons/best_viewed_with_a_computer_monitor.gif", class="pixelated", width="88", height="31") }} \
 <a href="https://github.com/yokoffing/BetterFox">
 	{{ image(alt="Betterfox Now!", src="/images/buttons/betterfox_now.png", class="pixelated", width="88", height="31") }}
 </a>
 {{ image(alt="Bitwarden", src="/images/buttons/bitwarden.gif", class="pixelated", width="88", height="31") }}
 {{ image(alt="Nix fixes this.", src="/images/buttons/nix/fixes_this.png", class="pixelated", width="88", height="31") }}
+{{ image(alt="Powered by THE VOID", src="/images/buttons/powered_by_the_void.gif", class="pixelated", width="88", height="31") }}
 
 {{ image(alt="the stamp next to this stamp is lying.", src="/images/stamps/next_stamp_lie.png", class="pixelated") }}
 {{ image(alt="you are an idiot ☺☺☺", src="/images/stamps/you_are_an_idiot.gif", class="pixelated") }}
@@ -39,3 +41,5 @@ aliases = ["fr", "en"]
 <a href="https://ribo.zone/">{{ image(src="/images/buttons/ribose.png", alt="ribose", class="pixelated", width="88", height="31") }}</a>
 <a href="https://sixey.es/">{{ image(src="/images/buttons/six_eyes.gif", alt="SIX EYES!", class="pixelated", width="88", height="31")}}</a>
 <a href="https://thewhiteflareon.straw.page/">{{ image(src="/images/buttons/thewhiteflareon.gif", alt="THEWHITEFLARE0N", class="pixelated", width="88", height="31") }}</a>
+<a href="https://crouton.net/">{{ image(src="/images/buttons/crouton_dot_net.png", alt="crouton.net", class="pixelated", width="88", height="31") }}</a>
+<a href="https://duckduckgo.com/">{{ image(src="/images/buttons/duckduckgo.png", alt="DuckDuckGo", class="pixelated", width="88", height="31") }}</a>
