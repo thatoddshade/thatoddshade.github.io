@@ -89,12 +89,19 @@
 				<li>
 					<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" lang="fr">il</a>
 				</li>
+				<li>
+					<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/c%C3%A9zigue#Pronom_personnel" hreflang="fr" lang="fr">cézigue</a>
+				</li>
 			</ul>
 
 			<p>
 				<span class="dt-bday">born on <time class="value" datetime="--05-26">a 26th of May</time></span>,
 				<span class="p-country-name">living in <span class="value">France</span></span>
 			</p>
+
+			{% if config.extra.email %}
+			<p><a class="u-email" href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
+			{% endif %}
 
 			{% if config.extra.links %}
 			<details>
@@ -135,10 +142,6 @@
 				href="https://www.imood.com/users/{{ config.extra.imood_username }}"
 				hreflang="en"
 			/>
-
-			<a href='https://www.free-website-hit-counter.com'>
-				<img src='https://www.free-website-hit-counter.com/zc.php?d=9&id=4431&s=29' border='0' alt='free website hit counter' class="invert pixelated" />
-			</a>
 
 			{% if config.extra.homepage_links %}
 			<nav id="header-navigation">
