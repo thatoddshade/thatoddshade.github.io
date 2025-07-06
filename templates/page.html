@@ -11,6 +11,14 @@
 
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
+{% block header %}
+<header>
+<nav>
+	<a href="/">home</a>
+</nav>
+</header>
+{% endblock header %}
+
 {% block content %}
 <main id="maincontent"
 	class="post h-entry"
@@ -91,3 +99,6 @@
 	{% endif %}
 </main>
 {% endblock content %}
+
+{% block footer %}
+{% endblock footer %}
