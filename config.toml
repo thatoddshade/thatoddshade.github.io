@@ -33,6 +33,7 @@ email = "thatoddshade@gmx.com"
 links = [
 	{ name = "pocket", url = "https://getpocket.com/@32bp8T96AaK76da688g29b3ge3d0A226093YQ7v348H420l3636f9k94U50tF45f?src=navbar", inactive = true},
 	{ name = "GitHub", url = "https://github.com/thatoddshade", lang = "en" },
+	{ name = "Discord", url = "https://discord.com/users/1015587533939298316" },
 	{ name = "itch.io", url = "https://thatoddshade.itch.io/", lang = "en"},
 	{ name = "YouTube", url = "https://www.youtube.com/@thatoddshade" },
 	{ name = "reddit", url = "https://www.reddit.com/user/That-Odd-Shade/", lang = "en" },
