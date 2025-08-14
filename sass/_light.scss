@@ -1,20 +1,16 @@
 @use "sass:color";
 
 $foreground: #000000;
-$background: #feedda;
+$background: #fffff0;
 $secondary: #000000;
 $tertiary: #879079;
 $accent: #7d2646;
 
 @mixin light-theme {
 	color: $foreground;
-	background-color: $tertiary;
+	background-color: $background;
 	
-	> header, > main {
-		background-color: $background;
-	}
-
-	> main {
+	#maincontent {
 		border: 4px solid $foreground;
 		box-shadow: 4px 4px $foreground;
 	}
@@ -84,6 +80,10 @@ $accent: #7d2646;
 			background-color: lighten($tertiary, 10%);
 		}
 	}*/
+
+  #skip:focus {
+    background-color: $tertiary;
+  }
 }
 
 @media (prefers-color-scheme: light) {

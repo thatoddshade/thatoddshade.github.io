@@ -1,7 +1,9 @@
 base_url = "/"
 
-title = "thatoddshade"
+title = "thatoddshade's record cards"
 description = "whatever I want to put here will be here."
+
+author = "thatoddshade"
 
 default_language = "en"
 
@@ -44,6 +46,7 @@ links = [
 	{ name = "ART FIGHT", url = "https://artfight.net/~thatoddshade"},
 	{ name = "mastodon.art", url = "https://mastodon.art/@thatoddshade", lang = "en", inactive = true },
 	{ name = "sourcehut", url = "https://sr.ht/~thatoddshade/", lang = "en" },
+	{ name = "imood.com", url = "https://imood.com/users/thatoddshade", lang = "en"},
 	{ name = "Wikipédia (fr)", url = "https://fr.wikipedia.org/wiki/Utilisateur:Thatoddshade", lang = "fr" },
 	{ name = "Wikipedia (en)", url = "https://en.wikipedia.org/wiki/User:Thatoddshade", lang = "en" },
 	{ name = "tumblr", url = "https://www.tumblr.com/blog/thatoddshade" },

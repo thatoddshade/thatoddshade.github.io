@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="{{ config.default_language }}">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<meta name="theme-color" content="ivory" media="(prefers-color-scheme: light)" />
+	<meta name="theme-color" content="black" media="(prefers-color-scheme: dark)" />
+
+	<meta name="author" content="{{ config.author }}" />
+
+	<meta 
+		name="description" 
+		content="{% block description %}{{ section.description | default(value=config.description) }}{% endblock description %}"
+	/>
+
+	<meta property="og:url" content="{{ current_url | default(value=config.base_url ~ "404") }}">
+	{# <meta property="og:image" content="{{ config.extra.photo }}"> #}
+	<meta property="og:site_name" content="{{ config.title }}">
+
+	<title>{% block title %}{{ config.title }}{% endblock title %}</title>
+
+	<link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+	<link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+
+	<link rel="openid.delegate" href="{{ config.base_url }}" />
+	<link rel="openid.server" href="https://openid.indieauth.com/openid" />
+
+	<link rel="webmention" href="https://webmention.io/thatoddshade.is-a.dev/webmention" />
+
+	<link rel="microsub" href="https://aperture.p3k.io/microsub/1024" />
+
+	{% block extra_head %}
+	<link
+		rel="stylesheet"
+		href="{{ get_url(path='style.css', cachebust=true) }}"
+	/>
+
+	<link rel="feed" href="{{ config.extra.hfeed }}" />
+
+	{% endblock extra_head %}
+
+	<link rel="icon" type="image/png" href="{{ config.extra.photo }}" />
+
+	<!-- add a [rel-me](https://indieweb.org/rel-me) for each `config.extra.links` dictionary's `href` -->
+	{% if config.extra.links %}
+	{% for link in config.extra.links %}
+	<link
+		rel="me"
+		title="{{ link.name }}"
+		href="{{ link.url }}"
+		{% if link.lang %}hreflang="{{ link.lang }}"{% endif %}
+	/>
+	{% endfor %}
+	{% endif %}
+
+	{% block feed_link %}
+	{% if config.generate_feed %}
+	<link
+		rel="alternate"
+		type="application/atom+xml"
+		title="feed"
+		href="{{ get_url(path=config.feed_filename, trailing_slash=false) }}"
+	/>
+	{% endif %}
+	{% endblock %}
+</head>
+<!--
+  /___   __   ____    \
+ /|   \ /  \ |    \\  /\
+/ |___/|    ||     |\/  \
+\ |   \|    ||     |/   /
+ \|___/ \__/ |____//   /
+  \                   /
+-->
+<body>
+	<a href="#maincontent" id="skip">skip to main content</a>
+
+
+	<nav id="navigation-links">
+	<ul>
+		<li><a href="/">home</a></li>
+		<li><a href="/posts">posts</a></li>
+		<li><a href="/about">about</a></li>
+	</ul>
+	</nav>
+
+	{% block header %}
+	{% endblock header %}
+
+	{% block content %}
+	{% endblock content %}
+
+	{% block footer %}
+	{% endblock footer %}
+</body>
+</html>

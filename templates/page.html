@@ -1,4 +1,4 @@
-{% extends "index.html" %}
+{% extends "base.html" %}
 
 {% block title %}
 {%- if page.title -%}{{ page.title }}
@@ -13,9 +13,7 @@
 
 {% block header %}
 <header>
-<nav>
-	<a href="/">home</a>
-</nav>
+	<h1 style="font-size: 1em; font-weight: normal; font-family: 'Jost', sans-serif; margin-block: 0;"><a href="/" style="text-decoration: none;">{{ config.title }}</a></h1>
 </header>
 {% endblock header %}
 

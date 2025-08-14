@@ -2,33 +2,120 @@
 @use "settings";
 
 body {
-	font-family: "Jost";
+  position: relative;
+  max-width: 640px;
+  max-height: 480px;
 
-	margin: 0;
+	font-family: "Jost", sans-serif;
+
+    margin-block-start: 0;
+	margin-inline-start: auto;
+	margin-inline-end: auto;
 	padding: 0;
 
-	background-image: url("/images/backgrounds/0.svg");
-	background-attachment: fixed;
+	/*background-image: url("/images/backgrounds/0.svg");
+	background-attachment: fixed;*/
 
-	> header, > main, > footer {
+	/*> header, > main, > footer {
 		margin: settings.$margin;
 	}
 
 	> main {
 		border-radius: settings.$border-radius;
 		padding: settings.$padding;
-	}
+	}*/
+
+  /*display: grid;
+  grid-template-columns: 214px 426px;*/
 
     h1, h2, h3, h4, h5, h6 {
-    font-family: "Junicode-CondMedium", sans-serif;
+      font-family: "Junicode-CondMedium", serif;
     }
 }
 
 /* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */
-@media all and (max-width: 960px) {
+/*@media all and (max-width: 960px) {
 	body > main {
 		border-radius: 0;
 		border-inline-style: none !important;
 		margin-inline: 0;
 	}
+}*/
+
+#frame {
+  inline-size: 213px;
+}
+
+#navigation-links {
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 1em;
+  
+  font-family: "Junicode-CondMedium", serif;
+  font-size: 1.5em;
+  font-style: italic;
+
+  margin-inline: 2ch;
+  margin-block: 1em;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+ li {
+    list-style-type: none;
+  }
+}
+
+#notice-button {
+  position: absolute;
+  inset-inline-start: 22em; /* if 1em=16px, then 15em=240px. */
+  inset-block-start: 10.25em;
+
+  transform: rotate(-52deg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  p {
+    margin: 0;
+  }
+}
+
+#notice-e-mail {
+  transform: rotate(20deg);
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-start: 18em;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a {
+    font-family: "Junicode-CondMedium", serif;
+    font-size: 1.5em;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    
+    p {
+      inline-size: 7ch;
+      text-align: center;
+    }
+  }
+}
+
+#notice-scroll {
+  position: absolute;
+  inset-block-start: 30em;
+  inline-size: 100%;
+  text-align: center;
 }
