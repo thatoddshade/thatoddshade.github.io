@@ -23,7 +23,7 @@ the bather:
 > wha- who are… what?
 
 Hatred:
-> eudaemonia, eudaemonia, eudaemonia, eudaemonia…\
+> eudaemonia, eudaemonia, eudaemonia, eudaemonia…
 
 the bather:
 > huh?
@@ -31,7 +31,7 @@ the bather:
 Hatred:
 > …is a Greek concept for happiness or welfare.\
 eudaemonisn is believing that happiness is the primary goal of life.\
-but I don't want you to be happy. I wish you to be miserable.\
+but I don't want you to be happy. I wish you to be miserable.
 
 the bather:
 > what do you mean…? are you okay…?
