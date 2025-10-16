@@ -2,7 +2,7 @@
 description = "on once popular but now unused products' cuteness"
 title = "lovable. huggable. small."
 date = 2025-05-02T12:02:00+02:00
-updated = 2025-05-24T00:25:19+02:00
+updated = 2025-10-17T00:39:00+02:00
 +++
 
 a lot of the products shown on Apple's website's homepage are accompanied with a few adjectives; for example, the <span class="h-product">iPhone 14</span> has been described with „Big and bigger“, the <span class="h-product">iPhone 14 Pro</span> has got „Pro. Beyond.“
@@ -11,7 +11,7 @@ and the <span class="h-product">iPad</span> has got „Lovable. Drawable. Magica
 
 but I do not believe that this is accurate. <!-- more -->
 
-these taglines all share something: "Big and bigger", "Beyond" and "Magical" all imply a sense of ununderstandability, unreachability and *mystery*, as if Apple were selling more than shrunk down pieces of computer hardware stuck together under a some shiny plastic or metal.
+these taglines all share something: „Big and bigger“, „Beyond“ and „Magical“ all imply a sense of ununderstandability, unreachability and *mystery*, as if Apple were selling more than shrunk down pieces of computer hardware stuck together under a some shiny plastic or metal.
 
 this is different from the time when the Game Boy Color was available in a transparent case to let people see the inside, when desktop computers had at least a dozen of ports, when *buying* and *owning* music, movies, video games and software was *actually possible*.
 
@@ -40,13 +40,13 @@ when I discovered [ribo.zone](https://ribo.zone/), I *loved it*. I loved the dit
 
 on the contact page, there was a mention of postcards, which used to not interest me, and of a website of which I had never heard, <cite style="text-transform: uppercase">Postcrossing</cite>. I read what the webkeeper of this site wrote about it, which expressed the excitement that they feel every time they reveive postcards sent by strangers, and soon became inspired to try this website.
 
-when I first dared click on "Send", I got someone's address with their profile on the website, their physical address and some links to various pages withe instructions and tips. I did not find any postcard at home (there actually were *a lot* of them; I just did not look in the right place.) so I took some paper cardboard, cut it in what happens to be my favourite paper format ever, A6 (105mm by 148mm or roughly 4 by 6 inches), carefully care fully used a pen of my favourite kind, a black ink rollerball, and a ruler to trace a vertical line in the centre to clearly separate the text content on the left side from the recipient's address on the right side and made some collage on the back.
+when I first dared click on „Send“, I got someone's address with their profile on the website, their physical address and some links to various pages withe instructions and tips. I did not find any postcard at home (there actually were *a lot* of them; I just did not look in the right place.) so I took some paper cardboard, cut it in what happens to be my favourite paper format ever, A6 (105mm by 148mm or roughly 4 by 6 inches), carefully care fully used a pen of my favourite kind, a black ink rollerball, and a ruler to trace a vertical line in the centre to clearly separate the text content on the left side from the recipient's address on the right side and made some collage on the back.
 
 that collage was composed of a a picture of a river near which I live that I had taken with my smartphone and that I printed with a printer, accompanied by some cut out pencil drawings.
 
 {{ photo(src="/images/camera/IMG_20250418_222008.jpg", alt="the backside of a handmade postcard, on which there is a picture of a river and a few drawings") }}
 
-as the recipient lives in another country, I could not used green stamps, which can only be used from mainland France to somewhere else in mainland France. I had to used purple stamps, which cost slightly more (2.10<abbr title="euros">EUR</abbr>). \
+as the recipient lives in another country, I could not used green stamps, which can only be used from mainland France to somewhere else in mainland France. I had to used purple stamps, which cost slightly more (2.10<abbr title="euro">EUR</abbr>). \
 as I feared that the whole <abbr title="do it yourself">DIY</abbr> postcard could be somehow more than 20g, over which more than one stamp is required, I weighted it… with a dedicated device that is called „<i lang="fr">pèse-lettre</i>“ in French.
 
 {{ photo(src="/images/camera/IMG_20250418_204503.jpg", width="480") }}
@@ -71,7 +71,7 @@ Optio M60</span> and the other is the
 
 I recently started looking for them, especially the the PENTAX, which, despite
 being the oldest one of the two, had been my favourite. \
-when I found them, they both uncharged, which is an issue that was quickly
+when I found them, they were both uncharged, which is an issue that was quickly
 resolved by simply using the cables with which they originally came.
 
 {{ photo(src="/images/camera/nikon/DSCN0011.JPG", alt="a PENTAX Optio M60 digital camera held in portrait orientation in a hand", height="480") }}
@@ -88,7 +88,7 @@ ViBE</span>.
 
 attempting to collect up all of my music files, finding good sources to replace bad ones and get new ones and transferring everything via <abbr>USB</abbr> cable was a very interesting experience; it made me feel more content of everything to which I have access.
 
-even if I originally had on this device about eighty different tracks (most of which being legally[^legally] from <cite>TUNIC</cite>'s <abbr title="original soundtrack">OST</abbr>) and currently <del>138</del> 253, my listening experience feels richer, not necessarily more varied, just *richer*: it feels like I am digging my own huge but deeply personal cavern instead of visiting and touring around an already existing mine with little signs and siderails to not get me lost.
+even if I originally had, on this device, about eighty different tracks (most of which legally[^legally] from the <cite>TUNIC</cite> <abbr title="original soundtrack">OST</abbr>) and currently have <del>138</del> 253, my listening experience feels richer, not necessarily more varied, just *richer*: it feels like I am digging my own huge but deeply personal cavern instead of visiting and touring around an already existing mine with little signs and siderails to not get lost.
 
 although I really appreciate it, my experience is somewhat flawed:
 - the back/cancel button does not work (it does not really that much though; the absolutely necessary buttons do work.);
