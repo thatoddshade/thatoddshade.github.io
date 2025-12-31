@@ -2,7 +2,7 @@
 {% if page.extra.bookmark_of is object %}
 {% set bookmarked = page.extra.bookmark_of %}
 <div class="u-bookmark-of h-cite">
-	<p class="bookmark">bookmark of 
+	<p class="bookmark">Bookmark of 
 		<a class="u-url" href="{{ bookmarked.url }}">
 			{% if bookmarked.name %}<span class="p-name">{{ bookmarked.name }}</span>
 			{%- else %}{{ bookmarked.url }}

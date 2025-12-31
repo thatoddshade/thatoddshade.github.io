@@ -2,7 +2,7 @@
 {% if page.extra.in_reply_to is object %}
 {% set replied_to = page.extra.in_reply_to %}
 <div class="u-in-reply-to h-cite">
-	<p class="reply">in reply to
+	<p class="reply">In reply to
 		<a class="u-url" href="{{ replied_to.url }}">
 			{% if replied_to.name %}<span class="p-name">{{ replied_to.name }}</span>{% else %}{{ replied_to.url }}{% endif %}</a>
 		{% if replied_to.author %}

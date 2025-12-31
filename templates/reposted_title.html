@@ -2,7 +2,7 @@
 {{ page.extra.repost_of.name -}}
 
 {%- elif page.extra.repost_of.content -%}
-„{{ page.extra.repost_of.content | striptags | truncate(length=32) }}“
+‘{{ page.extra.repost_of.content | striptags | truncate(length=32) }}’
 
 
 {%- elif page.extra.repost_of.url -%}

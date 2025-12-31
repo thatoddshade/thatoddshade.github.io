@@ -2,7 +2,7 @@
 {% if page.extra.like_of is object %}
 {% set liked = page.extra.like_of %}
 <div class="u-like-of h-cite">
-	<p class="like">like of 
+	<p class="like">Like of 
 		<a class="u-url" href="{{ liked.url }}">
 			{% if liked.name %}<span class="p-name">{{ liked.name }}</span>
 			{%- else %}{{ liked.url }}
@@ -19,7 +19,7 @@
 </div>
 {% else %}
 <div class="liked-list">
-	<p class="like">like of:</p>
+	<p class="like">Like of :</p>
 	<ul class="list-with-punctuation list-with-reduced-spacing">
 		{% for liked in page.extra.like_of %}
 		<li class="u-like-of h-cite">
