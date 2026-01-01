@@ -127,4 +127,27 @@ h1, h2, h3, h4, h5, h6 {
   inset-block-start: 30em;
   inline-size: 100%;
   text-align: center;
+
+footer {
+  position: absolute;
+  inset-block-end: 0;
+}
+
+#backtotop {
+  position: absolute;
+  inset-block-end: 0;
+  image-rendering: crisp-edges;
+  display: block;
+  aspect-ratio: auto 443/65;
+  background-image: url("/images/leaves.avif");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position-y: bottom;	
+  min-block-size: 128px;
+  max-inline-size: 100%;
+  font-size: 0;
+}
+
+#backtotop:focus {
+  background-color: #0000;
 }
