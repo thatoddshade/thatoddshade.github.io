@@ -59,6 +59,9 @@ img {
   max-inline-size: 100%;
 }
 
+.footnote-reference > a {
+  text-decoration: none;
+}
 
 .footnote-definition {
   margin-block-start: 1em;
