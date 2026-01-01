@@ -37,13 +37,12 @@
 }
 
 #imood {
-    position: absolute;
-    transform: rotate(40deg);
+  transform: rotate(41deg);
+  position: absolute;
+  inset-inline-start: 273px;
+  inset-block-start: 15px;
 
-    inset-inline-start: 21em;
-    inset-block-start: 3.25em;
-
-	text-decoration: none;
+  text-decoration: none;
 }
 
 #pronouns, #header-navigation > ul {

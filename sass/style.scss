@@ -23,7 +23,8 @@ blockquote {
 
 
 code {
-	padding: 0.1em 0.2em;
+  padding-inline: 0.25em;
+    padding-block: 0.25em;
   font-size: 12pt;
 }
 
@@ -143,7 +144,7 @@ make it so that the list items look like this:
   image-rendering: pixelated;
 }
 
-.floating-line-end {
+aside, .float-end {
   float: inline-end;
 }
 

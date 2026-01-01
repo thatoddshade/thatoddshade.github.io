@@ -34,7 +34,7 @@ $selection: khaki;
   }
 
   a:focus, ::selection {
-    background-color: $selection;
+    background-color: color.scale($selection, $alpha: -50%);
   }
 
   blockquote {

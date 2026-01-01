@@ -1,6 +1,7 @@
 @use "fonts";
 @use "settings";
 @use "skip";
+@use "header";
 @use "footer";
 
 
@@ -27,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--big-serif);
-  font-variant: small-caps;
+  font-variant: all-small-caps;
   font-weight: normal;
 }
 
@@ -116,7 +117,7 @@ main {
   min-width: 640px;
   height: auto;
   position: absolute;
-  z-index: -1;
+  z-index: -2;
 }
 
 footer {

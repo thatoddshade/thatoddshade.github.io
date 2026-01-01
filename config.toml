@@ -1,6 +1,6 @@
 base_url = "/"
 
-title = "thatoddshade’s palace"
+title = "THATODDSHADE’s palace"
 description = "The gloomy agony that shines in rooms of pine and ebony…"
 author = "thatoddshade"
 default_language = "en"
@@ -61,4 +61,4 @@ mastodon_username = "@thatoddshade@mas.to"
 photo = "/images/photo.svg"
 
 # appended between a `page.title` and `config.title`
-title_separator = " — "
+title_separator = " ⸺:⸺ "
