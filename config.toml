@@ -4,12 +4,10 @@ title = "thatoddshade's record cards"
 description = "whatever I want to put here will be here."
 
 author = "thatoddshade"
-
 default_language = "en"
 
 compile_sass = true
 minify_html = true
-
 ignored_static = ["*.xcf"]
 
 [markdown]
