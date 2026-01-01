@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/style.css" rel="stylesheet">
+
+		<style>
+		#window {
+			position: absolute; 
+			inset-inline: 320px; 
+			inset-block: 0;
+
+			inline-size: 320px; 
+			block-size: 240px; 
+
+			background-color: black; 
+		}
+
+		#edge {
+			position: relative; 
+			inset-block: 240px; 
+
+			inline-size: 320px; 
+			block-size: 20px; 
+
+			background-color: ivory; 
+			border-style: solid; 
+			border-color: black; 
+			border-width: 2px; 
+			border-block-start-width: 0;
+		}
+
+		#book-space {
+			position: absolute;
+			inset-inline: 0;
+			inset-block: 240px;
+		}
+
+		#box {
+			inline-size: 320px;
+			block-size: 240px;
+
+			background-color: green;
+
+			clip-path: polygon(100% 0, 95% 20%, 90% 20%, 75% 100%, 0 100%, 0 0);
+		}
+		</style>
+	</head>
+	<body style="background-color: beige;">
+		<!-- WINDOW -->
+		<div id="window">
+			<canvas id="game" width="320" height="240" style="image-rendering: pixelated; min-width: 320; height: auto;"></canvas><script src="umbra.js"></script><script src="animation.js"></script>
+			<div id="edge"></div>
+		</div>
+
+		<!-- PLASTIC BOX -->
+		<div id="book-space">
+			<div style="position absolute; display: flex; flex-direction: inline;">
+				<div style="z-index: 1; position: relative; inset-block-start: -120px; block-size: 120px; inline-size: 50px; background-color: orange;"></div>
+				<div style="z-index: 1; position: relative; inset-inline-start: 50px; inset-block-start: -150px; block-size: 150px; inline-size: 30px; background-color: red;"></div>
+			</div>
+			<div id="box"></div>
+		</div>
+	
+	</body>
+</html>
