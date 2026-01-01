@@ -38,17 +38,6 @@
 		<link class="p-name" title="{{ config.author }}" />
 		<link class="u-uid u-url" href="{{ config.base_url }}" />
 		<link class="u-photo" href="{{ config.extra.photo }}" />
-
-		{% if config.extra.links %}
-		{% for link in config.extra.links %}
-		<link
-			class="u-url"
-			title="{{ link.name }}"
-			href="{{ link.url }}"
-			{% if link.lang %}hreflang="{{ link.lang }}"{% endif %}
-		/>
-		{% endfor %}
-		{% endif %}
 	</div>
 	
 	<header>
