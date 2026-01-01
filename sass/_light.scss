@@ -1,10 +1,11 @@
 @use "sass:color";
 
-$foreground: #000000;
-$background: #fffff0;
-$secondary: #000000;
-$tertiary: #879079;
-$accent: #7d2646;
+$foreground: black;
+$background: ivory;
+$secondary: grey;
+$tertiary: beige;
+$accent: darkred;
+$selection: khaki;
 
 @mixin light-theme {
 	color: $foreground;
