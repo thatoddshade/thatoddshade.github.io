@@ -1,6 +1,7 @@
 +++
-title = "posts"
-description = "articles, notes, likes, reposts and photos"
+title = "Posts"
+description = "Articles, notes, likes, reposts & photos."
 sort_by = "date"
 aliases = ["blog"]
+
 +++
