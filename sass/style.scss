@@ -9,92 +9,95 @@ main p {
 /* support for browsers that have the old hierarchy-based sizing */
 :where(h1) {
   margin-block: 0.67em;
-	font-size: 2em;
+  font-size: 2em;
 }
 
-img {
-	max-inline-size: 100%;
+ul > li {
+  list-style-type: "– ";
 }
 
 blockquote {
-	margin-inline-start: 0;
-	padding-inline-start: 1em;
+  margin-inline-start: 0;
+  padding-inline-start: 1ch;
 }
+
 
 code {
 	padding: 0.1em 0.2em;
-	font-size: 12pt;
+  font-size: 12pt;
 }
 
 pre {
-	overflow: auto;
-	/*
-	padding: 0.3em;
-	 */
-	padding: 1rem;
+  overflow: auto;
+  padding: 1rem;
 
-	/*
-	table {
-		inline-size: 100%;
+  /*
+  table {
+    inline-size: 100%;
 
-		td {
-			padding: 0;
-		}
+    td {
+      padding: 0;
+    }
 
-		td:nth-of-type(1) {
-			text-align: center;
-			user-select: none;
-		}
-	}
-	*/
+    td:nth-of-type(1) {
+      text-align: center;
+      user-select: none;
+    }
+  }
+  */
 
-	mark {
-		display: block;
-	}
+  mark {
+    display: block;
+  }
 
-	code {
-		padding: 0;
-	}
+  code {
+    padding: 0;
+  }
 }
 
+img {
+  max-inline-size: 100%;
+}
+
+
 .footnote-definition {
-	margin-block-start: 1em;
-
-	&:first-of-type {
-		margin-block-start: 3em;
-	}
-
-	p {
-		display: inline;
-	}
+  margin-block-start: 1em;
+  
+  &:first-of-type {
+    margin-block-start: 3em;
+  }
+  
+  p {
+    display: inline;
+  }
 }
 
 /*
 table {
-	border-spacing: 0;
+  border-spacing: 0;
 
-	th, td {
-		border: 1px solid;
-		border-inline-start: none;
-		padding: 0.2em;
+  th, td {
+    border: 1px solid;
+    border-inline-start: none;
+    padding: 0.2em;
 
-		&:first-child {
-			border-inline-start: 1px solid;
-		}
-	}
+    &:first-child {
+      border-inline-start: 1px solid;
+    }
+  }
 
-	th {
-		border-block-start: 1px solid;
-	}
+  th {
+    border-block-start: 1px solid;
+  }
 
-	td {
-		border-block-start: none;
-	}
+  td {
+    border-block-start: none;
+  }
 }
 */
 
 rt {
-	font-size: 0.75em;
+  font-size: 0.75em;
 }
 
 .bookmarked-list > p,
@@ -103,7 +106,7 @@ rt {
 .replied-to-list > p,
 #syndication > p,
 {
-	margin-block-end: 0;
+  margin-block-end: 0;
 }
 
 /*
@@ -117,41 +120,33 @@ make it so that the list items look like this:
 (this is intended for `ol` and `ul`.)
 */
 .list-with-punctuation {
-	> ::after {
-		content: ";";
-	}
-	> :has(+ :last-of-type)::after {
-		content: "; and";
-	}
-	> :last-of-type::after {
-		content: ".";
-	}
+  > ::after {
+    content: ";";
+  }
+  > :has(+ :last-of-type)::after {
+    content: "; and";
+  }
+  > :last-of-type::after {
+    content: ".";
+  }
 }
 
 .list-with-reduced-spacing {
-	margin-block-start: 0;
-	padding-inline-start: 2ch;
+  margin-block-start: 0;
+  padding-inline-start: 2ch;
 }
 
 .pixelated {
-	image-rendering: pixelated;
+  image-rendering: pixelated;
 }
 
-.floating-on-line-end {
-	float: inline-end;
-}
-
-ul > li {
-	list-style-type: "– ";
+.floating-line-end {
+  float: inline-end;
 }
 
 figure, .photo {
 	border-radius: settings.$border-radius;
 }
 
-q::before {
-	content: "„";
-}
-q::after {
-	content: "“";
-}
+q::before { content: "‘"; }
+q::after  { content: "’"; }
