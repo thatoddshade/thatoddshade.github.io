@@ -1,1 +1,1 @@
-{% if page.description %}{{ page.description | markdown | safe }}{% endif %}
+{% if page.description %}{{ page.description | markdown(inline=true) | safe }}{% endif %}
