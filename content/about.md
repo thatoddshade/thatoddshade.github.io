@@ -1,77 +1,70 @@
 +++
-title = "about"
+title = "About"
 date = 2024-08-30
-updated = 2025-02-28T01:12:00Z
-description = "a page about this website and me"
+updated = 2025-12-31T23:00:00+01:00
+description = "This website and I"
 +++
 
-## this website {#website}
+## The website {#website}
 
-it originally started with [an untastefully purple page with an unhealthy amount of external content and tons of awful CSS](https://web.archive.org/web/20230110095501/https://thatoddshade.github.io/); \
-later, it became [a somewhat more decent one with epic blur effects](https://web.archive.org/web/20230326153840/https://thatoddshade.github.io/en/) (those are in at least one of every front-end developer's phases.); \
+Back in 2023, among crumbling personal projects in the messiness of forgotten directories, this website first rose as a purple page of candid creativity. [Its colours were untasteful, its CSS was awful…](https://web.archive.org/web/20230110095501/https://thatoddshade.github.io/)
 
-the way in which it is currently made is explained in [the „colophon“ page](/colophon).
+But it eventually morphed into a more delicate piece, which, although still novice, had a keen [use of blur and transparency](https://web.archive.org/web/20230326153840/https://thatoddshade.github.io/en/).
 
-it is and always has been stored in [a publicly available GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io).
+Then, after all that violet, came an illuminated era of beige in which it still re&shy;mains to this day,—just as it always has been made with the same [tools](/colophon), and al&shy;ways has been available on a public [GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io).
 
-### somewhat related blinkies, buttons and stamps {#website-badges}
+### Blinkies, buttons & stamps {#website-badges}
 
-{{ image(alt="<HTML>
-Learn it today!", src="/images/buttons/html_learn_it_today.png", class="pixelated") }}
-{{ image(alt="WEBMENTIONS
-SUPPORTED", src="/images/buttons/webmentions_supported.gif", class="pixelated") }}
-{{ image(alt="MADE WITH
-CASCADING
-STYLE SHEETS", src="/images/buttons/made_with_cascading_stylesheets.gif", class="pixelated") }}
-{{ image(alt="Best viewed with
-eyes", src="/images/buttons/best_viewed_with_eyes_1.gif", class="pixelated") }}
-{{ image(alt="BEST
-viewed with
-EYES", src="/images/buttons/best_viewed_with_eyes_0.gif", class="pixelated") }}
+{{ image(alt="HTML,—learn it today!", src="/images/buttons/html_learn_it_today.png", class="pixelated") }}
+{{ image(alt="Webmentions Supported", src="/images/buttons/webmentions_supported.gif", class="pixelated") }}
+{{ image(alt="Made with Cascading Style Sheets", src="/images/buttons/made_with_cascading_stylesheets.gif", class="pixelated") }}
+{{ image(alt="Best viewed with eyes", src="/images/buttons/best_viewed_with_eyes_1.gif", class="pixelated") }}
+{{ image(alt="Best viewed with eyes", src="/images/buttons/best_viewed_with_eyes_0.gif", class="pixelated") }}
 
-## me
+## The webkeeper
 
-<picture class="floating-on-line-end">
+<picture class="float-end">
 <source srcset="/images/greeting.avif" type="image/avif" />
-{{ image(src="/images/greeting.png", height="315", alt="a watercolour mini-painting of me greeting by waving a hand") }}
+{{ image(src="/images/greeting.png", height="315", alt="Monster with glowing yellow eyes and mouth, that wears a green cape and a hood, and a red belt, boots, gaunts and trousers, waving at the viewer with its right hand") }}
 </picture>
 
-I:
-- often draw.
-- conlang[^conlang].
-- have more than one web identity; *thatoddshade*:
-    - is the one I use on [this website](#website) and other places.
-    - is the main one.
-- occasionally work on a video game with [the Godot game engine](https://godotengine.org).
-- have a <i lang="de">Zettelkasten</i>[^zettelkasten].
+Born and raised in Europe, my mother tongue is not English; but an over-consumption of online con&shy;tent has made me fluent in the written language.
 
-[^conlang]: „conlang“ is both a noun that means „constructed language“ and a verb that means „construct a language/languages“; a famous conlang is Esperanto; my favourite one is [toki pona](https://tokipona.org).
+I often draw,—I have always had crayons, pencils, markers, paint, pens and other tools;—this picture on the right is a small pastel and watercolour de&shy;piction of an <abbr title="original character">O.C.</abbr> of mine.
 
-[^zettelkasten]: „Zettelkasten“ (a German compound from „Zettel“, which means „note“, and „Kasten“, which means „box“, of which the plural is „Zettelkästen“) refers to a personal knowledge management method popularised by Niklas Luhmann; more about it can be learnt from [the Zettelkasten website](https://zettelkasten.de).
+2020 was the first time I have ever done pro&shy;gram&shy;ming : during the lockdown, my time on the com&shy;pu&shy;ter vastly increased and I stumbled upon a free, basic HTML course of a few videos that allowed me to get into the world of *computer science*. 
 
-### somewhat related blinkies, buttons and stamps {#me-badges}
+Most of my coding today happens either on this website or on some game pro&shy;ject in [Godot](https://godotengine.org).
+
+Another interest of mine is linguistics : this comes from back when I started lear&shy;n&shy;ing Latin in school. Because of that, I also have extensively explored <abbr title="language constructing">conlanging</abbr>[^cl].
+
+The researches that I have done have led me to write and increasing number of notes. Because of this, I use more than one notebook,—a sketchbook, a diary, a bul&shy;let journal, an address book etc.,—and store in a small crate on my desk the pre&shy;mice of a zettelkasten[^zk].
+
+[^cl]: <dfn><abbr title="Constructed languages">Conlangs</abbr></dfn> are languages created by people known as ‘conlangers’. Some of the most popular conlangs are Zamenhof’s famous language Esperanto, which aims to serve as a universal medium of communication; Lojban, a community-made language whose goal is to be as logical as possible; and [Toki Pona](https://tokipona.org/), a recently tren&shy;dy one that is meant to be small and minimalist in order to not only be easy to learn, but also to force upon its speakers a more thoughtful use of words.
+
+[^zk]: <dfn><i lang="de">Zettelkasten</i></dfn>,—German compound of <i lang="de">Zettel</i> ‘note’ and <i lang="de">Kasten</i> ‘box’, with the plu&shy;ral form <i lang="de">Zettelkästen</i>,—refers to a personal knowledge management method po&shy;pu&shy;larised by sociologist Niklas Luhmann during the 20th century; many re&shy;sour&shy;ces by dedicated users may be found on the [Zettelkasten website](https://zettelkasten.de/).
+
+### Blinkies, buttons & stamps {#me-badges}
 
 {{ image(alt="I am European.", src="/images/blinkies/nationalities/european.png", class="pixelated") }}
 {{ image(alt="French is my native language.", src="/images/blinkies/languages/french.png", class="pixelated") }}
 {{ image(alt="English is my second language.", src="/images/blinkies/languages/english_second_language.png", class="pixelated") }}
 {{ image(alt="I like webcore.", src="/images/blinkies/aesthetics/webcore.png", class="pixelated") }}
 {{ image(alt="I like weirdcore.", src="/images/blinkies/aesthetics/weirdcore.png", class="pixelated") }}
-{{ image(alt="I prefer being referred to with the „he/him“ pronouns.", src="/images/blinkies/he_slash_him.png", class="pixelated") }}
-{{ image(alt="I am right-handed.", src="/images/blinkies/righthanded.png", class="pixelated") }} \
-{{ image(alt="I support drawing in class", src="/images/blinkies/in_class_drawing_support.gif", class="pixelated") }}
+{{ image(alt="I write and draw with my right hand.", src="/images/blinkies/righthanded.png", class="pixelated") }} \
+{{ image(alt="I support drawing in class.", src="/images/blinkies/in_class_drawing_support.gif", class="pixelated") }}
 {{ image(alt="I love RADIOHEAD.", src="/images/blinkies/radiohead.gif", class="pixelated") }}
 
 {{ image(alt="I love NEKOJIRU.", src="/images/buttons/nekojiru.gif", class="pixelated") }}
-{{ image(alt="MSIE Makes me sick!", src="/images/buttons/internet_explorer/makes_me_sick.gif", class="pixelated") }}
-{{ image(alt="I use HE/HIM", src="/images/buttons/i_use_he_slash_him.gif", class="pixelated") }}
-{{ image(alt="I AM CONFUSED BUT THAT'S FINE.", src="/images/buttons/i_am_confused_but_thats_fine.gif", class="pixelated") }}
-{{ image(alt="a written manifestation of the confusion that is mentioned by the previous button's label", src="/images/buttons/what.gif", class="pixelated") }}
+{{ image(alt="Internet Explorer makes me sick!", src="/images/buttons/internet_explorer/makes_me_sick.gif", class="pixelated") }}
+{{ image(alt="I am confused, but that’s fine.", src="/images/buttons/i_am_confused_but_thats_fine.gif", class="pixelated") }}
+{{ image(alt="What?", src="/images/buttons/what.gif", class="pixelated") }}
 
-{{ image(alt="I support Randomness!", src="/images/stamps/randomness_support.jpg", class="pixelated") }}
-{{ image(alt="I LOVE STAMPS!", src="/images/stamps/stamp_love.gif", class="pixelated") }}
-{{ image(alt="I WISH I COULD BEAT MY YOUNGER SELF WITH A LEAD PIPE.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
-{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
-{{ image(alt="STAMP MISSING", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ image(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
-{{ image(alt="STAMP MISSING", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
-{{ image(alt="STAMP MISSING", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}
+{{ image(alt="I support randomness!", src="/images/stamps/randomness_support.jpg", class="pixelated") }}
+{{ image(alt="I love stamps!", src="/images/stamps/stamp_love.gif", class="pixelated") }}
+{{ image(alt="I wish i could beat my younger self with a lead pipe.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
+{{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
+{{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }}
+{{ image(alt="I love to do stuff on the computer.", src="/images/stamps/computer_love.jpg", class="pixelated") }}
+{{ image(alt="I love physical media.", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
+{{ image(alt="I love cheese.", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}
