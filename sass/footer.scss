@@ -1,6 +1,24 @@
 @use "john";
 
+footer {
+  position: absolute;
+  inset-block-end: 0;
+  min-inline-size: 100%;
+}
 
+#backtotop {
+  position: absolute;
+  inset-block-end: 0;
+  image-rendering: crisp-edges;
+  display: block;
+  aspect-ratio: auto 443/65;
+  background-image: url("/images/leaves.avif");
+  background-size: contain;
+  background-repeat: repeat-x;
+  background-position-y: bottom;	
+  min-block-size: 128px;
+  max-inline-size: 100%;
+  font-size: 0;
 }
 
 #brainmade {
@@ -8,4 +26,6 @@
 	/*inset-inline-end: 7ch;*/
 	inset-inline-end: 0;
 	inset-block-start: -2em;
+#backtotop:focus {
+  background-color: #0000;
 }
