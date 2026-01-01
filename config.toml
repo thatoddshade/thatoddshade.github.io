@@ -64,4 +64,4 @@ mastodon_username = "@thatoddshade@mas.to"
 photo = "/images/photo.svg"
 
 # appended between a `page.title` and `config.title`
-title_separator = " \\ "
+title_separator = " — "
