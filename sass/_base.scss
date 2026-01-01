@@ -2,11 +2,13 @@
 @use "settings";
 
 body {
+  --serif: "EB Garamond 08", Georgia, serif;
+  --big-serif: "EB Garamond 12", Georgia, serif;  /* optical size */
+
   position: relative;
   max-width: 640px;
   max-height: 480px;
 
-	font-family: "Jost", sans-serif;
 
     margin-block-start: 0;
 	margin-inline-start: auto;
@@ -15,6 +17,8 @@ body {
 
 	/*background-image: url("/images/backgrounds/0.svg");
 	background-attachment: fixed;*/
+  font-family: var(--serif);
+  font-size: 20px;
 
 	/*> header, > main, > footer {
 		margin: settings.$margin;
@@ -28,9 +32,6 @@ body {
   /*display: grid;
   grid-template-columns: 214px 426px;*/
 
-    h1, h2, h3, h4, h5, h6 {
-      font-family: "Junicode-CondMedium", serif;
-    }
 }
 
 /* `max-width` is used instead of `max-inline-size` because logical properties do not work with media queries yet. */
@@ -41,6 +42,11 @@ body {
 		margin-inline: 0;
 	}
 }*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--big-serif);
+  font-variant: small-caps;
+  font-weight: normal;
+}
 
 #frame {
   inline-size: 213px;
@@ -51,7 +57,7 @@ body {
   inset-inline-end: 0;
   inset-block-start: 1em;
   
-  font-family: "Junicode-CondMedium", serif;
+  font-family: var(--serif);
   font-size: 1.5em;
   font-style: italic;
 
@@ -94,7 +100,7 @@ body {
   align-items: center;
 
   a {
-    font-family: "Junicode-CondMedium", serif;
+    font-family: var(--serif);
     font-size: 1.5em;
   }
 

@@ -1,3 +1,106 @@
+/* EB Garamond */
+@font-face {
+	font-family: "EBGaramond SC 08";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond SC 08"),
+		url("fonts/EBGaramondSC08-Regular.woff2") format("woff2"),
+		url("fonts/EBGaramondSC08-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond SC 12";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond SC 12"),
+		url("fonts/EBGaramondSC12-Regular.woff2") format("woff2"),
+		url("fonts/EBGaramondSC12-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond 08";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond 08"),
+		url("fonts/EBGaramond08-Regular.woff2") format("woff2"),
+		url("fonts/EBGaramond08-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond 12";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond 12"),
+		url("fonts/EBGaramond12-Regular.woff2") format("woff2"),
+		url("fonts/EBGaramond12-Regular.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond 12";
+	font-display: swap;
+	font-weight: normal;
+	font-style: italic;
+	src: local("EB Garamond 12"),
+		url("fonts/EBGaramond12-Italic.woff2") format("woff2"),
+		url("fonts/EBGaramond12-Italic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond 08";
+	font-display: swap;
+	font-weight: normal;
+	font-style: italic;
+	src: local("EB Garamond 08"),
+		url("fonts/EBGaramond08-Italic.woff2") format("woff2"),
+		url("fonts/EBGaramond08-Italic.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond 12 All SC";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond 12 All SC"),
+		url("fonts/EBGaramond12-AllSC.woff2") format("woff2"),
+		url("fonts/EBGaramond12-AllSC.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond Initials";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond Initials"),
+		url("fonts/EBGaramondInitials.woff2") format("woff2"),
+		url("fonts/EBGaramondInitials.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond Initials Fill1";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond Initials Fill1"),
+		url("fonts/EBGaramondInitialsF1.woff2") format("woff2"),
+		url("fonts/EBGaramondInitialsF1.woff") format("woff");
+}
+
+@font-face {
+	font-family: "EB Garamond Initials Fill2";
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+	src: local("EB Garamond Initials Fill2"),
+		url("fonts/EBGaramondInitialsF2.woff2") format("woff2"),
+		url("fonts/EBGaramondInitialsF2.woff") format("woff");
+}
+
+
+/* Jost */
 @font-face {
 	font-family: "Jost";
 	src: url("fonts/Jost-100.otf") format("opentype");
@@ -126,6 +229,7 @@
 }
 
 
+/* Junicode */
 @font-face {
   font-family: "Junicode-CondMedium";
   src: url("fonts/Junicode-CondMedium.otf") format("opentype");
