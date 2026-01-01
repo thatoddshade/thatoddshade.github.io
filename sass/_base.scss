@@ -28,7 +28,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--big-serif);
-  font-variant: all-small-caps;
+  font-variant: all-petite-caps;
   font-weight: normal;
 }
 
@@ -118,9 +118,4 @@ main {
   height: auto;
   position: absolute;
   z-index: -2;
-}
-
-footer {
-  position: absolute;
-  inset-block-end: 0;
 }
