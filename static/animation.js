@@ -1,5 +1,10 @@
-const BACKGROUND = "#efefef22"
-const LINE_WIDTH = 1.5
+// canvas fill
+const BACKGROUND   = "#fffff044"
+
+// line strokes
+const FOREGROUND_1 = "#ffffffff"
+const FOREGROUND_2 = "#000c0f10"
+const LINE_WIDTH   = 1.5
 
 
 const ctx = game.getContext("2d")
@@ -81,7 +86,7 @@ function frame() {
             const b = vs[f[(i + 1)%f.length]];
 			//console.log(f, a, b)
             line({p1: screen(project(translate_z(rotate_xz(a, Math.PI), dz))),
-                 p2: screen(project(translate_z(rotate_xz(b, angle), dz)))}, "#ffffff") //white
+                 p2: screen(project(translate_z(rotate_xz(b, angle), dz)))}, FOREGROUND_1)
 
         }
     }
@@ -92,7 +97,7 @@ function frame() {
             const b = vs[f[(i + 1)%f.length]];
 			//console.log(f, a, b)
             line({p1: screen(project(translate_z(rotate_xz(a, angle), dz))),
-                 p2: screen(project(translate_z(rotate_xz(b, Math.PI - angle), dz)))}, "#000c0f10")
+                 p2: screen(project(translate_z(rotate_xz(b, Math.PI - angle), dz)))}, FOREGROUND_2)
         }
     }
 
