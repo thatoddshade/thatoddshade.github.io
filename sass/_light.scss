@@ -8,87 +8,76 @@ $accent: darkred;
 $selection: khaki;
 
 @mixin light-theme {
-	color: $foreground;
-	background-color: $background;
-	
-	#maincontent {
-		border: 4px solid $foreground;
-		box-shadow: 4px 4px $foreground;
-	}
+  body {
+    color: $foreground;
+    background-color: $background;
+    box-shadow: 0 0 4ch 0 #0002;
+  }
+  
+  main {
+    /*border: 4px solid $foreground;*/
+    /*border-radius: 0 1ch 1ch 0;*/
+    /*box-shadow: inset 0 0 0 4px #000;*/
+  }
 
-	.secondary {
-		color: $secondary;
-	}
+  .secondary {
+    color: $secondary;
+  }
 
-	a {
-		color: $foreground;
-		text-decoration: underline;
-	}
+  a {
+    color: $foreground;
+    text-decoration: underline;
+  }
 
-	a:hover {
-		color: $accent;
-	}
+  a:hover {
+    color: $accent;
+  }
 
-	a:focus, ::selection {
-		background-color: color.scale($accent, $alpha: -75%);
-	}
+  a:focus, ::selection {
+    background-color: $selection;
+  }
 
-	blockquote {
-		border-inline-start: 2px solid $secondary;
-	}
+  blockquote {
+    border-inline-start: 2px solid $foreground;
+    box-shadow: inset 1ch 0 1ch 0 #0001;
+  }
 
-	code {
-		background-color: $tertiary;
-	}
+  code {
+    background-color: $tertiary;
+  }
 
-	/*
-	this is where the `dark-theme` mixin has `.invert`.
-	*/
+  /*
+  this is where the `dark-theme` mixin has `.invert`.
+  */
 
-	pre code {
-		background-color: transparent;
-	}
+  pre code {
+    background-color: transparent;
+  }
 
-	.footnote-reference {
-		> a {
-			padding-inline: 0.25ch;
-			color: $background;
-			background-color: $foreground;
+    
 
-			text-decoration: none;
-		}
+    > a:hover {
+      background-color: $accent;
+    }
+  }
+  
 
-		> a:hover {
-			background-color: $accent;
-		}
-	}
-	
-	.footnote-definition-label {
-		padding-inline-start: 0.125ch;
-	}
+  /*table {
+    th, td {
+      border-color: darken($tertiary, 5%);
+    }
 
-	.footnote-definition-label::after {
-		padding-inline-end: 0.125ch;
-		content: ": ";
-	}
-
-	/*table {
-		th, td {
-			border-color: darken($tertiary, 5%);
-		}
-
-		thead, tr:nth-child(even) {
-			background-color: lighten($tertiary, 10%);
-		}
-	}*/
+    thead, tr:nth-child(even) {
+      background-color: lighten($tertiary, 10%);
+    }
+  }*/
 
   #skip:focus {
     background-color: $tertiary;
   }
-}
 
-@media (prefers-color-scheme: light) {
-	body {
-		@include light-theme;
-	}
-}
+/*@media (prefers-color-scheme: light) {*/
+  /*body {*/
+    @include light-theme;
+  /*}*/
+/*}*/
