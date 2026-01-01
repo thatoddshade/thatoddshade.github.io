@@ -6,6 +6,10 @@
 @use "post";
 @use "settings";
 
+main p {
+  text-indent: 2ch each-line;
+}
+
 /* support for browsers that have the old hierarchy-based sizing */
 :where(h1) {
   margin-block: 0.67em;
