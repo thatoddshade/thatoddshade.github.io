@@ -1,10 +1,6 @@
-@use "skip";
-@use "theme";
 @use "base";
-@use "header";
-@use "footer";
+@use "theme";
 @use "post";
-@use "settings";
 
 main p {
   text-indent: 2ch each-line;
