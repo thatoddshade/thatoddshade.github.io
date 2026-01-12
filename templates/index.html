@@ -1,7 +1,42 @@
 {% extends "base.html" %}
 
 {% block header %}
+<style>
+#imood {
+	transform: rotate(-25deg);
+	position: absolute;
+	inset-inline-start: 280px;
+	inset-block-start: 10px;
+
+	text-decoration: none;
+}
+
+#pronouns, #header-navigation > ul {
+	margin: 0;
+	padding: 0;
+
+	> li {
+		list-style-type: none;
+		display: inline flow-root;
+	}
+}
+
+#header-navigation > ul {
+	> li {
+		margin-inline-end: 1ch;
+	}
+	> li:last-of-type {
+		margin-inline-end: 0;
+	}
+	> li[aria-current="page"] > a {
+		text-decoration: none;
+	}
+}
+</style>
+
 <div class="h-card">
+
+<img src="/images/eye.gif" style="position: absolute; inset-block: 260px; inset-inline: 170px;" />
 
 <a id="imood" href="https://www.imood.com/users/{{ config.extra.imood_username }}">
 	<img
@@ -28,8 +63,9 @@
 {% endif %}#}
 
 
-<div style="background-image: url('/images/homepage_frame.svg'); min-width: 480px; min-height: 360px; position: absolute; z-index: -1;"></div>
-
+<div style="background-image: url('/images/homepage_frame.svg');
+		width: 100%; height: 100%;
+		position: absolute; z-index: -1;"></div>
 
 <canvas id="game" width="320" height="240"></canvas><script src="umbra.js"></script><script src="animation.js"></script>
 <div id="frame">
@@ -123,12 +159,12 @@
 
 {% block content %}
 <style>
-	main {
-		text-align: center;
-		padding-block-end: 0;
-		overflow: hidden;
-		margin-block-start: 240px;
-	}
+main {
+	text-align: center;
+	padding-block-end: 0;
+	overflow: hidden;
+	margin-block-start: 240px;
+}
 </style>
 
 <main id="maincontent">{% if section.content %}{{ section.content | safe }}{% endif %}
