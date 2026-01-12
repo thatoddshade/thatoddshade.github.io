@@ -2,6 +2,7 @@
 
 footer {
   min-inline-size: 100%;
+  height: 128px;
 }
 
 #backtotop {
@@ -15,6 +16,8 @@ footer {
   min-block-size: 128px;
   max-inline-size: 100%;
   font-size: 0;
+  position: absolute;
+  inset-block-end: 0;
 }
 
 #backtotop:focus {
