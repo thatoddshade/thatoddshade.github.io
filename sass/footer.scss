@@ -1,7 +1,5 @@
-@use "john";
-
 footer {
-  min-inline-size: 100%;
+  min-width: 100%;
   height: 128px;
 }
 
@@ -9,15 +7,17 @@ footer {
   image-rendering: crisp-edges;
   display: block;
   aspect-ratio: auto 443/65;
+
   background-image: url("/images/leaves.avif");
   background-size: contain;
   background-repeat: repeat-x;
   background-position-y: bottom;	
-  min-block-size: 128px;
-  max-inline-size: 100%;
+
+  height: 128px;
+  max-width: 100%;
   font-size: 0;
   position: absolute;
-  inset-block-end: 0;
+  bottom: 0;
 }
 
 #backtotop:focus {

@@ -3,8 +3,8 @@
 .repost::before	{
 	content: "";
 	display: inline-block;
-	inline-size: 16px;
-	block-size: 16px;
+	width: 16px;
+	height: 16px;
 	margin-inline-end: 0.25em;
 	background-color: currentColor;
 }

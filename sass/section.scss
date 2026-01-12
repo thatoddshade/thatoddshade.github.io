@@ -1,10 +1,10 @@
 body > main {
 	> hgroup {
-		border-block-end: 1px solid currentcolor;
+		border-bottom: 1px solid currentcolor;
 	}
 
 	article {
-		border-block-start: 2px solid currentcolor;
+		border-top: 2px solid currentcolor;
 		padding-block: 0.25em;
 
 		> header {
@@ -18,7 +18,7 @@ body > main {
 		}
 	
 		img {
-			max-block-size: 480px;		
+			max-height: 480px;		
 		}
 	}
 }

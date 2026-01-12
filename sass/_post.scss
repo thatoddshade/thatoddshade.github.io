@@ -8,11 +8,11 @@
         font-variant-caps: all-small-caps;
 
 		.updated {
-			float: inline-end;
+			float: right;
 		}
 	}
 
 	img {
-		max-block-size: 64rem;
+		max-height: 64rem;
 	}
 }

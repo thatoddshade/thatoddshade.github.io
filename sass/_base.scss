@@ -1,7 +1,6 @@
 @use "fonts";
 @use "settings";
 @use "skip";
-@use "header";
 @use "footer";
 
 
@@ -17,8 +16,7 @@ body {
   font-size: 20px;
 
   margin-block: 0;
-  margin-inline-start: auto;
-  margin-inline-end: auto;
+  margin-inline: auto;
 
   padding: 0;
   
@@ -33,13 +31,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #frame {
-  inline-size: 213px;
+  width: 213px;
 }
 
 #navigation-links {
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 1em;
+  right: 0;
+  top: 1em;
   
   font-family: var(--serif);
   font-size: 1.5em;
