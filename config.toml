@@ -15,14 +15,15 @@ highlight_theme = "1337"
 
 [extra]
 homepage_links = [
-	{ title = "home", href = "@/_index.md" },
-	{ title = "slipbox", href = "@/slipbox/_index.md" },
-	{ title = "posts", href = "@/posts/_index.md" },
-	{ title = "blogroll", href = "@/blogroll.md" },
-	{ title = "people", href = "@/people.md" },
-	{ title = "uses", href = "@/uses.md" },
-	{ title = "colophon", href = "@/colophon.md" },
-	{ title = "about", href = "@/about.md" },
+	{ name = "home", url = "@/_index.md" },
+	#{ name = "slipbox", url = "@/slipbox/_index.md" },
+	{ name = "posts", url = "@/posts/_index.md" },
+	{ name = "now", url = "@/now.md" },
+	#{ name = "blogroll", url = "@/blogroll.md" },
+	#{ name = "people", url = "@/people.md" },
+	#{ name = "uses", url = "@/uses.md" },
+	#{ name = "colophon", url = "@/colophon.md" },
+	{ name = "about", url = "@/about.md" },
 ]
 
 hfeed = "/posts"
