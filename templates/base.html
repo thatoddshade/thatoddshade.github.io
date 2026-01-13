@@ -76,14 +76,29 @@
 <body id="top">
 	<a href="#maincontent" id="skip">Skip to main content</a>
 
+	{% if config.extra.homepage_links %}
 	<nav id="navigation-links">
-		<ul>
-			<li><a href="/">home</a></li>
-			<li><a href="/posts">posts</a></li>
-			<li><a href="/now">now</a></li>
-			<li><a href="/about">about</a></li>
+		<ul>{% for link in config.extra.homepage_links %}
+
+			{% if page.path %}
+			{% set current_path = page.path %}
+			{% elif section.path %}
+			{% set current_path = section.path %}
+			{% else %}
+			{% set current_path = config.base_url %}
+			{% endif %}
+
+			{% set is_current_page = get_url(path=link.url) == get_url(path=current_path) ~ "/" %}
+			<li
+				{% if is_current_page == true %}
+				aria-current="page"
+				{% endif %}
+			><a href="{{ get_url(path=link.url) }}">{{ link.name }}</a>
+			</li>
+			{% endfor %}	
 		</ul>
 	</nav>
+	{% endif %}
 
 	{% block header %}
 	{% endblock header %}
