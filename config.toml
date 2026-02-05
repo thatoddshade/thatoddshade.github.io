@@ -49,7 +49,7 @@ links = [
 	{ name = "Wikipedia (en)", url = "https://en.wikipedia.org/wiki/User:Thatoddshade", lang = "en" },
 	{ name = "Tumblr", url = "https://www.tumblr.com/blog/thatoddshade" },
 	{ name = "last.fm", url = "https://www.last.fm/user/thatoddshade" },
-	{ name = "doevery.day", url = "https://doevery.day/thatoddshade", lang = "en"},
+	{ name = "doevery.day", url = "https://doevery.day/thatoddshade", lang = "en", inactive = true},
 	{ name = "Internet Archive", url = "https://archive.org/details/@thatoddshade", lang = "en" },
 	{ name = "Postcrossing", url = "https://www.postcrossing.com/user/thatoddshade" },
 	{ name = "mas.to", url = "https://mas.to/@thatoddshade", lang = "en" },
