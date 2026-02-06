@@ -109,6 +109,17 @@ main {
 /*main {
   min-inline-size: fit-content;
 }*/
+#sitetitle {
+  margin-block: 0;
+  font-family: 'Jost', sans-serif;
+  font-size: 1em;
+  font-variant: all-petite-caps;
+  font-weight: normal;
+
+  > a {
+    text-decoration: none;
+  }
+}
 
 #game {
   image-rendering: pixelated;
