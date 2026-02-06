@@ -43,12 +43,14 @@
 	<!-- add a [rel-me](https://indieweb.org/rel-me) for each `config.extra.links` dictionary's `href` -->
 	{% if config.extra.links %}
 	{% for link in config.extra.links %}
+	{% if not link.inactive %}
 	<link
 		rel="me"
 		title="{{ link.name }}"
 		href="{{ link.url }}"
 		{% if link.lang %}hreflang="{{ link.lang }}"{% endif %}
 	/>
+	{% endif %}
 	{% endfor %}
 	{% endif %}
 
