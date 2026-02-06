@@ -2,8 +2,8 @@
 
 {% block title %}
 {%- if page.title -%}{{ page.title }}
-{%- elif page.extra.like_of -%}like of {% include "liked_title.html" %}
-{%- elif page.extra.repost_of -%}repost of {% include "reposted_title.html" %}
+{%- elif page.extra.like_of -%}Like of {% include "liked_title.html" %}
+{%- elif page.extra.repost_of -%}Repost of {% include "reposted_title.html" %}
 {%- else -%}{{ page.content | striptags | truncate(length=32)}}{%- endif -%}
 {{ config.extra.title_separator }}{{ config.title }}
 {% endblock title %}
