@@ -46,25 +46,25 @@ The researches that I have done have led me to write and increasing number of no
 
 ### Blinkies, buttons & stamps {#me-badges}
 
-{{ image(alt="I am European.", src="/images/blinkies/nationalities/european.png", class="pixelated") }}
-{{ image(alt="French is my native language.", src="/images/blinkies/languages/french.png", class="pixelated") }}
-{{ image(alt="English is my second language.", src="/images/blinkies/languages/english_second_language.png", class="pixelated") }}
-{{ image(alt="I like webcore.", src="/images/blinkies/aesthetics/webcore.png", class="pixelated") }}
-{{ image(alt="I like weirdcore.", src="/images/blinkies/aesthetics/weirdcore.png", class="pixelated") }}
-{{ image(alt="I write and draw with my right hand.", src="/images/blinkies/righthanded.png", class="pixelated") }} \
-{{ image(alt="I support drawing in class.", src="/images/blinkies/in_class_drawing_support.gif", class="pixelated") }}
-{{ image(alt="I love RADIOHEAD.", src="/images/blinkies/radiohead.gif", class="pixelated") }}
+{{ image(alt="European", src="/images/blinkies/nationality_european.png", class="pixelated") }}
+{{ image(alt="French language", src="/images/blinkies/lang_french.png", class="pixelated") }}
+{{ image(alt="English second language", src="/images/blinkies/lang_english_2nd.png", class="pixelated") }}
+{{ image(alt="Webcore", src="/images/blinkies/webcore.png", class="pixelated") }}
+{{ image(alt="Weirdcore", src="/images/blinkies/weirdcore.png", class="pixelated") }}
+{{ image(alt="Right-handed", src="/images/blinkies/righthanded.png", class="pixelated") }} \
+{{ image(alt="I support drawing in class.", src="/images/blinkies/i_support_drawing_in_class.gif", class="pixelated") }}
+{{ image(alt="Radiohead", src="/images/blinkies/radiohead.gif", class="pixelated") }}
 
-{{ image(alt="I love NEKOJIRU.", src="/images/buttons/nekojiru.gif", class="pixelated") }}
+{{ image(alt="Nekojiru", src="/images/buttons/nekojiru.gif", class="pixelated") }}
 {{ image(alt="Internet Explorer makes me sick!", src="/images/buttons/internet_explorer/makes_me_sick.gif", class="pixelated") }}
 {{ image(alt="I am confused, but that’s fine.", src="/images/buttons/i_am_confused_but_thats_fine.gif", class="pixelated") }}
 {{ image(alt="What?", src="/images/buttons/what.gif", class="pixelated") }}
 
 {{ image(alt="I support randomness!", src="/images/stamps/randomness_support.jpg", class="pixelated") }}
 {{ image(alt="I love stamps!", src="/images/stamps/stamp_love.gif", class="pixelated") }}
-{{ image(alt="I wish i could beat my younger self with a lead pipe.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
+{{ image(alt="I wish I could beat my younger self with a lead pipe.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
 {{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
 {{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ image(alt="I love to do stuff on the computer.", src="/images/stamps/computer_love.jpg", class="pixelated") }}
-{{ image(alt="I love physical media.", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
-{{ image(alt="I love cheese.", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}
+{{ image(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
+{{ image(alt="i <3 physical media", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
+{{ image(alt="I love cheese", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}
