@@ -3,7 +3,8 @@ footer {
   height: 128px;
 }
 
-#backtotop {
+/* fun alliteration… there is another one in the markup */
+#scrolltostart {
   image-rendering: crisp-edges;
   display: block;
   aspect-ratio: auto 443/65;
@@ -21,6 +22,6 @@ footer {
   bottom: 0;
 }
 
-#backtotop:focus {
+#scrolltostart:focus {
   background-color: #0000;
 }

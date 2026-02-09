@@ -73,8 +73,8 @@
  \|___/ \__/ |____//   /
   \                   /
 -->
-<body id="top">
-	<a href="#maincontent" id="skip">Skip header</a>
+<body id="begin">
+	<a href="#maincontent" id="skip">Skip to content</a>
 
 	{% if config.extra.homepage_links %}
 	<nav id="navigation-links">
@@ -107,8 +107,9 @@
 	{% endblock content %}
 
 	<footer>
-		<a href="#top" fetchpriority="high" id="backtotop" class="invert"
-				title="Go back to top">Go back to top</a>
+		<!-- I have way to much fun with alliterations. -->
+		<a href="#begin" fetchpriority="high" id="scrolltostart" class="invert"
+				title="Back to beginning">Back to beginning</a>
 	</footer>
 </body>
 </html>
