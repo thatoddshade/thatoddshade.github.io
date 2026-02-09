@@ -65,12 +65,8 @@
 	<div class="e-content">{{ page.content | safe }}</div>
 
 	{% if page.extra.syndication %}
-	<div id="syndication">	
-		<p>
-			<abbr
-				title="These websites may allow interaction, which I invite you to do to give feedback or share any,—and I do mean any,—thought of yours."
-			>also on</abbr>:
-		</p>
+	<aside id="syndication">	
+		<h2>Syndication</h2>
 		<ul class="list-with-punctuation list-with-reduced-spacing">
 			{% for syndication in page.extra.syndication %}
 			<li>
@@ -81,7 +77,7 @@
 			</li>
 			{% endfor %}
 		</ul>
-	</div>
+	</aside>
 	{% endif %}
 </main>
 {% endblock content %}
