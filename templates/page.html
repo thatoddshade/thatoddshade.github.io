@@ -18,14 +18,13 @@
 
 {% block content %}
 <main id="maincontent"
-	class="post h-entry"
+		class="post h-entry"
 
-	{% if page.extra.lang %}
-	lang="{{ page.extra.lang }}"
-	{% else %}
-	lang="{{ page.lang }}"
-	{% endif %}
->
+		{% if page.extra.lang %}
+		lang="{{ page.extra.lang }}"
+		{% else %}
+		lang="{{ page.lang }}"
+		{% endif %}>
 	<link class="u-url" href="{{ page.permalink }}" />
 
 	<meta
