@@ -122,3 +122,12 @@ main {
   position: absolute;
   z-index: -2;
 }
+
+#imood {
+	transform: rotate(-30deg);
+	position: absolute;
+	inset-inline-start: 260px;
+	inset-block-start: 20px;
+
+	text-decoration: none;
+}
