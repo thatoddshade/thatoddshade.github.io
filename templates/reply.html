@@ -25,27 +25,24 @@
 <div class="replied-to-list">
 	<p class="reply">In reply to :</p>
 	<ul class="list-with-punctuation list-with-reduced-spacing">
-		{% for replied_to in page.extra.in_reply_to %}
+		{%- for replied_to in page.extra.in_reply_to %}
 		<li class="u-in-reply-to h-cite">
-			<a
-				class="u-url"
-				href="{{ replied_to.url }}"
-				>{% if replied_to.name %}<span class="p-name">{{ replied_to.name }}</span>{% else %}{{ replied_to.url }}{% endif %}</a>
-			{% if replied_to.author %}
+			<a class="u-url" href="{{ replied_to.url }}">
+				{%- if replied_to.name %}<span class="p-name">{{ replied_to.name }}</span>
+				{%- else %}{{ replied_to.url }}{% endif %}</a>
+			{%- if replied_to.author %}
 			by
 			<span class="p-author h-card">
-				{% if replied_to.author.url%}
-				<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ replied_to.author.name }}</a>
-				{% else %}
-				<span class="p-name">{{ replied_to.author.name }}</span>
+				{% if replied_to.author.url %}<a class="u-url p-name" href="{{ replied_to.author.url }}">{{ replied_to.author.name }}</a>
+				{% else %}<span class="p-name">{{ replied_to.author.name }}</span>
 				{%- endif -%}
 			</span>
-			{% endif %}
-			{%- if replied_to.content %}:
+			{%- endif %}
+			{% if replied_to.content %}:
 			<blockquote>
 				{{ replied_to.content | markdown | safe }}
 			</blockquote>
-			{% endif %}
+			{%- endif -%}
 		</li>
 		{% endfor %}
 	</ul>
