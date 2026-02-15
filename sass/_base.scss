@@ -3,6 +3,9 @@
 @use "skip";
 @use "footer";
 
+@view-transition {
+  navigation: auto;
+}
 
 body {
   --serif: "EB Garamond 08", Georgia, serif;
