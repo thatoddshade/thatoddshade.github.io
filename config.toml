@@ -14,6 +14,8 @@ highlight_code = true
 highlight_theme = "1337"
 
 [extra]
+domain = "thatoddshade.is-a.dev"
+
 homepage_links = [
 	{ name = "home", url = "@/_index.md" },
 	#{ name = "slipbox", url = "@/slipbox/_index.md" },
