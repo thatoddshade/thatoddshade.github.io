@@ -48,6 +48,7 @@
 	{%- endfor -%}
 	{%- endif %}
 </head>
+
 <!--
   /___   __   ____    \
  /|   \ /  \ |    \\  /\
@@ -59,29 +60,24 @@
 <body id="begin">
 	<a href="#maincontent" id="skip">Skip to content</a>
 
-	{% if config.extra.homepage_links %}
+	{% if config.extra.homepage_links -%}
 	<nav id="navigation-links">
-		<ul>{% for link in config.extra.homepage_links %}
-
-			{% if page.path %}
-			{% set current_path = page.path %}
-			{% elif section.path %}
-			{% set current_path = section.path %}
-			{% else %}
-			{% set current_path = config.base_url %}
-			{% endif %}
-
-			{% set is_current_page = get_url(path=link.url) == get_url(path=current_path) ~ "/" %}
-			<li
-				{% if is_current_page == true %}
+		<ul>{% for link in config.extra.homepage_links -%}
+			{%- if page.path -%}
+			{%- set current_path = page.path -%}
+			{%- elif section.path -%}
+			{%- set current_path = section.path -%}
+			{%- else -%}
+			{%- set current_path = config.base_url -%}
+			{%- endif -%}
+			{%- set is_current_page = get_url(path=link.url) == get_url(path=current_path) ~ "/" %}
+			<li {% if is_current_page == true -%}
 				aria-current="page"
-				{% endif %}
-			><a href="{{ get_url(path=link.url) }}">{{ link.name }}</a>
-			</li>
-			{% endfor %}	
+				{%- endif -%}><a href="{{ get_url(path=link.url) }}">{{ link.name }}</a></li>
+			{%- endfor %}	
 		</ul>
 	</nav>
-	{% endif %}
+	{%- endif %}
 
 	{% block header %}
 	{% endblock header %}
