@@ -6,7 +6,7 @@
 {%- elif page.extra.repost_of -%}Repost of {% include "reposted_title.html" %}
 {%- else -%}{{ page.content | striptags | truncate(length=32)}}{%- endif -%}
 {{ config.extra.title_separator }}{{ config.title }}
-{% endblock title %}
+{%- endblock title %}
 
 {% block description %}{{ page.description | default(value=config.description) }}{% endblock description %}
 
@@ -79,6 +79,7 @@
 	</aside>
 	{% endif %}
 
+	{# Webmentions -#}	
 	{% set data = load_data(path="webmentions.json", format="json") %}
 	<aside>
 		{#- <h2>Mentions</h2> -#}
@@ -86,10 +87,8 @@
 		{%- set trimmed_path = links.target | trim_start_matches(pat="https://" ~ config.extra.domain ~ "/") | trim_end_matches(pat="/") %}
 		{%- set relative_path = trimmed_path ~ ".md" %}
 		{%- if relative_path == page.relative_path %}
-
 		{% set target_page = get_page(path=relative_path) %}
 		{%- if not links.source is starting_with("https://" ~ config.extra.domain) -%}
-
 		{%- if links.activity.type == "like" -%}
 		<article class="mention-profile like">
 			<p><a href="{{ links.source }}"><time datetime="{{ links.data.published }}">{{ links.data.published | date(format="%Y, %B %-d at %H:%M (UTC%:z)") | replace(from=" at 00:00 (UTC+00:00)", to="") | replace(from=" (UTC+00:00)", to="") }}</time></a> :
