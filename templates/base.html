@@ -42,6 +42,8 @@
 	<link rel="{{ favicon.rel }}" type="{{ favicon.type }}" href="{{ favicon.href }}"{% if favicon.sizes %} sizes="{{ favicon.sizes }}"{% endif %} />
 	{%- endfor %}
 
+	<meta name="apple-mobile-web-app-title" content="{{ config.author }}" />
+
 	<!-- https://indieweb.org/rel-me -->
 	{% if config.extra.links -%}
 	{%- for link in config.extra.links -%}
