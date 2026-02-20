@@ -37,7 +37,10 @@
 	<link rel="openid.server" href="https://openid.indieauth.com/openid" />
 	<link rel="webmention" href="https://webmention.io/thatoddshade.is-a.dev/webmention" />
 	<link rel="microsub" href="https://aperture.p3k.io/microsub/1024" />
-	<link rel="icon" type="image/png" href="{{ config.extra.photo }}" />
+	
+	{% for favicon in config.extra.favicons %}
+	<link rel="{{ favicon.rel }}" type="{{ favicon.type }}" href="{{ favicon.href }}"{% if favicon.sizes %} sizes="{{ favicon.sizes }}"{% endif %} />
+	{%- endfor %}
 
 	<!-- https://indieweb.org/rel-me -->
 	{% if config.extra.links -%}

@@ -61,7 +61,18 @@ links = [
 imood_username = "thatoddshade"
 mastodon_username = "@thatoddshade@mas.to"
 
-photo = "/images/photo.svg"
+photo = "/favicon.png"
+favicons = [
+	{ rel="shortcut icon", href = "/favicon.ico", type = "image/x-icon" },
+
+	{ rel="apple-touch-icon", type = "image/png", sizes="120x120", href = "/favicon-120x120.png" },
+	{ rel="apple-touch-icon", type = "image/png", sizes="152x152", href = "/favicon-152x152.png" },
+	{ rel="apple-touch-icon", type = "image/png", sizes="167x167", href = "/favicon-167x167.png" },
+	{ rel="apple-touch-icon", type = "image/png", sizes="180x180", href = "/favicon-180x180.png" },
+
+	{ rel="icon", sizes="400x400", href = "/favicon.jpeg", type = "image/jpeg" },
+	{ rel="icon", sizes="400x400", href = "/favicon.png", type = "image/png" },
+]
 
 # appended between a `page.title` and `config.title`
 title_separator = " ⸺:⸺ "
