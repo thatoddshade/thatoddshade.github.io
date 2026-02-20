@@ -7,12 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=overlays-content" />
 	<meta name="theme-color" content="ivory" />
 
-	{% block extra_head -%}
-	<link
-		rel="stylesheet"
-		href="{{ get_url(path='style.css', cachebust=true) }}"
-	/>
+	<link rel="stylesheet" href="{{ get_url(path='style.css', cachebust=true) }}" />
 
+	{% block extra_head -%}
 	<link rel="feed" href="{{ config.extra.hfeed }}" />
 	{%- endblock extra_head %}
 
