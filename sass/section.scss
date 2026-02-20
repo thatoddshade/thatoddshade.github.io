@@ -7,14 +7,8 @@ body > main {
 		border-top: 2px solid currentcolor;
 		padding-block: 0.25em;
 
-		> header {
-			.time > a {
-				text-decoration: none;
-			}
-
-			h1 > a {
-				text-decoration: none;
-			}
+		> header > h1 > a {
+			text-decoration: none;
 		}
 	
 		img {

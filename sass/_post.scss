@@ -1,20 +1,25 @@
 @use "actions";
 
-.post {
-	.time {
-		font-size: 1em;
-		font-weight: bold;
+.post > img {
+  max-height: 64rem;
+}
 
-        font-variant-caps: all-small-caps;
+.time {
+  font-size: 1em;
+  text-decoration: none;
+  font-weight: bold;
+  
+  a {
+    text-decoration: none;
+  }
 
-		.updated {
-			float: right;
-		}
-	}
+  .updated {
+  	float: right;
+  }
+}
 
-	img {
-		max-height: 64rem;
-	}
+.mention-author {
+  text-decoration: none;
 }
 
 #next-previous {

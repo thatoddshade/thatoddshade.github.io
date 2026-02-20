@@ -89,29 +89,11 @@
 		{%- if relative_path == page.relative_path %}
 		{% set target_page = get_page(path=relative_path) %}
 		{%- if not links.source is starting_with("https://" ~ config.extra.domain) -%}
-		{%- if links.activity.type == "like" -%}
-		<article class="mention-profile like">
-			<p><a href="{{ links.source }}"><time datetime="{{ links.data.published }}">{{ links.data.published | date(format="%Y, %B %-d at %H:%M (UTC%:z)") | replace(from=" at 00:00 (UTC+00:00)", to="") | replace(from=" (UTC+00:00)", to="") }}</time></a> :
-			{{ links.data.author.name }} liked this post.</p>
+		<article class="mention">
+			<p class="{% if links.activity.type == "like" %}like{% endif %}{% if links.activity.type == "link" %}link{% endif %}{% if links.activity.type == "reply" %}reply{% endif %}"><span class="time"><a href="{{ links.source }}"><time datetime="{{ links.data.published }}">{{ links.data.published | date(format="%Y, %B %-d at %H:%M (UTC%:z)") | replace(from=" at 00:00 (UTC+00:00)", to="") | replace(from=" (UTC+00:00)", to="") }}</time></a> :</span>
+			{% if links.data.author.url %}<a href="{{ links.data.author.url }}" class="mention-author">{{ links.data.author.name }}</a>{% else %}<span class="mention-username">{{ links.data.author.name }}</span>{% endif %} {% if links.activity.type == "like" %}liked this post.{% endif %}{% if links.activity.type == "link" %}mentioned this post{% if links.data.name %} in <a href="{{ links.source }}"><cite>{{ links.data.name }}</cite></a>{% endif %}.{% endif %}{% if links.activity.type == "reply" %}replied to this post.{% endif %}</p>	
 		</article>
 		{%- endif -%}
-		
-		{%- if links.activity.type == "link" -%}
-		<article class="mention-profile link">
-			<p><a href="{{ links.source }}"><time datetime="{{ links.data.published }}">{{ links.data.published | date(format="%Y, %B %-d at %H:%M (UTC%:z)") | replace(from=" at 00:00 (UTC+00:00)", to="") | replace(from=" (UTC+00:00)", to="") }}</time></a> :
-			{{ links.data.author.name }} mentioned this post{% if links.data.name %} in <a href="{{ links.source }}"><cite>{{ links.data.name }}</cite></a>{% endif %}.</p>
-		</article>
-		{%- endif -%}
-		
-		{%- if links.activity.type == "reply" -%}
-		<article class="mention-profile reply">
-			<p><a href="{{ links.source }}"><time datetime="{{ links.data.published }}">{{ links.data.published | date(format="%Y, %B %-d at %H:%M (UTC%:z)") | replace(from=" at 00:00 (UTC+00:00)", to="") | replace(from=" (UTC+00:00)", to="") }}</time></a> :
-			{{ links.data.author.name }} replied to this post.</p>
-		</article>
-		{%- endif -%}
-
-		{%- endif -%}
-
 		{%- endif -%}
 		{%- endfor %}
 	</aside>
