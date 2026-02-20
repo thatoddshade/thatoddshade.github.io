@@ -46,12 +46,12 @@ The researches that I have done have led me to write and increasing number of no
 
 ### Blinkies, buttons & stamps {#me-badges}
 
-{{ image(alt="European", src="/images/blinkies/nationality_european.png", class="pixelated") }}
-{{ image(alt="French language", src="/images/blinkies/lang_french.png", class="pixelated") }}
-{{ image(alt="English second language", src="/images/blinkies/lang_english_2nd.png", class="pixelated") }}
-{{ image(alt="Webcore", src="/images/blinkies/webcore.png", class="pixelated") }}
-{{ image(alt="Weirdcore", src="/images/blinkies/weirdcore.png", class="pixelated") }}
-{{ image(alt="Right-handed", src="/images/blinkies/righthanded.png", class="pixelated") }} \
+{{ image(alt="European", src="/images/labels/nat_european.png", class="pixelated") }}
+{{ image(alt="French language", src="/images/labels/lang_french.png", class="pixelated") }}
+{{ image(alt="English second language", src="/images/labels/lang_english_2nd.png", class="pixelated") }}
+{{ image(alt="Webcore", src="/images/labels/webcore.png", class="pixelated") }}
+{{ image(alt="Weirdcore", src="/images/labels/weirdcore.png", class="pixelated") }}
+{{ image(alt="Right-handed", src="/images/labels/righthanded.png", class="pixelated") }} \
 {{ image(alt="I support drawing in class.", src="/images/blinkies/i_support_drawing_in_class.gif", class="pixelated") }}
 {{ image(alt="Radiohead", src="/images/blinkies/radiohead.gif", class="pixelated") }}
 
@@ -65,6 +65,6 @@ The researches that I have done have led me to write and increasing number of no
 {{ image(alt="I wish I could beat my younger self with a lead pipe.", src="/images/stamps/younger_self_lead_pipe_beating_wish.png", class="pixelated") }}
 {{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }} \
 {{ image(alt="Stamp Missing", src="/images/stamps/stamp_missing.png", class="pixelated") }}
-{{ image(alt="I love to do stuff on the computer", src="/images/stamps/computer_love.jpg", class="pixelated") }}
+{{ image(alt="I love to do stuff on the computer", src="/images/stamps/i_love_to_do_stuff_on_the_computer.jpg", class="pixelated") }}
 {{ image(alt="i <3 physical media", src="/images/stamps/i_love_physical_media.png", class="pixelated") }}
 {{ image(alt="I love cheese", src="/images/stamps/i_love_cheese.jpg", class="pixelated") }}
