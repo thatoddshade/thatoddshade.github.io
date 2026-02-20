@@ -49,7 +49,7 @@
 	{%- for link in config.extra.links -%}
 	{%- if not link.inactive -%}
 	<link rel="me" title="{{ link.name }}" href="{{ link.url }}" {% if link.lang %}hreflang="{{ link.lang }}"{% endif %} />
-	{%- endif -%}
+	{% endif -%}
 	{%- endfor -%}
 	{%- endif %}
 </head>
@@ -76,19 +76,17 @@
 			{%- set current_path = config.base_url -%}
 			{%- endif -%}
 			{%- set is_current_page = get_url(path=link.url) == get_url(path=current_path) ~ "/" %}
-			<li {% if is_current_page == true -%}
+			<li{% if is_current_page == true %}
 				aria-current="page"
-				{%- endif -%}><a href="{{ get_url(path=link.url) }}">{{ link.name }}</a></li>
+				{%- endif %}><a href="{{ get_url(path=link.url) }}">{{ link.name }}</a></li>
 			{%- endfor %}	
 		</ul>
 	</nav>
 	{%- endif %}
 
-	{% block header %}
-	{% endblock header %}
+	{% block header %}{% endblock header %}
 
-	{% block content %}
-	{% endblock content %}
+	{% block content %}{% endblock content %}
 
 	<footer>
 		<!-- I have way to much fun with alliterations. -->
