@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 
+{% block extra_head -%}
+<link rel="stylesheet" href="{{ get_url(path='homepage.css', cachebust=true) }}" />
+{%- endblock extra_head %}
+
 {% block header %}
 <div class="h-card">
-
-	<!--<div id="notice-button">
+	{#-<div id="notice-button">
 		<p>Link to my button!</p>
 		<img class="pixelated" alt="website button" src="/images/buttons/website.png" width="88" height="31" />
-	</div>-->
+	</div>
 	
-	{#{% if config.extra.email %}
+	{% if config.extra.email %}
 	<div id="notice-e-mail">
 		<p><a class="u-email" href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
 		<div>
@@ -18,22 +21,15 @@
 	</div>
 	{% endif %}#}
 	
+	<div id="homepage-frame"></div>
 	
-	<div style="background-image: url('/images/homepage_frame.svg');
-			width: 100%; height: 100%;
-			position: absolute; z-index: -1;"></div>
-	
-	<canvas id="game" width="320" height="240"></canvas>
+	<canvas id="animation" width="320" height="240"></canvas>
 	<script src="umbra.js"></script><script src="animation.js"></script>
 	
 	<div id="frame">
 		<div id="logo">
-			{#<img
-				class="u-photo"
-				src="{{ config.extra.photo }}"
-				alt="a vector illustration depicting a green hood worn by a creature of darkness"
-				/>#}
-			<h1 class="sc"><a class="u-uid u-url p-name p-nickname" href="/">{{ config.author }}</a></h1>
+			<img id="picture" class="u-photo" width="320px" src="{{ config.extra.photo }}" alt="Torn paper with green paint and pencil all over it" />
+			<h1 id="username" class="sc"><a class="u-uid u-url p-name p-nickname" href="/">{{ config.author }}</a></h1>
 		</div>
 	
 		<p><a class="u-email" href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
@@ -41,13 +37,13 @@
 		{#<p>
 		<span class="dt-bday">born on <time class="value" datetime="--05-26">a May 26<sup>th</sup></time></span>,
 			<span class="p-country-name">living in <span class="value">France</span></span>.
-		</p>#}
+		</p>
 	
 	
 		{% if config.extra.links %}
-		{#<details>
-			<summary>Links</summary>#}
-			{#<h2>Links</h2>
+		<details>
+			<summary>Links</summary>
+			<h2>Links</h2>
 			<ul class="list-with-punctuation list-with-reduced-spacing">
 				{% for link in config.extra.links %}
 				<li>{% if link.inactive %}<s>{% endif %}
@@ -59,12 +55,12 @@
 					>{{ link.name }}</a>{% if link.inactive %}</s>{% endif %}
 				</li>
 				{% endfor %}
-			</ul>#}
-		{#</details>#}
+			</ul>
+		</details>
 		{% endif %}
 	
 	
-		{#<section>	
+		<section>	
 			{% if config.extra.homepage_links %}
 			<nav id="header-navigation">
 				<ul>
@@ -92,9 +88,9 @@
 				</ul>
 			</nav>
 			{% endif %}	
-		</section>#}
+		</section>
 	
-		{#<ul id="pronouns">
+		<ul id="pronouns">
 			<li>
 				<a class="u-pronoun" href="https://en.wiktionary.org/wiki/they#Pronoun" hreflang="en" lang="en">they</a>
 			</li>
@@ -111,9 +107,9 @@
 			<li>
 				<a class="u-pronoun" href="https://fr.wiktionary.org/wiki/il#Pronom_personnel" hreflang="fr" lang="fr">il</a>
 			</li>
-		</ul>#}
+		</ul>-#}
 	
-		<img aria-hidden="true" width="56" height="35" alt="Blinking eye" src="/images/eye.gif" style="position: absolute; inset-block: 260px; inset-inline: 170px;" class="pixelated" />
+		<img aria-hidden="true" width="56" height="35" id="blinking-eye" alt="Blinking eye" src="/images/eye.gif" class="pixelated" />
 		
 		<a id="imood" href="https://www.imood.com/users/{{ config.extra.imood_username }}">
 			<img
@@ -129,15 +125,6 @@
 	{% endblock header %}
 	
 	{% block content %}
-	<style>
-	main {
-		text-align: center;
-		padding-block-end: 0;
-		overflow: hidden;
-		margin-block-start: 240px;
-	}
-	</style>
-	
 	{% if section.content %}<main id="maincontent">{{ section.content | safe }}</main>{% endif %}
 	{% endblock content %}
 	

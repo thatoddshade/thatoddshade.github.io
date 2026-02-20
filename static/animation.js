@@ -7,13 +7,13 @@ const FOREGROUND_2 = "#000c0f10"
 const LINE_WIDTH   = 1.5
 
 
-const ctx = game.getContext("2d")
+const ctx = animation.getContext("2d")
 ctx.imageSmoothingEnabled = false
 
 
 function clear() {
     ctx.fillStyle = BACKGROUND
-    ctx.fillRect(0, 0, game.width, game.height)
+    ctx.fillRect(0, 0, animation.width, animation.height)
 }
 
 function point({x, y}, size, color) {
@@ -36,8 +36,8 @@ function line({p1, p2}, color) {
 function screen(p) {
     // -1..1 => 0..2 => 0..1 => 0..w
     return {
-        x: (p.x + 1) / 2 * game.width,
-        y: (1 - (p.y + 1) / 2) * game.height,
+        x: (p.x + 1) / 2 * animation.width,
+        y: (1 - (p.y + 1) / 2) * animation.height,
     }
 }
 
@@ -48,7 +48,7 @@ function project({x, y, z}) {
     }
 }
 
-const FPS = 60;
+const FPS = 30;
 
 
 function translate_z({x, y, z}, dz) {
