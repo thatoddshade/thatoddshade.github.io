@@ -16,3 +16,22 @@
 		max-height: 64rem;
 	}
 }
+
+#next-previous {
+  text-align: center;
+}
+
+.next,
+.previous {
+  display: block;
+  text-decoration: none;
+  font-variant-caps: all-small-caps;
+}
+
+.next::before,
+.previous::after {
+  display: block;
+}
+
+.next::before { content: "↑"; }
+.previous::after { content: "↓"; }

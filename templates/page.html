@@ -116,6 +116,13 @@
 		{%- endif -%}
 		{%- endfor %}
 	</aside>
+
+	{% if page.lower or page.higher %}
+	<aside id="next-previous">
+		{% if page.lower %}<a href="{{ page.lower.permalink }}#next-previous" class="next">Next</a>{% endif %}
+		{% if page.higher %}<a href="{{ page.higher.permalink }}#next-previous" class="previous">Previous</a>{% endif %}
+	</aside>
+	{% endif %}
 </main>
 {% endblock content %}
 
