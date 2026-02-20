@@ -22,3 +22,15 @@ body > main {
 		}
 	}
 }
+
+#paginator {
+  text-align: center;
+}
+
+#newer,
+#older {
+  text-decoration: none;
+}
+
+#newer::before { content: "← "; }
+#older::after { content: " →"; }

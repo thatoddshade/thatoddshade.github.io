@@ -17,8 +17,8 @@
 		{% endif %}
 	</header>
 	
-	{% if section.pages %}	
-	{% for page in section.pages %}
+	{% if paginator.pages %}	
+	{% for page in paginator.pages %}
 	<article class="post h-entry">
 		<header>
 			<p class="time"><a class="u-url" href="{{ page.permalink }}">
@@ -45,7 +45,13 @@
 		{% endif %}
 	</article>
 	{% endfor %}
-	
+
+	<aside id="paginator">
+		{% if paginator.previous %}<a href="{{ paginator.previous }}#paginator" id="newer">Newer posts</a>{% endif %}
+		<span id="index">{{ paginator.current_index ~ "/" ~ paginator.number_pagers }}</span>
+		{% if paginator.next %}<a href="{{ paginator.next }}#paginator" id="older">Older posts</a>{% endif %}
+	</aside>
+
 	{% else %}
 	<p>This section is empty.</p>
 	{% endif %}
