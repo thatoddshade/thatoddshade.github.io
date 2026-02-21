@@ -41,8 +41,8 @@
 
 #blinking-eye {
   position: absolute;
-  inset-block: 260px;
-  inset-inline: 170px;
+  left: 170px;
+  top: 260px;
 }
 
 /*#notice-button {
@@ -58,9 +58,9 @@
   p {
     margin: 0;
   }
-}*/
+}
 
-/*#notice-e-mail {
+#notice-e-mail {
   transform: rotate(20deg);
   position: absolute;
   inset-inline-start: 0;
@@ -88,4 +88,14 @@
       text-align: center;
     }
   }
+}
+
+#pronouns {
+	margin: 0;
+	padding: 0;
+
+	> li {
+		list-style-type: none;
+		display: inline flow-root;
+	}
 }*/

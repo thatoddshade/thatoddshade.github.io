@@ -1,4 +1,4 @@
-body > main {
+main {
 	> hgroup {
 		border-bottom: 1px solid currentcolor;
 	}
@@ -15,6 +15,19 @@ body > main {
 			max-height: 480px;		
 		}
 	}
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 4em
+}
+
+#sectiondesc {
+  margin-top: 0;
+  text-align: center;
+  text-indent: 0;
 }
 
 #paginator {

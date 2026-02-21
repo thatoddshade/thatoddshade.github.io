@@ -63,6 +63,8 @@
 <body id="begin">
 	<a href="#maincontent" id="skip">Skip to content</a>
 
+	{% block header %}{% endblock header %}
+
 	{% if config.extra.homepage_links -%}
 	<nav id="navigation-links">
 		<ul>{% for link in config.extra.homepage_links -%}
@@ -81,8 +83,6 @@
 		</ul>
 	</nav>
 	{%- endif %}
-
-	{% block header %}{% endblock header %}
 
 	{% block content %}{% endblock content %}
 

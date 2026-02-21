@@ -3,40 +3,50 @@
 @use "skip";
 @use "footer";
 
+
 @view-transition {
   navigation: auto;
 }
 
+
 body {
   --serif: "EB Garamond 08", Georgia, serif;
-  --big-serif: "EB Garamond 12", Georgia, serif;  /* optical size */
+  --big-serif: "EB Garamond 12", Georgia, serif;
 
   position: relative;
   max-width: 640px;
   min-height: 480px;
 
   font-family: var(--serif);
-  font-size: 20px;
+  font-size: 16pt;
 
-  margin-block: 0;
-  margin-inline: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3 {
   font-family: var(--big-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
   font-variant: all-petite-caps;
   font-weight: normal;
+  text-transform: uppercase;
 }
+
 
 // <nav> element found in base template
 #navigation-links {
   position: absolute;
   right: 0;
-  font-family: var(--serif);
+  top: 0;
+  font-family: var(--big-serif);
   font-size: 1.5em;
-  font-style: italic;
   text-transform: lowercase;
 }
 
@@ -51,43 +61,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navigation-links li:not(:last-of-type) {
-  margin-right: 1ch;
+  margin-right: .5ch;
 }
 
-#navigation-links li[aria-current="page"] a {
+#navigation-links li[aria-current="page"] {
+  font-style: italic; 
+}
+
+#navigation-links a {
   text-decoration: none;
 }
 
+
 #sitetitle {
   margin-block: 0;
-  font-family: 'Jost', sans-serif;
-  font-size: 1em;
+  font-size: 1.5em;
+  font-family: var(--big-serif);
   font-variant: all-petite-caps;
+  text-transform: uppercase;
   font-weight: normal;
-
-  > a {
-    text-decoration: none;
-  }
 }
 
-#pronouns, #header-navigation > ul {
-	margin: 0;
-	padding: 0;
-
-	> li {
-		list-style-type: none;
-		display: inline flow-root;
-	}
-}
-
-#header-navigation > ul {
-	> li {
-		margin-inline-end: 1ch;
-	}
-	> li:last-of-type {
-		margin-inline-end: 0;
-	}
-	> li[aria-current="page"] > a {
-		text-decoration: none;
-	}
+#sitetitle a {
+  text-decoration: none;
 }
