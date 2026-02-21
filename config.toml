@@ -74,7 +74,7 @@ favicons = [
 	{ rel="icon", sizes="400x400", href = "/favicon.png", type = "image/png" },
 ]
 
-og = ["/images/og.png", "/images/og.webp"]
+ogimage = "/images/opengraph.webp"
 
 # appended between a `page.title` and `config.title`
 title_separator = " ⸺:⸺ "
