@@ -17,15 +17,15 @@ highlight_theme = "1337"
 domain = "thatoddshade.is-a.dev"
 
 homepage_links = [
-	{ name = "home", url = "@/_index.md" },
-	#{ name = "slipbox", url = "@/slipbox/_index.md" },
-	{ name = "posts", url = "@/posts/_index.md" },
-	{ name = "now", url = "@/now.md" },
-	#{ name = "blogroll", url = "@/blogroll.md" },
-	#{ name = "people", url = "@/people.md" },
-	#{ name = "uses", url = "@/uses.md" },
-	#{ name = "colophon", url = "@/colophon.md" },
-	{ name = "about", url = "@/about.md" },
+	{ name = "Home", url = "@/_index.md" },
+	#{ name = "Slipbox", url = "@/slipbox/_index.md" },
+	{ name = "Posts", url = "@/posts/_index.md" },
+	{ name = "Now", url = "@/now.md" },
+	#{ name = "Blogroll", url = "@/blogroll.md" },
+	#{ name = "People", url = "@/people.md" },
+	#{ name = "Uses", url = "@/uses.md" },
+	#{ name = "Colophon", url = "@/colophon.md" },
+	{ name = "About", url = "@/about.md" },
 ]
 
 hfeed = "/posts"
@@ -58,10 +58,10 @@ links = [
 	{ name = "lipu pona", url = "https://lipupona.net/ijosata", lang = "tok"},
 ]
 
-imood_username = "thatoddshade"
+imood = "thatoddshade"
 mastodon_username = "@thatoddshade@mas.to"
 
-photo = "/favicon.png"
+photo = "/favicon.jpeg"
 favicons = [
 	{ rel="shortcut icon", href = "/favicon.ico", type = "image/x-icon" },
 
@@ -73,6 +73,8 @@ favicons = [
 	{ rel="icon", sizes="400x400", href = "/favicon.jpeg", type = "image/jpeg" },
 	{ rel="icon", sizes="400x400", href = "/favicon.png", type = "image/png" },
 ]
+
+og = ["/images/og.png", "/images/og.webp"]
 
 # appended between a `page.title` and `config.title`
 title_separator = " ⸺:⸺ "

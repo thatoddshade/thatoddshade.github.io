@@ -2,7 +2,7 @@
 @use "theme";
 @use "post";
 
-main p {
+p {
   text-indent: 2ch each-line;
 }
 
@@ -17,14 +17,13 @@ ul > li {
 }
 
 blockquote {
-  margin-left: 0;
-  padding-left: 1ch;
+  margin-left: 2ch;
 }
 
-
 code {
-  padding: 0.25em;
-  font-size: 12pt;
+  font-size: 0.75em;
+  padding-inline: 0.25ch;
+  padding-block: 0.125em;
 }
 
 pre {

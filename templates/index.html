@@ -1,11 +1,13 @@
 {% extends "base.html" %}
 
 {% block extra_head -%}
-<link rel="stylesheet" href="{{ get_url(path='homepage.css', cachebust=true) }}" />
+	<link rel="stylesheet" href="{{ get_url(path='homepage.css', cachebust=true) }}" />
+	<link rel="preload" href="animation.js" as="script" />
 {%- endblock extra_head %}
 
-{% block header %}
-<div class="h-card">
+{#{% block header %}#}
+{% block content %}
+<main class="h-card">
 	{#-<div id="notice-button">
 		<p>Link to my button!</p>
 		<img class="pixelated" alt="website button" src="/images/buttons/website.png" width="88" height="31" />
@@ -23,8 +25,8 @@
 	
 	<div id="homepage-frame"></div>
 	
-	<canvas id="animation" width="320" height="240"></canvas>
-	<script src="umbra.js"></script><script src="animation.js"></script>
+	<canvas aria-hidden="true" id="animation" width="320" height="240"></canvas>
+	<script src="animation.js"></script>
 	
 	<div id="frame">
 		<div id="logo">
@@ -32,13 +34,12 @@
 			<h1 id="username" class="sc"><a class="u-uid u-url p-name p-nickname" href="/">{{ config.author }}</a></h1>
 		</div>
 	
-		<p><a class="u-email" href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a></p>
+		<a class="u-email" href="mailto:{{ config.extra.email }}">{{ config.extra.email }}</a>
 	
 		{#<p>
 		<span class="dt-bday">born on <time class="value" datetime="--05-26">a May 26<sup>th</sup></time></span>,
 			<span class="p-country-name">living in <span class="value">France</span></span>.
 		</p>
-	
 	
 		{% if config.extra.links %}
 		<details>
@@ -58,7 +59,6 @@
 			</ul>
 		</details>
 		{% endif %}
-	
 	
 		<section>	
 			{% if config.extra.homepage_links %}
@@ -109,26 +109,25 @@
 			</li>
 		</ul>-#}
 	
-		<img aria-hidden="true" width="56" height="35" id="blinking-eye" alt="Blinking eye" src="/images/eye.gif" class="pixelated" />
-		
-		<a id="imood" href="https://www.imood.com/users/{{ config.extra.imood_username }}">
-			<img
-				src="https://moods.imood.com/display/uname-{{ config.extra.imood_username }}/fg-000000/bg-fffff0/trans-1/imood.gif"
-				alt  ="Current mood on imood.com"
-				title="Current mood on imood.com"
-				border="0"
-			/>
-		</a>
+		<a id="imood" href="https://www.imood.com/users/{{ config.extra.imood }}"><img height="15" fetchpriority="low" src="https://moods.imood.com/display/uname-{{ config.extra.imood }}/trans-1/imood.gif" alt="Mood" border="0"></a>
 	
+		<img aria-hidden="true" width="56" height="35" id="blinking-eye" alt="Blinking eye" src="/images/eye.gif" class="pixelated" />
 	</div>
+</main>
+{% endblock content %}
 
-	{% endblock header %}
+	{#{% endblock header %}
+
 	
 	{% block content %}
 	{% if section.content %}<main id="maincontent">{{ section.content | safe }}</main>{% endif %}
+
+</div>
 	{% endblock content %}
 	
-	{#{% block footer %}
+	
+
+	{% block footer %}
 	<footer>
 		<a href="https://brainmade.org" title="this website was made by a being with a brain." id="brainmade">
 			<img src="/images/buttons/brainmade.png" alt="a logo of a human with a seed germinating in their head, with the word „BRAINMADE“ next to it" class="pixelated" />
@@ -137,6 +136,3 @@
 		{% include "croutons.html" %}
 	</footer>
 	{% endblock footer %}#}
-	
-	
-</div>
