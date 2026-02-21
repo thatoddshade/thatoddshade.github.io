@@ -3,7 +3,7 @@ name: Fetch Webmentions
 on:
   push:
     branches:
-      - main
+      - master 
   schedule:
     - cron: '*/30 * * * *'  # Runs every 30 minutes
   workflow_dispatch:  # Allows manual triggering of the workflow if needed
