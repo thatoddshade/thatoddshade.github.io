@@ -1,20 +1,18 @@
 #skip {
   position: absolute;
-  inset-inline-start: -10000px;
-  inset-block-start: auto;
+  left: -999px;
+  top: -999px;
   width: 1px;
   height: 1px;
   overflow: hidden;
-
   z-index: 1;
 }
 
 #skip:focus {
   position: absolute;
-  inset-inline-start: 0;
-  margin-inline: auto;
-  inset-block-start: 0;
-  margin-block: auto;
+  left: 0;
+  top: 0;
+  margin: auto;
   width: auto;
   height: auto;
 }

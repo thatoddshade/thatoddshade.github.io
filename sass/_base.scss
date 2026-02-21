@@ -30,35 +30,33 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
 }
 
+// <nav> element found in base template
 #navigation-links {
   position: absolute;
   right: 0;
-  top: 1em;
-  
   font-family: var(--serif);
   font-size: 1.5em;
   font-style: italic;
-
-  margin-inline: 2ch;
-  margin-block: 1em;
-
-  ul {
-    margin: 0;
-    padding: 0;
-    display: inline-flex;
-  }
-
- li {
-    list-style-type: none;
-  }
-
-  li:not(:last-of-type) {
-    margin-right: 1ch;
-  }
+  text-transform: lowercase;
 }
 
-main {
-  padding-inline: 0.5ch;
+#navigation-links ul {
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+}
+
+
+#navigation-links li {
+  list-style-type: none;
+}
+
+#navigation-links li:not(:last-of-type) {
+  margin-right: 1ch;
+}
+
+#navigation-links li[aria-current="page"] a {
+  text-decoration: none;
 }
 
 #sitetitle {
