@@ -1,8 +1,8 @@
 base_url = "/"
 
-title = "THATODDSHADE’s palace"
-description = "The gloomy agony that shines in rooms of pine and ebony…"
 author = "thatoddshade"
+title = "thatoddshade’s palace"
+description = "The gloomy agony that shines in rooms of pine and ebony…"
 default_language = "en"
 
 compile_sass = true
