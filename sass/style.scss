@@ -2,6 +2,10 @@
 @use "theme";
 @use "post";
 
+a {
+  color: currentColor;
+}
+
 p {
   text-indent: 2ch each-line;
 }
