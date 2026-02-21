@@ -26,8 +26,13 @@
 	
 	<div id="homepage-frame"></div>
 	
-	<canvas aria-hidden="true" id="animation" width="320" height="240"></canvas>
-	<script src="animation.js"></script>
+	<canvas aria-hidden="true" id="animation" width="320" height="240">
+		<picture>
+			<source srcset="/images/animation.webp" type="image/webp" />
+			<img aria-hidden="true" width="640" height="480" src="/images/animation.gif" type="image/gif" />
+		</picture>
+	</canvas>
+	<script src="animation.js" type="text/javascript"></script>
 	
 	<div id="frame">
 		<div id="logo">
