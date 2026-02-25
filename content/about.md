@@ -1,7 +1,7 @@
 +++
 title = "About"
 date = 2024-08-30
-updated = 2025-12-31T23:00:00+01:00
+updated = 2026-02-23
 description = "This website and I"
 +++
 
@@ -11,7 +11,7 @@ Back in 2023, among crumbling personal projects in the messiness of forgotten di
 
 But it eventually morphed into a more delicate piece, which, although still novice, had a keen [use of blur and transparency](https://web.archive.org/web/20230326153840/https://thatoddshade.github.io/en/).
 
-Then, after all that violet, came an illuminated era of beige in which it still re&shy;mains to this day,—just as it always has been made with the same [tools](/colophon), and al&shy;ways has been available on a public [GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io).
+Then, after all that violet, came an illuminated era of beige in which it still re&shy;mains to this day,—just as it al&shy;ways has been available on a public [GitHub repository](https://github.com/thatoddshade/thatoddshade.github.io/) and has been made with (roughly) the same tools (check out the [Colophon](/colophon)!).
 
 ### Blinkies, buttons & stamps {#website-badges}
 
