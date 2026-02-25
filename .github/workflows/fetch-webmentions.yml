@@ -30,7 +30,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add static/webmentions.json
           git commit -m "Update webmentions" || echo "No changes to commit"
-          # Pull latest changes from main with rebase to avoid conflicts
-          git pull --rebase origin main
+          # Pull latest changes from master with rebase to avoid conflicts
+          git pull --rebase origin master 
           # Now push the updated branch
           git push
