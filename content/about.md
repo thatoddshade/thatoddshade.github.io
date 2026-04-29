@@ -1,7 +1,7 @@
 +++
 title = "About"
 date = 2024-08-30
-updated = 2026-02-23
+updated = 2026-04-29
 description = "This website and I"
 +++
 
@@ -40,7 +40,7 @@ Another interest of mine is linguistics : this comes from back when I started le
 
 The researches that I have done have led me to write and increasing number of notes. Because of this, I use more than one notebook,—a sketchbook, a diary, a bul&shy;let journal, an address book etc.,—and store in a small crate on my desk the pre&shy;mice of a zettelkasten[^zk].
 
-[^cl]: <dfn><abbr title="Constructed languages">Conlangs</abbr></dfn> are languages created by people known as ‘conlangers’. Some of the most popular conlangs are Zamenhof’s famous language Esperanto, which aims to serve as a universal medium of communication; Lojban, a community-made language whose goal is to be as logical as possible; and [Toki Pona](https://tokipona.org/), a recently tren&shy;dy one that is meant to be small and minimalist in order to not only be easy to learn, but also to force upon its speakers a more thoughtful use of words.
+[^cl]: <dfn><abbr title="Constructed languages">Conlangs</abbr></dfn> are languages created by people known as ‘conlangers’. Some of the most popular conlangs are Zamenhof’s famous language Esperanto, which aims to serve as a universal medium of communication; Lojban, a community-made language whose goal is to be as logical as possible; and [Toki Pona](https://tokipona.net/), a recently tren&shy;dy one that is meant to be small and minimalist in order to not only be easy to learn, but also to force upon its speakers a more thoughtful use of words.
 
 [^zk]: <dfn><i lang="de">Zettelkasten</i></dfn>,—German compound of <i lang="de">Zettel</i> ‘note’ and <i lang="de">Kasten</i> ‘box’, with the plu&shy;ral form <i lang="de">Zettelkästen</i>,—refers to a personal knowledge management method po&shy;pu&shy;larised by sociologist Niklas Luhmann during the 20th century; many re&shy;sour&shy;ces by dedicated users may be found on the [Zettelkasten website](https://zettelkasten.de/).
 
