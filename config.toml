@@ -6,7 +6,6 @@ description = "The gloomy agony that shines in rooms of pine and ebony…"
 default_language = "en"
 
 compile_sass = true
-#minify_html = true
 ignored_static = ["*.xcf"]
 
 [markdown]
