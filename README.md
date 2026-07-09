@@ -34,4 +34,4 @@ Among the files located under `content/`, most are ‘pages’. Their template c
     - `mastodon`.
 - To set `p-summary`, set `description`;
 - To set `dt-published`, set `date` to a date; and
-- To set `dt-updated`, set `updated to a date.
+- To set `dt-updated`, set `updated` to a date.
